@@ -1,0 +1,69 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. A wide, low ancient grey volcanic stone relief panel, width twice its height, carved with FIVE clearly distinct symbols from left to right: flowing water, tree roots, a flower, crescent moon, and an oil lamp. Deep recessed niches, eroded stone, traces of ochre, moss at bottom. No written text. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Render against perfectly flat solid #FF00FF magenta background, including all empty holes; magenta appears nowhere on the object. No ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-relief-cave.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-relief-cave.png.raw.png",
+  "raw_bytes": 1576017,
+  "elapsed_seconds": 76.75,
+  "model": "gpt-5.5",
+  "session_id": "01a0c61b-a9ea-7630-bdae-00cfd1bbaf86",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "chroma",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-relief-cave.png",
+    "mode": "RGBA",
+    "method": "ycbcr",
+    "size": "1774x887",
+    "key": "magenta",
+    "keyed_pixels": 765924,
+    "fringe_pixels": 0,
+    "cleaned_transparent_rgb_pixels": 193260,
+    "alpha_zero_pct": 99.97,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": {
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-relief-cave.png",
+    "mode": "RGBA",
+    "method": "ycbcr",
+    "size": "1774x887",
+    "key": "magenta",
+    "keyed_pixels": 765924,
+    "fringe_pixels": 0,
+    "cleaned_transparent_rgb_pixels": 193260,
+    "alpha_zero_pct": 99.97,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        114,
+        607,
+        1555,
+        645
+      ],
+      "before": [
+        1774,
+        887
+      ],
+      "after": [
+        1441,
+        38
+      ],
+      "margin_px": {
+        "left": 114,
+        "top": 607,
+        "right": 219,
+        "bottom": 242
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

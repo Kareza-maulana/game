@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-relief-cave.png.raw.png",
+  "out": "assets\\art\\prop-relief-cave.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-relief-cave.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1774x887",
+    "alpha_zero_pct": 51.29,
+    "partial_alpha_pct": 48.66,
+    "opaque_pct": 0.05,
+    "cleaned_transparent_rgb_pixels": 1151,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      45,
+      212,
+      1731,
+      679
+    ],
+    "before": [
+      1774,
+      887
+    ],
+    "after": [
+      1686,
+      467
+    ],
+    "margin_px": {
+      "left": 45,
+      "top": 212,
+      "right": 43,
+      "bottom": 208
+    }
+  },
+  "coverage": 0.9464121966770049
+}

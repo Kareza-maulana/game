@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-damar.png.raw.png",
+  "out": "assets\\art\\prop-damar.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-damar.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 77.26,
+    "partial_alpha_pct": 22.74,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 786428,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      295,
+      85,
+      728,
+      1358
+    ],
+    "before": [
+      1024,
+      1536
+    ],
+    "after": [
+      433,
+      1273
+    ],
+    "margin_px": {
+      "left": 295,
+      "top": 85,
+      "right": 296,
+      "bottom": 178
+    }
+  },
+  "coverage": 0.6234459161588436
+}

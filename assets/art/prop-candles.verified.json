@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-candles.png.raw.png",
+  "out": "assets\\art\\prop-candles.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-candles.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1536x1024",
+    "alpha_zero_pct": 66.91,
+    "partial_alpha_pct": 33.09,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 818882,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      80,
+      272,
+      1477,
+      765
+    ],
+    "before": [
+      1536,
+      1024
+    ],
+    "after": [
+      1397,
+      493
+    ],
+    "margin_px": {
+      "left": 80,
+      "top": 272,
+      "right": 59,
+      "bottom": 259
+    }
+  },
+  "coverage": 0.7203018348503966
+}

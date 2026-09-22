@@ -1,0 +1,14 @@
+import { gd } from 'gdcore-tools';
+import fs from 'node:fs';
+const p = gd.ProjectHelper.createNewGDJSProject();
+p.setName('Cahaya Kadiri');
+const s = p.insertNewLayout('Petirtaan', 0);
+const player = s.getObjects().insertNewObject(p, 'Sprite', 'Kirana', 0);
+player.addNewBehavior(p, 'PlatformBehavior::PlatformerObjectBehavior', 'Platformer');
+const floor = s.getObjects().insertNewObject(p, 'Sprite', 'Stone', 1);
+floor.addNewBehavior(p, 'PlatformBehavior::PlatformBehavior', 'Platform');
+const el = new gd.SerializerElement(); p.serializeTo(el);
+fs.mkdirSync('.tools', {recursive:true});
+fs.writeFileSync('.tools/default-project.json', gd.Serializer.toJSON(el));
+console.log('Generated engine-validated default schema.');
+el.delete(); p.delete();

@@ -1,0 +1,69 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One low wide stone altar with EXACTLY FIVE short beeswax candles in five carved recessed holders, five small golden flames, melted wax, soot, chipped stone edges. Width 1.5 times height. All five clearly separated but mounted on ONE shared base. No sixth candle, no writing. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Render against perfectly flat solid #FF00FF magenta background, including all empty holes; magenta appears nowhere on the object. No ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-candles.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-candles.png.raw.png",
+  "raw_bytes": 1528685,
+  "elapsed_seconds": 69.562,
+  "model": "gpt-5.5",
+  "session_id": "01a0c61d-0e7b-75a2-b8dd-1c2db74c2448",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "chroma",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-candles.png",
+    "mode": "RGBA",
+    "method": "ycbcr",
+    "size": "1536x1024",
+    "key": "magenta",
+    "keyed_pixels": 516986,
+    "fringe_pixels": 0,
+    "cleaned_transparent_rgb_pixels": 163057,
+    "alpha_zero_pct": 99.77,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": {
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-candles.png",
+    "mode": "RGBA",
+    "method": "ycbcr",
+    "size": "1536x1024",
+    "key": "magenta",
+    "keyed_pixels": 516986,
+    "fringe_pixels": 0,
+    "cleaned_transparent_rgb_pixels": 163057,
+    "alpha_zero_pct": 99.77,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        233,
+        272,
+        1308,
+        381
+      ],
+      "before": [
+        1536,
+        1024
+      ],
+      "after": [
+        1075,
+        109
+      ],
+      "margin_px": {
+        "left": 233,
+        "top": 272,
+        "right": 228,
+        "bottom": 643
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

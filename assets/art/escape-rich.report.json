@@ -1,0 +1,23 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create one production-ready material illustration for Cahaya Kadiri, a richly illustrated 16-bit pixel-art side scrolling game. Match the attached game's painterly pixel texture, dense handcrafted shading and believable material depth. A wide panoramic background viewed from the mouth of Selomangleng cave across the Klotok foothills in imagined medieval East Java. Richly detailed scenery filling the image: layered blue-grey volcanic mountains, a winding glinting Brantas river, terraced rice fields, little timber villages and tiled roofs, carved stone shrines and an ancient Dhaha gateway nestled among banyan trees, delicate bridges, waterfalls down forested cliffs, tangled roots and ferns at lower corners, lush varied foliage, wisps of atmospheric mist, small warm oil lamps and distant settlement lights. Cool misty blue palette with subtle amber highlights, as detailed and textured as the attached cave background. Clouded late afternoon light. Composition broad horizontal vista, 3:1 panoramic canvas 1536x512. Horizon in upper third; fill middle and lower thirds with rich landscape objects. Background scene only, no playable platforms, no people, no UI, no text, no flat vector shapes, no giant plain triangles, no abstract silhouettes. Depth from atmospheric perspective but keep medium-distance buildings and rock detail legible.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\escape-rich.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\escape-rich.png.raw.png",
+  "raw_bytes": 3265243,
+  "elapsed_seconds": 100.953,
+  "model": "gpt-5.5",
+  "session_id": "01a0c40a-3641-7e31-a5c8-01492a5aaf56",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\hill.png"
+  ],
+  "transparent": false,
+  "alpha": null,
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null
+  },
+  "provider_resolved_from": "explicit"
+}

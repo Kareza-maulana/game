@@ -1,0 +1,55 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "One full body static character sprite on a genuinely transparent background. Ki Jati, a kindly elderly Javanese palace gardener and abdi dalem in an imagined 11th century Kadiri, male around 65, warm brown skin, simple brown blangkon style head wrap, cream long sleeve tunic, dark brown batik sarong, dark sandals, carries an old small brass oil lamp in front of him. Three quarter side view facing LEFT. Humble slightly bowed pose, wistful thoughtful expression, small grey moustache. Detailed clean hand crafted pixel art with hard pixel edges and limited warm palette, side scrolling platformer character. Proportions realistic 6 heads tall. Single figure only, no animation, no ground plane, no scenery, no text, no shadow outside the feet. Full body visible with feet aligned at bottom, ample transparent margin.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\ki-jati.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\ki-jati.png.raw.png",
+  "raw_bytes": 1483765,
+  "elapsed_seconds": 44.813,
+  "model": "gpt-5.5",
+  "session_id": "01a0bfaf-3835-7b31-8800-6eb54d043cb1",
+  "refs": [],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "provider-default",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\ki-jati.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 72.15,
+    "partial_alpha_pct": 27.85,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 773216,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        294,
+        67,
+        820,
+        1472
+      ],
+      "before": [
+        1024,
+        1536
+      ],
+      "after": [
+        526,
+        1405
+      ],
+      "margin_px": {
+        "left": 294,
+        "top": 67,
+        "right": 204,
+        "bottom": 64
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

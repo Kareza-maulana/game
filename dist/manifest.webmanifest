@@ -1,0 +1,12 @@
+{
+  "name": "Cahaya Kadiri",
+  "short_name": "Cahaya Kadiri",
+  "id": "id.ukmpp.cahayakadiri",
+  "description": "Serat Sapta Keteladanan — Prolog sampai Epilog, berdasarkan GDD v2.0.",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}

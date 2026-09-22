@@ -1,0 +1,55 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Handcrafted detailed 16-bit pixel art for Cahaya Kadiri, a 2D side-scrolling narrative platformer. Sharp stepped pixel edges, coherent restrained palette, atmospheric diorama lighting. No text, no UI, no labels, no watermark. One static isolated sprite on genuinely transparent background. Dewi Kilisuci, a serene adult East Javanese ascetic woman, simple ivory and faded ochre robes, dark long hair tied back, bare feet, modest small gold forehead ornament, gentle upright standing pose, three-quarter side view facing left, full body. No ground plane, no drop shadow; generous transparent margin.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\kilisuci.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\kilisuci.png.raw.png",
+  "raw_bytes": 1536992,
+  "elapsed_seconds": 48.75,
+  "model": "gpt-5.5",
+  "session_id": "01a0c0bc-873b-7380-9b11-1bd09226df22",
+  "refs": [],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "provider-default",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\kilisuci.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 69.38,
+    "partial_alpha_pct": 30.62,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 789107,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        288,
+        42,
+        767,
+        1494
+      ],
+      "before": [
+        1024,
+        1536
+      ],
+      "after": [
+        479,
+        1452
+      ],
+      "margin_px": {
+        "left": 288,
+        "top": 42,
+        "right": 257,
+        "bottom": 42
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

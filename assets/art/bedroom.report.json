@@ -1,0 +1,21 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Handcrafted detailed 16-bit pixel art for Cahaya Kadiri, a 2D side-scrolling narrative platformer. Sharp stepped pixel edges, coherent restrained palette, atmospheric diorama lighting. No text, no UI, no labels, no watermark. Wide 3:1 composition, 1536x512. A quiet intimate East Javanese princess bedroom in a royal palace, pure side view cutaway. Carved low wooden daybed on right, ivory silk curtains, bronze dressing mirror and manuscript table on left, open window showing a blue moon. Warm gold oil lamps, soft ivory cloth and dark teak. A small calm space after a storm. Empty room, no people. No characters. Strict side elevation, not isometric. This is a backdrop; leave midground clear for independently placed gameplay platforms.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\bedroom.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\bedroom.png.raw.png",
+  "raw_bytes": 2155181,
+  "elapsed_seconds": 39.781,
+  "model": "gpt-5.5",
+  "session_id": "01a0c0bb-e255-7620-bab8-2a015c985d59",
+  "refs": [],
+  "transparent": false,
+  "alpha": null,
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null
+  },
+  "provider_resolved_from": "explicit"
+}

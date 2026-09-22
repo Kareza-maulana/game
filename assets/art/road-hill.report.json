@@ -1,0 +1,23 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create one production-ready material illustration for Cahaya Kadiri, a richly illustrated 16-bit pixel-art side scrolling game. Match the attached game's painterly pixel texture, dense handcrafted shading and believable material depth. Wide horizontal rectangular material plate, aspect ratio 3:1, 1536x512. Mountain Klotok natural rocky trail ledge, layered rugged blue-grey andesite, packed fine gravel on the level walking plane, individually shaded cracked rocks, moss patches, small exposed winding roots, thick irregular weathered stone front face. Indigo stone and mossy teal, subtle warm reflected light. This is ONE continuous road cross-section, not a sprite sheet, not a grid and not separate floating islands. Side-on orthographic game elevation with a narrow visible upper walking plane, bevelled lip and substantial shaded front wall below it. The road occupies the ENTIRE canvas edge to edge: level straight back edge at the TOP image border y=0, top walking plane in upper 22%, bevel at 22%-30%, rich structural front face below. Cut flush at left and right edges so adjacent modules join, same heights and lighting at both edges. Opaque filled canvas, no surrounding sky or background, no transparent margin, no pedestal in empty space, no exterior drop shadow, no perspective vanishing point or tilted walk line. Shading from top-left. Dense stone/wood microtexture, chipped edges, occlusion and several complementary midtones. Ground must look like a real dimensional constructed object, not flat stripes or minimalist vector art. No characters, text, labels, border or UI.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\road-hill.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\road-hill.png.raw.png",
+  "raw_bytes": 3301947,
+  "elapsed_seconds": 75.141,
+  "model": "gpt-5.5",
+  "session_id": "01a0c40b-fcc7-7803-86c7-741619c92236",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\hill.png"
+  ],
+  "transparent": false,
+  "alpha": null,
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null
+  },
+  "provider_resolved_from": "explicit"
+}

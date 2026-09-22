@@ -1,0 +1,55 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Handcrafted detailed 16-bit pixel art for Cahaya Kadiri, a 2D side-scrolling narrative platformer. Sharp stepped pixel edges, coherent restrained palette, atmospheric diorama lighting. No text, no UI, no labels, no watermark. One static isolated sprite on genuinely transparent background. A kind elderly East Javanese woman, Mbok Rondo Dadapan, humble brown batik skirt, cream shoulder shawl, dark hair bun with grey strands, holding a woven basket of food. Three-quarter side view facing right, full body, standing. No ground plane, no drop shadow; generous transparent margin.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\mbok.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\mbok.png.raw.png",
+  "raw_bytes": 513833,
+  "elapsed_seconds": 44.844,
+  "model": "gpt-5.5",
+  "session_id": "01a0c0bc-76bf-7951-8e81-f91926544689",
+  "refs": [],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "provider-default",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\mbok.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1199x1312",
+    "alpha_zero_pct": 80.62,
+    "partial_alpha_pct": 19.36,
+    "opaque_pct": 0.02,
+    "cleaned_transparent_rgb_pixels": 261,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        406,
+        145,
+        900,
+        1198
+      ],
+      "before": [
+        1199,
+        1312
+      ],
+      "after": [
+        494,
+        1053
+      ],
+      "margin_px": {
+        "left": 406,
+        "top": 145,
+        "right": 299,
+        "bottom": 114
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

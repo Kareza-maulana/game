@@ -1,0 +1,21 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create a production background for Cahaya Kadiri, a 2D side scrolling pixel art game set in an imagined 11th century East Javanese Kadiri. Very wide horizontal 3:1 composition, 1536 by 512. Pure side elevation, NO isometric perspective. Four terraces of a sacred water garden, weathered dark andesite temple relief walls, carved makara waterspouts, a paduraksa gateway on the far right, large ancient banyan framing the left. Jade green misty morning atmosphere, layered teal distant jungle and mountains, moss, white wijayakusuma flowers, tiny warm amber oil lamps. Rich handcrafted 16-bit pixel art, sharply stepped pixel edges, limited 48 colour palette, dramatic but quiet, beautiful environmental storytelling. Lower third mostly dark stone and shallow water; middle band leaves clear space for playable platforms and characters. No people, no player, no letters, no UI, no writing, no grids. Entire image is a continuous side-scroller stage backdrop, not a sprite sheet. Attractive emerald, muted gold and blue green composition, restrained luminous fog, subtle reflected warm light in pools.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\petirtaan.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\petirtaan.png.raw.png",
+  "raw_bytes": 2904824,
+  "elapsed_seconds": 51.75,
+  "model": "gpt-5.5",
+  "session_id": "01a0bfad-7116-70a3-b109-79426558ff8d",
+  "refs": [],
+  "transparent": false,
+  "alpha": null,
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null
+  },
+  "provider_resolved_from": "explicit"
+}

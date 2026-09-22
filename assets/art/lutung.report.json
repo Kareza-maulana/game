@@ -1,0 +1,55 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Handcrafted detailed 16-bit pixel art for Cahaya Kadiri, a 2D side-scrolling narrative platformer. Sharp stepped pixel edges, coherent restrained palette, atmospheric diorama lighting. No text, no UI, no labels, no watermark. One static isolated sprite on genuinely transparent background. One small black Javan langur monkey with a long curling tail, crouching side view facing right, holding a little cloth food bundle. Friendly mischievous expression, whole body and entire tail visible. No ground plane, no drop shadow; generous transparent margin.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\lutung.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\lutung.png.raw.png",
+  "raw_bytes": 670044,
+  "elapsed_seconds": 61.438,
+  "model": "gpt-5.5",
+  "session_id": "01a0c0bd-fe11-7632-bcf3-df265d1e1eb4",
+  "refs": [],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "provider-default",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\lutung.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1380x1140",
+    "alpha_zero_pct": 70.57,
+    "partial_alpha_pct": 29.3,
+    "opaque_pct": 0.12,
+    "cleaned_transparent_rgb_pixels": 530,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        105,
+        161,
+        1223,
+        1054
+      ],
+      "before": [
+        1380,
+        1140
+      ],
+      "after": [
+        1118,
+        893
+      ],
+      "margin_px": {
+        "left": 105,
+        "top": 161,
+        "right": 157,
+        "bottom": 86
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}
