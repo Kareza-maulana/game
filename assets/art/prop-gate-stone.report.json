@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One complete tall Javanese paduraksa gateway, red brick and weathered andesite, stepped carved crown, two thick sculpted side posts, narrow golden bronze inlays, mossy feet. Open doorway with transparent alpha visible THROUGH the entire opening. Height about 1.7 times width. No ground, building wall or scenery. Full silhouette including crown and feet, no glowing cross or marker. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-gate-stone.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-gate-stone.png.raw.png",
+  "raw_bytes": 2306463,
+  "elapsed_seconds": 102.172,
+  "model": "gpt-5.5",
+  "session_id": "01a0e381-7289-7530-b290-a4dc92a0ea35",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-gate-stone.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 49.24,
+    "partial_alpha_pct": 50.76,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 695788,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        60,
+        13,
+        972,
+        1480
+      ],
+      "before": [
+        1024,
+        1536
+      ],
+      "after": [
+        912,
+        1467
+      ],
+      "margin_px": {
+        "left": 60,
+        "top": 13,
+        "right": 52,
+        "bottom": 56
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

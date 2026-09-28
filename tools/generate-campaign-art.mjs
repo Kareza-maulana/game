@@ -4,7 +4,7 @@ import path from 'node:path';
 const root=process.cwd(),python='C:/Users/po/.codex/skills/sprite-gen/.venv/Scripts/python.exe';
 const requests=JSON.parse(fs.readFileSync('assets/prompts/campaign.json','utf8'));
 const style='Handcrafted detailed 16-bit pixel art for Cahaya Kadiri, a 2D side-scrolling narrative platformer. Sharp stepped pixel edges, coherent restrained palette, atmospheric diorama lighting. No text, no UI, no labels, no watermark. ';
-const entries=Object.entries(requests).filter(([name])=>!fs.existsSync(`assets/art/${name}.png`));
+const entries=Object.entries(requests).filter(([name])=>!fs.existsSync(`assets/art/${name}.png`)&&!fs.existsSync(`assets/art/${name}.webp`)&&!['ki-jati','kilisuci'].includes(name));
 fs.mkdirSync('assets/art',{recursive:true});
 async function worker(){
   while(entries.length){

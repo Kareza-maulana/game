@@ -6,8 +6,12 @@ const root=process.cwd(),python='C:/Users/po/.codex/skills/sprite-gen/.venv/Scri
 const manifest=Object.fromEntries(Object.entries(propSubjects).map(([id,subject])=>['prop-'+id,{ref:'assets/prompts/props-style-reference.png',prompt:propPrompt(subject)}]));
 fs.writeFileSync('assets/prompts/props-rich.json',JSON.stringify(manifest,null,2));
 const requests=Object.entries(manifest).filter(([name])=>!fs.existsSync(`assets/art/${name}.verified.json`));
-async function worker(){for(;;){const entry=requests.shift();if(!entry)return;const[name,r]=entry,prompt=path.resolve(`assets/prompts/${name}.txt`);fs.writeFileSync(prompt,r.prompt);console.log('Generating',name);
+async function worker(){for(;;){if(fs.existsSync('assets/prompts/props-stop.txt'))return;const entry=requests.shift();if(!entry)return;const[name,r]=entry,prompt=path.resolve(`assets/prompts/${name}.txt`);fs.writeFileSync(prompt,r.prompt);console.log('Generating',name);
  const args=['-X','utf8','-m','sprite_gen.cli','gen','--provider','codex','--model','gpt-5.5','--prompt-file',prompt,'--ref',path.resolve(r.ref),'--transparent','--alpha-mode','native','--trim-alpha','--out',path.resolve(`assets/art/${name}.png`),'--report',path.resolve(`assets/art/${name}.report.json`)];
  const code=await new Promise(resolve=>{let log='';const child=spawn(python,args,{cwd:root,windowsHide:true});child.stdout.on('data',v=>log+=v);child.stderr.on('data',v=>log+=v);child.on('error',e=>{log+=e.message;resolve(1);});child.on('close',code=>{fs.writeFileSync(`assets/art/${name}.generation.log`,log);resolve(code);});});console.log(code===0?'Ready':'FAILED',name);if(code!==0)process.exitCode=1;
+ if(code===0){const verified=await new Promise(resolve=>{const child=spawn(python,['-X','utf8','tools/verify-prop-alpha.py',`assets/art/${name}.png.raw.png`],{cwd:root,windowsHide:true,stdio:'inherit'});child.on('error',()=>resolve(1));child.on('close',resolve);});if(verified!==0)process.exitCode=1;}
 }}
-await Promise.all(Array.from({length:3},worker));
+await Promise.all(Array.from({length:4},worker));
+if(!process.exitCode&&!fs.existsSync('assets/prompts/props-stop.txt')){
+ const code=await new Promise(resolve=>{const child=spawn(python,['-X','utf8','tools/export-prop-art.py'],{cwd:root,windowsHide:true,stdio:'inherit'});child.on('error',()=>resolve(1));child.on('close',resolve);});if(code!==0)process.exitCode=1;
+}

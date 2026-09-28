@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One low ornate teak reading desk with an OPEN palm-leaf manuscript and seven narrow leaf strips arranged across its surface, width about 1.5 times height. Tiny abstract incisions, tied cords, carved legs, warm golden trim, deep wood shadows. No readable text. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-manuscript.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-manuscript.png.raw.png",
+  "raw_bytes": 2024485,
+  "elapsed_seconds": 98.047,
+  "model": "gpt-5.5",
+  "session_id": "01a0e388-4951-74b3-a6a4-cbf1ce295f89",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-manuscript.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1536x1024",
+    "alpha_zero_pct": 55.64,
+    "partial_alpha_pct": 44.36,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 694909,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        49,
+        195,
+        1492,
+        892
+      ],
+      "before": [
+        1536,
+        1024
+      ],
+      "after": [
+        1443,
+        697
+      ],
+      "margin_px": {
+        "left": 49,
+        "top": 195,
+        "right": 44,
+        "bottom": 132
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

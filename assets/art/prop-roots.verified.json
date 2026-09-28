@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-roots.png.raw.png",
+  "out": "assets\\art\\prop-roots.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-roots.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1254x1254",
+    "alpha_zero_pct": 36.42,
+    "partial_alpha_pct": 63.53,
+    "opaque_pct": 0.05,
+    "cleaned_transparent_rgb_pixels": 522,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      55,
+      114,
+      1203,
+      1221
+    ],
+    "before": [
+      1254,
+      1254
+    ],
+    "after": [
+      1148,
+      1107
+    ],
+    "margin_px": {
+      "left": 55,
+      "top": 114,
+      "right": 51,
+      "bottom": 33
+    }
+  },
+  "coverage": 0.7664804900081521
+}

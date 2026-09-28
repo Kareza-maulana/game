@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-store.png.raw.png",
+  "out": "assets\\art\\prop-store.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-store.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1086x1448",
+    "alpha_zero_pct": 32.27,
+    "partial_alpha_pct": 67.71,
+    "opaque_pct": 0.02,
+    "cleaned_transparent_rgb_pixels": 285,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      89,
+      47,
+      1011,
+      1385
+    ],
+    "before": [
+      1086,
+      1448
+    ],
+    "after": [
+      922,
+      1338
+    ],
+    "margin_px": {
+      "left": 89,
+      "top": 47,
+      "right": 75,
+      "bottom": 63
+    }
+  },
+  "coverage": 0.8484301690287896
+}

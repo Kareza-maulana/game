@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-gate-dials.png.raw.png",
+  "out": "assets\\art\\prop-gate-dials.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-gate-dials.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1586x992",
+    "alpha_zero_pct": 46.75,
+    "partial_alpha_pct": 53.23,
+    "opaque_pct": 0.02,
+    "cleaned_transparent_rgb_pixels": 216,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      28,
+      242,
+      1556,
+      850
+    ],
+    "before": [
+      1586,
+      992
+    ],
+    "after": [
+      1528,
+      608
+    ],
+    "margin_px": {
+      "left": 28,
+      "top": 242,
+      "right": 30,
+      "bottom": 142
+    }
+  },
+  "coverage": 0.8713251756682282
+}

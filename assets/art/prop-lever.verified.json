@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-lever.png.raw.png",
+  "out": "assets\\art\\prop-lever.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-lever.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 65.14,
+    "partial_alpha_pct": 34.86,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 704257,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      144,
+      46,
+      879,
+      1489
+    ],
+    "before": [
+      1024,
+      1536
+    ],
+    "after": [
+      735,
+      1443
+    ],
+    "margin_px": {
+      "left": 144,
+      "top": 46,
+      "right": 145,
+      "bottom": 47
+    }
+  },
+  "coverage": 0.5028064170921314
+}

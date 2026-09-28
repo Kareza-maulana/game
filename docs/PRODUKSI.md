@@ -17,11 +17,19 @@ Prolog memuat buku, lampu, tangga dan portal. Pasar memuat pesanan, pengejaran l
 
 ## Material pijakan per map
 
-Sembilan gambar material GPT berada di `assets/art/road-*.png`, dengan permukaan atas, sisi depan, tekstur dan bayangan yang membentuk kedalaman. Prolog dan epilog berbagi material perpustakaan; Pasar memiliki material terpisah untuk atap dan dermaga. Prompt dan laporan generasi disimpan bersama proyek.
+Sembilan gambar material GPT berada di `assets/art/road-*.webp`, dengan permukaan atas, sisi depan, tekstur dan bayangan yang membentuk kedalaman. WebP lossless mempertahankan seluruh piksel dan resolusi PNG semula. Prolog dan epilog berbagi material perpustakaan; Pasar memiliki material terpisah untuk atap dan dermaga. Prompt dan laporan generasi disimpan bersama proyek.
 
 Kayu tua untuk perpustakaan; rumbia dan batu dermaga untuk pasar; andesit berlumut untuk Petirtaan; batu alam berlapis untuk bukit; bata merah untuk gerbang; kayu ukir untuk kedaton; batu gelap dengan motif cahaya untuk Bangsal; kayu bertatahan emas untuk kamar putri. Gambar diulang sebagai modul 144 × 48 melalui TiledSprite, dengan sisi bawah tersendiri untuk lantai yang tebal.
 
 `src/terrain-renderer.js` memasangkan dekorasi dengan collision lama yang disembunyikan. Posisi dan ukuran collision tetap sama. Pijakan memudar mengikuti opacity objek fisika, rakit mengikuti ketinggian air, dan penghalang Gerbang mengikuti status puzzle. SVG di `assets/terrain/` masih dipakai untuk sumber collision, tangga dan elemen pendukung.
+
+## Revisi objek lingkungan
+
+Objek fisik memakai ilustrasi transparan GPT di `assets/props-ready/prop-*.webp`, mengikuti tekstur terrain: batu berpahat, kayu berserat, anyaman, perunggu berpatina dan cahaya hangat. Pada revisi objek terdahulu, versi runtime sudah dibatasi sisi terpanjang 512 piksel melalui fungsi fit resmi sprite-gen, dari 43.759.298 menjadi 7.687.904 byte PNG. Optimasi sekarang mengompres piksel runtime tersebut secara lossless tanpa resize tambahan. Master PNG besar dan raw generasi telah dibersihkan; aset runtime, prompt, laporan generasi dan hash verifikasi tetap disimpan. Relief Petirtaan, pertapaan goa dan batu Gerbang memiliki gambar berbeda. Gerbang luar memakai bata/batu; pintu interior memakai kayu ukir. Kendi, cermin, dakon, gudang, lemari pusaka, manuskrip, poster dan empat batu putar memiliki bentuk khusus sesuai fungsi, menggantikan ikon buku/papan generik.
+
+Damar, lima cerukan, lonceng, pilar, bunga, Kidung, tuas, saklar, sulur dan makhluk kecil juga memakai cutout bertekstur. Rak beroda dan keranjang mempertahankan persegi collision lama. Tangga fisika disembunyikan di belakang gambar tangga; rakit mengikuti posisi air seperti sebelumnya. Objek dekoratif dipaskan dengan rasio gambar asli dan ditambatkan pada dasar kotak penempatannya. Titik interaksi tetap berasal dari `src/levels.mjs`.
+
+Prompt sumber ada di `tools/prop-art.mjs` dan `assets/prompts/props-rich.json`. Generasi memakai transparansi native. Tiga hasil awal (relief goa, damar, cerukan) dipulihkan dari raw yang sudah memiliki alpha menggunakan fungsi verifikasi/trim resmi sprite-gen, setelah jalur chroma terbukti menghapus badan objek. Laporan awal dipertahankan untuk audit; `*.verified.json` mencatat alpha dan trim hasil akhir yang digunakan game. Tidak ada atlas hasil pemotongan grid. Glow, sorot, kabut dan partikel tetap berupa efek render sederhana.
 
 ## Perbaikan keterjangkauan dan interaksi
 
@@ -35,7 +43,7 @@ Kanvas menyesuaikan rasio jendela dengan resolusi dasar 480 × 270; kamera mengi
 
 ## Poles pemandangan, kamera dan audio
 
-Jalur keluar goa memakai panorama GPT `assets/art/escape-rich.png`: gunung bertingkat, sungai, sawah, pepohonan, air terjun, permukiman dan bangunan batu. Satu panorama lebar bergerak pada lapisan parallax dan menutup seluruh lintasan kamera tanpa pengulangan horizontal. Ujung lukisan goa lama memudar ke panorama baru melalui filter render. Lapisan dekorasi tidak memiliki collision. Sulur depan dibatasi ke bagian goa agar jalur terbuka tetap terbaca.
+Jalur keluar goa memakai panorama GPT `assets/art/escape-rich.webp`: gunung bertingkat, sungai, sawah, pepohonan, air terjun, permukiman dan bangunan batu. Satu panorama lebar bergerak pada lapisan parallax dan menutup seluruh lintasan kamera tanpa pengulangan horizontal. Ujung lukisan goa lama memudar ke panorama baru melalui filter render. Lapisan dekorasi tidak memiliki collision. Sulur depan dibatasi ke bagian goa agar jalur terbuka tetap terbaca.
 
 Kamera memakai toleransi horizontal tanpa offset arah hadap. Ketinggian lantai menjadi acuan vertikal; lompatan biasa tidak menggeser kamera. Lompatan tinggi/jatuh panjang tetap diikuti saat mendekati batas pandangan. Gerak diredam berdasarkan waktu frame, posisi render tiap layer dibulatkan, dan checkpoint mereset kamera agar tidak menyapu seluruh map saat respawn.
 
@@ -45,7 +53,7 @@ Audio Web Audio dibuat secara prosedural, tanpa unduhan atau sampel pihak ketiga
 
 Kampanye gameplay ini belum berarti seluruh spesifikasi seni dan produksi GDD selesai.
 
-- Platform memakai material raster GPT berulang; bentuk luar masih mengikuti platform persegi panjang. NPC tambahan masih pose statis dan beberapa tokoh kecil memakai ulang sprite. Bayang Galuh memakai varian warna Putri.
+- Platform memakai material raster GPT berulang; bentuk luar masih mengikuti platform persegi panjang. Ki Jati, Kilisuci dan penjaga memakai animasi dari sheet pengguna; NPC lain masih pose statis dan beberapa tokoh kecil memakai ulang sprite. Bayang Galuh memakai varian warna Putri.
 - Latar generatif belum menjadi tileset modular yang cocok persis dengan semua collision. Atlas, batas 48 warna, dan optimasi tekstur belum final.
 - Kilas balik disampaikan lewat dialog dan efek cahaya. Lukisan tiap serat, hujan, koreografi kamera, tirai, dan animasi cutscene sesuai durasi GDD belum lengkap.
 - Cahaya memakai sprite radial/kerucut, belum extension Lighting beserta Light obstacle. Dialog memakai DOM, belum Yarn.
@@ -57,6 +65,8 @@ Kampanye gameplay ini belum berarti seluruh spesifikasi seni dan produksi GDD se
 ## Aset dan sejarah
 
 Sprite pengguna tetap asli: IDLE 9 frame, East 8 frame, jump 3 frame terpisah. Gerak kiri memakai flip. Pose geser sementara dibuat dari East dalam kanvas 256 × 256 dengan collision kaki tetap; file sumber tidak diubah. Strip east jump.png belum digunakan. GPT melalui sprite-gen menghasilkan latar dan NPC tambahan; prompt serta laporan ada di assets/. Preferensi GPT dan tanpa galeri dipertahankan.
+
+Sheet NPC pengguna di `karakter/` diekstrak oleh `tools/extract-npc-sheets.py`: Ki Jati 6 frame, Dewi Kilisuci 10 frame dan penjaga 6 frame. Pemisahan memakai batas alpha kosong dari sprite-gen, bukan memotong piksel pose pada batas grid perkiraan. Satu crop gabungan dipakai untuk seluruh animasi, mempertahankan pitch, ukuran piksel, urutan dan gerakan sumber. Manifest di `assets/npc/manifest.json` menyimpan hash sumber, rentang ekstraksi, ukuran frame dan durasi. Semua frame dipakai sebagai loop idle; rasio gambar dipertahankan dan kaki diletakkan di dasar node. Sprite penjaga digunakan pada dua penjaga Gerbang serta penjaga atap/dermaga Pasar. Semua instance Ki Jati yang sebelumnya dipakai ulang kini menggunakan animasi baru.
 
 Kidung membedakan adaptasi fiksi dan catatan sejarah. Sumber: [UNESCO — Panji Tales Manuscripts](https://www.unesco.org/en/memory-world/panji-tales-manuscripts) dan [DPM Kota Kediri — Gunung Klotok](https://dpm.kedirikota.go.id/blog/11/gunung-klotok). Sumber muncul dalam jurnal setelah Kidung ditemukan. Visual merupakan interpretasi artistik, bukan rekonstruksi arkeologis.
 

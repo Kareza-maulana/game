@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. A wide, low ancient andesite relief panel, width twice its height. FOUR inset carved narrative scenes: a princess with a bird, a snail shell, an elderly woman helping, and a royal homecoming. Deep bas-relief, worn chisel marks, chipped bevels, damp moss at the base. Small stone feet touch the floor. No written text. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-relief-water.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-relief-water.png.raw.png",
+  "raw_bytes": 1812329,
+  "elapsed_seconds": 97.953,
+  "model": "gpt-5.5",
+  "session_id": "01a0e381-723a-7310-b9e7-88c66c2543ff",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-relief-water.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1774x887",
+    "alpha_zero_pct": 44.89,
+    "partial_alpha_pct": 55.08,
+    "opaque_pct": 0.04,
+    "cleaned_transparent_rgb_pixels": 886,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        35,
+        181,
+        1741,
+        751
+      ],
+      "before": [
+        1774,
+        887
+      ],
+      "after": [
+        1706,
+        570
+      ],
+      "margin_px": {
+        "left": 35,
+        "top": 181,
+        "right": 33,
+        "bottom": 136
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

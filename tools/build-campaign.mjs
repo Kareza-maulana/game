@@ -1,21 +1,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {gd,loadProject,exportProject} from 'gdcore-tools';
+import {gd,loadProject} from 'gdcore-tools';
+import {assetFile,assetSize} from './asset-files.mjs';
+import {exportGame} from './export-game.mjs';
 import {art} from './build-project.mjs';
 import levels from '../src/levels.mjs';
 import {makeTerrain,TERRAIN_BY_SCENE} from './terrain-art.mjs';
 const terrain=makeTerrain();
-const prop=name=>`assets/art/prop-${name}.png`;
+const prop=name=>`assets/props-ready/prop-${name}.png`;
+// Fit display cutouts without resampling assets or moving interaction points.
+const propSizes=new Map();
+function imageSize(file){if(!propSizes.has(file))propSizes.set(file,assetSize(file));return propSizes.get(file);}
 const root=process.cwd();
+const npcSheets=JSON.parse(fs.readFileSync('assets/npc/manifest.json','utf8'));
+const animatedNpcs={KiJati:'ki-jati',Kilisuci:'kilisuci',Guard:'penjaga'};
 const extra=(name,w,h,body)=>{const file=`assets/system/${name}.svg`;fs.writeFileSync(file,`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">${body}</svg>`);return file;};
 Object.assign(art,{
-  Book:extra('book',20,24,'<path fill="#72564f" stroke="#d4bd82" d="M1 1h17v22H1z"/><path stroke="#c1ac7d" d="M5 1v22M8 7h7M8 11h7M8 15h5"/>'),
-  Candles:extra('five-candles',48,32,'<path fill="#515b60" d="M0 24h48v8H0z"/>'+[2,11,20,29,38].map(x=>`<path fill="#e2c89a" d="M${x} 14h6v12h-6z"/><path fill="#ffda79" d="M${x+2} 5h2v3h2v5h-6V8h2z"/><path fill="#fff0bb" d="M${x+2} 9h2v4h-2z"/>`).join('')),
-  Bell:extra('bell',24,32,'<path stroke="#a89460" d="M12 0v8"/><path fill="#b99b59" d="M6 9h12l2 14 3 3H1l3-3z"/><path fill="#e1ca86" d="M5 23h14v2H5zM10 27h4v3h-4z"/>'),
-  Pillar:extra('pillar',24,64,'<path fill="#36465c" stroke="#748c91" d="M4 8h16v48H4zM1 56h22v7H1zM1 1h22v8H1z"/><path fill="#b7bf9d" d="M10 16h4v23h-4zM7 25h10v3H7z"/>'),
-  Ladder:extra('ladder',24,64,'<path stroke="#9a8c65" stroke-width="3" d="M3 0v64M21 0v64"/><path stroke="#b5a475" stroke-width="2" d="M3 7h18M3 19h18M3 31h18M3 43h18M3 55h18"/>'),
-  Crate:extra('crate',32,40,'<path fill="#664f32" stroke="#b09a6a" d="M1 1h30v38H1z"/><path stroke="#ba9e62" stroke-width="3" d="M3 4l26 32M29 4L3 36"/>'),
-  Foot:extra('foot',12,8,'<path fill="#817ba2" d="M1 1h5v3H1zM3 3h7v4H3z"/>'),
+  Ladder:terrain.library.ladder,
   Spark:extra('spark',4,4,'<path fill="#fff1b6" d="M1 0h2v4H1zM0 1h4v2H0z"/>'),
   Void:extra('void',960,704,'<defs><radialGradient id="g"><stop stop-color="#343046"/><stop offset="1" stop-color="#0c0b19"/></radialGradient></defs><path fill="url(#g)" d="M0 0h960v704H0z"/>')
 });
@@ -31,10 +32,10 @@ const el=new gd.SerializerElement();draft.serializeTo(el);const data=JSON.parse(
 const sceneTemplate=data.layouts[0],playerTemplate=sceneTemplate.objects[0],stoneTemplate=sceneTemplate.objects[1],layerTemplate=sceneTemplate.layers[0];
 data.layouts=[];data.firstLayout='Prolog';Object.assign(data.properties,{name:'Cahaya Kadiri',description:'Serat Sapta Keteladanan — Prolog sampai Epilog, berdasarkan GDD v2.0.',version:'0.2.0',windowWidth:480,windowHeight:270,adaptGameResolutionAtRuntime:true,scaleMode:'nearest',pixelsRounding:true,antialiasingMode:'none',sizeOnStartupMode:'scaleOuter',packageName:'id.ukmpp.cahayakadiri',minFPS:30,maxFPS:60});
 data.properties.loadingScreen.showGDevelopSplash=false;data.properties.watermark.showWatermark=false;
-const core=fs.readFileSync('src/model.mjs','utf8').replaceAll('export ','')+'\n'+fs.readFileSync('src/campaign-model.mjs','utf8').replaceAll('export ','')+'\n'+fs.readFileSync('src/camera.mjs','utf8').replaceAll('export ','')+'\n'+fs.readFileSync('src/audio.js','utf8')+'\n'+fs.readFileSync('src/terrain-renderer.js','utf8');
-const runtime=fs.readFileSync('src/campaign-runtime.js','utf8'),css=fs.readFileSync('src/ui.css','utf8')+'\n'+fs.readFileSync('src/campaign.css','utf8');
+const core=fs.readFileSync('src/model.mjs','utf8').replaceAll('export ','')+'\n'+fs.readFileSync('src/campaign-model.mjs','utf8').replaceAll('export ','')+'\n'+fs.readFileSync('src/camera.mjs','utf8').replaceAll('export ','')+'\n'+fs.readFileSync('src/audio.js','utf8')+'\n'+fs.readFileSync('src/terrain-renderer.js','utf8')+'\n'+fs.readFileSync('src/mobile-controls.js','utf8');
+const runtime=fs.readFileSync('src/campaign-runtime.js','utf8'),css=fs.readFileSync('src/ui.css','utf8')+'\n'+fs.readFileSync('src/campaign.css','utf8')+'\n'+fs.readFileSync('src/mobile.css','utf8');
 const content={dialogues:JSON.parse(fs.readFileSync('src/dialogues.json','utf8')),history:JSON.parse(fs.readFileSync('src/history.json','utf8')),site:JSON.parse(fs.readFileSync('src/site-config.json','utf8'))};
-const resource=file=>{if(!fs.existsSync(file))throw new Error('Required asset missing: '+file);if(!data.resources.resources.some(r=>r.name===file))data.resources.resources.push({kind:'image',name:file,file,smoothed:false,userAdded:true});return file;};
+const resource=name=>{const file=assetFile(name);if(!data.resources.resources.some(r=>r.name===name))data.resources.resources.push({kind:'image',name,file,smoothed:false,userAdded:true});return name;};
 let instanceCount=0;
 for(const level of levels){
   const material=terrain[TERRAIN_BY_SCENE[level.id]];
@@ -60,12 +61,18 @@ for(const level of levels){
   tiled('Road',roadImage);tiled('GroundRoad',groundImage);tiled('RoadFill',groundImage);tiled('FadedRoad',roadImage);
   if(level.id==='Petirtaan')sprite('RaftRoad',[[prop('raft')]]);
   if(level.id==='Gerbang')tiled('BarrierFace',roadImage);
-  const characters={KiJati:'ki-jati',Mbok:'mbok',Kilisuci:'kilisuci',Samar:'ki-samar',Putri:'putri',Lutung:'lutung',Galuh:'putri'};
+  const characters={Mbok:'mbok',Samar:'ki-samar',Putri:'putri',Lutung:'lutung',Galuh:'putri'};
   for(const[name,file]of Object.entries(characters))sprite(name,[[`assets/art/${file}.png`]]);
+  for(const[name,id]of Object.entries(animatedNpcs)){const clip=npcSheets[id];sprite(name,[clip.frames]);const animation=scene.objects.at(-1).animations[0];animation.name='Idle';animation.directions[0].timeBetweenFrames=clip.frameSeconds;}
   sprite('Garden',[[level.background?`assets/art/${level.background}.png`:art.Void]]);
   sprite('MemoryGarden',[['assets/art/palace.png']]);
   if(level.id==='Bukit')sprite('RichValley',[['assets/art/escape-rich.png']]);
   const put=(name,x,y,w,h,layer='',z=0,vars={})=>{const i={name,x,y,zOrder:z,angle:0,layer,customSize:true,width:w,height:h,numberProperties:[],stringProperties:[],initialVariables:Object.entries(vars).map(([name,value])=>({name,type:typeof value==='number'?'number':'string',value})),persistentUuid:`${level.id}-${instanceCount++}`};scene.instances.push(i);return i;};
+  const putCutout=(name,x,y,w,h,layer='',z=0,vars={})=>{
+    const file=scene.objects.find(o=>o.name===name)?.animations?.[0]?.directions?.[0]?.sprites?.[0]?.image;
+    if(file?.startsWith('assets/props-ready/prop-')){const[iw,ih]=imageSize(file),scale=Math.min(w/iw,h/ih),nw=iw*scale,nh=ih*scale;return put(name,x+(w-nw)/2,y+h-nh,nw,nh,layer,z,vars);}
+    return put(name,x,y,w,h,layer,z,vars);
+  };
   put('Sky',-480,-256,level.width+960,level.height+512,'L0Sky');put('Mountain',-240,0,1920,600,'L1Mountains');
   if(level.backgroundBox)put('Garden',...level.backgroundBox,level.backgroundLayer||'L2Garden');
   else for(let x=-160;x<level.width*.5+480;x+=1536)put('Garden',x,-128,1856,619,'L2Garden');
@@ -80,21 +87,23 @@ for(const level of levels){
   for(const[x,y,w,h]of level.ladders)for(let dy=0;dy<h;dy+=32)put('Ladder',x,y+dy,w,Math.min(32,h-dy),'',11);
   for(const[x,y,w,h]of level.ladders)put('LadderArt',x,y,w,h,'',11);
   put('Kirana',...level.checkpoints[0],32,32,'',25);
-  for(const[x,y]of level.damars){put('Damar',x,y-40,20,40,'',16);put('Glow',x-38,y-76,96,96,'L6Atmosphere');}
-  for(const[x,y]of level.flowers)put('Flower',x,y-16,16,16,'',17);
-  for(const[id,x,y]of level.kidung)put('Scroll',x,y,12,16,'',18,{kidung:id});
+  for(const[x,y]of level.damars){putCutout('Damar',x,y-40,20,40,'',16);put('Glow',x-38,y-76,96,96,'L6Atmosphere');}
+  for(const[x,y]of level.flowers)putCutout('Flower',x,y-16,16,16,'',17);
+  for(const[id,x,y]of level.kidung){const o=putCutout('Scroll',x,y,12,16,'',18,{kidung:id});o.y-=(16-o.height)/2;}
   for(const[x,y]of level.levers)put('Lever',x,y,16,24,'',15);
-  const types={jati:'KiJati',mbok:'Mbok',kilisuci:'Kilisuci',samar:'Samar',putri:'Putri',lutung:'Lutung',order:'KiJati',guard:'KiJati',sleeper:'KiJati',relief:'Relief',carving:'Relief',gate:'GateDials',portal:'Book',book:'Book',manuscript:'Manuscript',lastbook:'Book',poster:'Poster',push:'Crate',bell:'Bell',pillar:'Pillar',wani:'Scroll',candles:'Candles',lamp:'Lamp',dakon:'Dakon',jug:'Jug',mirror:'Mirror',moss:'Relief',lost:'Relief',store:'Store',escape:'Exit',pusaka:'Heirloom',trap:'Exit',slide:'Passage'};
+  const types={jati:'KiJati',mbok:'Mbok',kilisuci:'Kilisuci',samar:'Samar',putri:'Putri',lutung:'Lutung',order:'KiJati',guard:'Guard',sleeper:'Guard',relief:'Relief',carving:'Relief',gate:'GateDials',portal:'Book',book:'Book',manuscript:'Manuscript',lastbook:'Book',poster:'Poster',push:'Crate',bell:'Bell',pillar:'Pillar',wani:'Scroll',candles:'Candles',lamp:'Lamp',dakon:'Dakon',jug:'Jug',mirror:'Mirror',moss:'Relief',lost:'Relief',store:'Store',escape:'Exit',pusaka:'Heirloom',trap:'Exit',slide:'Passage'};
   const sizes={Relief:[64,32],Candles:[48,32],Lutung:[28,32],Crate:[32,40],Pillar:[24,64],Exit:[38,64],Dakon:[40,22],Jug:[20,28],Mirror:[24,38],Store:[40,52],Heirloom:[42,56],Manuscript:[56,38],Poster:[28,42],Roots:[32,32],Passage:[52,26],GateDials:[44,28]};
+  for(const[name,id]of Object.entries(animatedNpcs)){const c=npcSheets[id];sizes[name]=[c.displayHeight*c.size[0]/c.size[1],c.displayHeight];}
   for(const n of level.nodes){
-    const type=types[n.type]||(level.id==='Pasar'?'KiJati':level.id==='Gerbang'?'Roots':'Poster'),[w,h]=sizes[type]||[20,32];
+    const marketGuard=level.id==='Pasar'&&(n.id==='order2'||n.id==='npc4');
+    const type=marketGuard?'Guard':types[n.type]||(level.id==='Pasar'?'KiJati':level.id==='Gerbang'?'Roots':'Poster'),[w,h]=sizes[type]||[20,32];
     // Crates retain their exact physical rectangle; wider decorative props center
     // around the existing interaction point without changing quest coordinates.
     const x=type==='Crate'||type==='Relief'||type==='Candles'||type==='Lutung'?n.x:n.x+10-w/2;
-    put(type,x,n.y+32-h,w,h,'',18,{node:n.id});
+    (type==='Crate'?put:putCutout)(type,x,n.y+32-h,w,h,'',18,{node:n.id});
   }
-  put('Exit',level.exit[0]-16,level.exit[1]-48,48,80,'',14,{transition:1});
-  if(level.id==='Petirtaan'){put('Raft',320,402,80,12,'',12);put('RaftRoad',320,394,80,24,'',13);put('Water',288,410,160,102,'',14);put('Water',608,404,192,108,'',14);put('Kunang',700,340,12,12,'',23);}
+  putCutout('Exit',level.exit[0]-16,level.exit[1]-48,48,80,'',14,{transition:1});
+  if(level.id==='Petirtaan'){const[rw,rh]=imageSize(prop('raft')),height=80*rh/rw;put('Raft',320,402,80,12,'',12);put('RaftRoad',320,402-height*.28,80,height,'',13);put('Water',288,410,160,102,'',14);put('Water',608,404,192,108,'',14);put('Kunang',700,340,12,12,'',23);}
   if(level.id==='Bukit'){put('Kunang',380,550,12,12,'',23);put('Foot',320,635,16,8,'',22,{rayap:1});}
   if(level.id==='Gerbang'){put('Barrier',656,224,32,128,'',12);put('BarrierFace',656,224,32,128,'',13);}
   if(level.id==='Kedaton'){put('Foot',16,600,12,8,'',23);put('Galuh',450,416,18,32,'',21);}
@@ -103,11 +112,9 @@ for(const level of levels){
   for(let i=0;i<Math.min(16,Math.ceil(level.width/180));i++)put('Mist',i*180,level.checkpoints[0][1]-26+(i%3)*28,200,80,'L6Atmosphere',0);
   if(['Petirtaan','Bukit','Gerbang'].includes(level.id))for(let i=0;i<(level.id==='Bukit'?4:8);i++)put('Vine',i*224-50,32+(i%3)*14,96,160,'L5Foreground');
   scene.objectsFolderStructure={folderName:'__ROOT',children:scene.objects.map(o=>({objectName:o.name}))};
-  const inline=`if (!runtimeScene.__ck) {\n${core}\nconst model={setupTerrainRendering,followCamera,createSoundscape,SERAT,RELIEF,stepWater,solveRelief,stepOil,isLit,SCENES,VALUES,MANUSCRIPT,ARGUMENTS,newCampaign,awardSerat,canLeave,transition,answerArgument,argumentScore,assembleManuscript};\nruntimeScene.__ck=(${runtime})(runtimeScene,${JSON.stringify(level)},model,${JSON.stringify(css)},${JSON.stringify(content)});\n}\nruntimeScene.__ck.tick();`;
+  const inline=`if (!runtimeScene.__ck) {\n${core}\nconst model={setupMobileControls,setupTerrainRendering,followCamera,createSoundscape,SERAT,RELIEF,stepWater,solveRelief,stepOil,isLit,SCENES,VALUES,MANUSCRIPT,ARGUMENTS,newCampaign,awardSerat,canLeave,transition,answerArgument,argumentScore,assembleManuscript};\nruntimeScene.__ck=(${runtime})(runtimeScene,${JSON.stringify(level)},model,${JSON.stringify(css)},${JSON.stringify(content)});\n}\nruntimeScene.__ck.tick();`;
   scene.events=[{type:'BuiltinCommonInstructions::JsCode',inlineCode:inline.split('\n'),parameterObjects:'',useStrict:true,eventsSheetExpanded:true}];data.layouts.push(scene);
 }
 fs.writeFileSync('cahaya-kadiri.json',JSON.stringify(data,null,2));
-const project=await loadProject(path.join(root,'cahaya-kadiri.json'));fs.mkdirSync('dist',{recursive:true});exportProject(project,path.join(root,'dist'));project.delete();
-for(let i=0;i<9;i++){if(!fs.readFileSync(`dist/code${i}.js`,'utf8').includes('createCampaignGame'))throw new Error('Missing compiled scene '+i);}
-fs.copyFileSync('src/site-config.json','dist/site-config.json');
+const project=await loadProject(path.join(root,'cahaya-kadiri.json'));try{exportGame(project,root);}finally{project.delete();}
 console.log(`Campaign built: ${data.layouts.length} scenes, ${instanceCount} instances, ${data.resources.resources.length} resources.`);

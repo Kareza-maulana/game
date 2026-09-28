@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-passage.png.raw.png",
+  "out": "assets\\art\\prop-passage.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-passage.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1774x887",
+    "alpha_zero_pct": 62.84,
+    "partial_alpha_pct": 37.13,
+    "opaque_pct": 0.03,
+    "cleaned_transparent_rgb_pixels": 819,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      32,
+      179,
+      1744,
+      712
+    ],
+    "before": [
+      1774,
+      887
+    ],
+    "after": [
+      1712,
+      533
+    ],
+    "margin_px": {
+      "left": 32,
+      "top": 179,
+      "right": 30,
+      "bottom": 175
+    }
+  },
+  "coverage": 0.6179018866932019
+}

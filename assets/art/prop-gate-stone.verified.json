@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-gate-stone.png.raw.png",
+  "out": "assets\\art\\prop-gate-stone.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-gate-stone.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 49.24,
+    "partial_alpha_pct": 50.76,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 695788,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      60,
+      13,
+      972,
+      1480
+    ],
+    "before": [
+      1024,
+      1536
+    ],
+    "after": [
+      912,
+      1467
+    ],
+    "margin_px": {
+      "left": 60,
+      "top": 13,
+      "right": 52,
+      "bottom": 56
+    }
+  },
+  "coverage": 0.5757154474461545
+}

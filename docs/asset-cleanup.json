@@ -1,0 +1,989 @@
+{
+  "removedBytes": 207073480,
+  "count": 163,
+  "files": [
+    {
+      "file": "assets/art/bedroom.png",
+      "bytes": 2155181,
+      "sha256": "4c7b07ff7732997e1d941fded2683693d012b578c55221271c19ecd5986c4258",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/escape-rich.png",
+      "bytes": 3265243,
+      "sha256": "1378f656ab6101548b4472536d77be182ddff3846c28f66d425dbb8c8e45f0cf",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/gate.png",
+      "bytes": 2620773,
+      "sha256": "9368852d4e54ca1240fbee530cd7ec934c530132c0dc6bb9104a97d8982b472b",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/hill.png",
+      "bytes": 2934687,
+      "sha256": "2154dad7bb8c53a3faad4d4c995ad91725a16f940c8f74ba70128e70209f2cb7",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/ki-samar.png",
+      "bytes": 911794,
+      "sha256": "a9d9aa3affd4e145e5597a50e8469e8d31a6b8762ce2204b1f841e3293f1fc79",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/library.png",
+      "bytes": 2622343,
+      "sha256": "8ae7d4051234bec3e5d7ec9ef8c617efbaaf9ffb9ae0bd0cb037220b7c8b4b14",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/lutung.png",
+      "bytes": 655758,
+      "sha256": "aed1f4e7666404415ee539112e5c08b09303719f823f573c8f24a081a8a5f155",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/market.png",
+      "bytes": 3014284,
+      "sha256": "11480d6c63db016b1ddd4238b252c5c8a98e44d3edcdc3db2b5aac292673adff",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/mbok.png",
+      "bytes": 482019,
+      "sha256": "2f1cf36d48588a9b6379a67d312a179ac65b2a8ca7551f8f4fccfcf95d70a615",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/palace.png",
+      "bytes": 2546446,
+      "sha256": "e9d0555cd58a9eadb5a23893b53160a37d86fc94c9dad2e264765d9a362cff91",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/petirtaan.png",
+      "bytes": 2904824,
+      "sha256": "33516f5662272f1b8ea6a252a191ba53a9100874ed4f7d8addabc6532f7bf8aa",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/putri.png",
+      "bytes": 1015304,
+      "sha256": "b60dfd7b540ea55458cb7762cc1413d119983262570e9073a47330ea3232dc13",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/road-bedroom.png",
+      "bytes": 2580445,
+      "sha256": "7ad27b167f472ca52482ef6b4f7f43869c313f7f7d04169cfb6b51331868bdcc",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/road-gate.png",
+      "bytes": 3033892,
+      "sha256": "f93ba5332bbad68b137e8a0b560919e10d511856576a8200805113de477d4716",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/road-hill.png",
+      "bytes": 3301947,
+      "sha256": "20f2ba5d33c7dc6ba33d983ab03bb238e16c83783a4c94650006ed38b5ccdd8e",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/road-library.png",
+      "bytes": 2229361,
+      "sha256": "54c0619cdb1ed722ca74c5a79d2b25ba6745a737aaddcce063f969ed1388d117",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/road-market-quay.png",
+      "bytes": 2839805,
+      "sha256": "d4cf3729c4973daef6b57c603a36bc225dd82a0fed820231b885481a2fbb17b3",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/road-market.png",
+      "bytes": 2913787,
+      "sha256": "a0957aae7ab00f9fb61a9d2e3d381844137e267df827e85ed535a0d102d7826f",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/road-palace.png",
+      "bytes": 2262695,
+      "sha256": "ee0fbfd74f9f238aa780f6c3996112370e80a3eae71c7ba56343e9704834ebc4",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/road-petirtaan.png",
+      "bytes": 3057501,
+      "sha256": "136df808e8e2439bbe2b2693162ee9251c8a9781959f4dc59bc2661faebd33b0",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/road-void.png",
+      "bytes": 2827747,
+      "sha256": "d233f342ebba951b654fa954310b96e2345eb7fb6bb07a0a40bd5ed50ca82246",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/ki-jati/idle-01.png",
+      "bytes": 20831,
+      "sha256": "fceaaba2db0a41ef9f58cec3ea4bfb758bee47a0c5dfd2d52da41c9351430cd2",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/ki-jati/idle-02.png",
+      "bytes": 20627,
+      "sha256": "6757fb38373b5e4873d0a5965a6ef5384bf3d1b03ac098a9cddf017cca2579b2",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/ki-jati/idle-03.png",
+      "bytes": 20830,
+      "sha256": "9d7f0a1d05148490690d8f5b80798f65bb1e124b2abf594fd8d919e32ccca2a8",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/ki-jati/idle-04.png",
+      "bytes": 20809,
+      "sha256": "11d02c10ad95b1d2f3434cc5a2e4e09fbe7b4c72e39512923e598d1076fe3acc",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/ki-jati/idle-05.png",
+      "bytes": 20966,
+      "sha256": "c6eff27bb661e30396d1fbcc414b50ead50fa2690f1bacc4894f396d2f4e09a2",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/ki-jati/idle-06.png",
+      "bytes": 21416,
+      "sha256": "4763ada0f92a1c2aa0375847476c370098badf0b8e4d012295d06e05e9b975e9",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-01.png",
+      "bytes": 39966,
+      "sha256": "41fb0f63b45460efe25937317aa51897ded51980440dfbb50fb683c8430929d3",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-02.png",
+      "bytes": 40034,
+      "sha256": "4a18088d0a797a9b8d172f0d56f9668227502dd08e1cf02276a0b9614d1b31c3",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-03.png",
+      "bytes": 40275,
+      "sha256": "bd2a6c8a1b617ac107713de3e09a128a1e72197ab17ae17b3f8a000154bc03d3",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-04.png",
+      "bytes": 40367,
+      "sha256": "789d85c52001f59dc6ae4d3a1c6ac2c9b2173f422e102fea9219773c20210869",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-05.png",
+      "bytes": 39031,
+      "sha256": "1e2599e109b94af4d38d46050ec5730f2e8143924421e5df87298d428974f88b",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-06.png",
+      "bytes": 38410,
+      "sha256": "115bb0ba9b2340bb95cf6e39087e7db3e2254c1b852cc25e15afe72a9c179b77",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-07.png",
+      "bytes": 36060,
+      "sha256": "d3457dae94bf42af6d50c277add143a10d2b0fcf9dc1fbf201a3287824d05089",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-08.png",
+      "bytes": 35159,
+      "sha256": "1cd8505d9689cca3bed1b88607186599ee29ccb4f8040af869f17eba9bd1a198",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-09.png",
+      "bytes": 35003,
+      "sha256": "8916a0929e2cf03e1dc5d320ea440de79f91fe2127885abd6fc4ae287418a0e9",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/kilisuci/idle-10.png",
+      "bytes": 34946,
+      "sha256": "241f5e4745aff5aa82d51e33e84167dba87d4f870df7d77cba6de9906681f2ba",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/penjaga/idle-01.png",
+      "bytes": 19727,
+      "sha256": "8ca12abff90ec8cfa5841383079bd64a66f4a85bd0428e8620c97e2dff96df6a",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/penjaga/idle-02.png",
+      "bytes": 19811,
+      "sha256": "e867883eb0f735eb3d3791f979994f2efd44b243da7b50b262484cf08e8650cc",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/penjaga/idle-03.png",
+      "bytes": 19480,
+      "sha256": "10abab01655ab5e77400a6929ef9c90ece5743d324f076dd52e301f356266fe0",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/penjaga/idle-04.png",
+      "bytes": 18997,
+      "sha256": "7102442664e890554d35ed294128999e464e6f698e2927d7e3a310e32323a1f2",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/penjaga/idle-05.png",
+      "bytes": 18766,
+      "sha256": "7daf15ff738d2d69be8dc480f812f9c7b9505a07ff70ce5d14d854266d5a90ea",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/npc/penjaga/idle-06.png",
+      "bytes": 18496,
+      "sha256": "2b0482a328763e0a5595dbd91943611e10f4ef38989f0c435314f1ebfd6e1ff1",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-basket.png",
+      "bytes": 451152,
+      "sha256": "fddca5c896aace14d5db04c2ca3b3835e02378e3e955e6b1e7e6ecff31fb1288",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-bell.png",
+      "bytes": 255374,
+      "sha256": "cabfdfb6b175e335922afa2bfe5c47984ae2295a01b31cd6dc4d96d3167b38e8",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-book.png",
+      "bytes": 347175,
+      "sha256": "4fea5b8222cb81e1fbeac54f39f84a3a91ec81c64953690e7e13aa620d4c7b2f",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-candles.png",
+      "bytes": 164410,
+      "sha256": "c273c5d92b224b809e66871ee5cfbe0da2845caebe7d657e73dd8585dd209856",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-dakon.png",
+      "bytes": 149191,
+      "sha256": "95f7b60da5badc86277a74ef0b7023af6927c065d5f9e2e62718812b281a19cd",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-damar.png",
+      "bytes": 124376,
+      "sha256": "8906b9b522647602b7793502ae671b22045842ff5349b850e678fe6439f03d67",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-door-wood.png",
+      "bytes": 272891,
+      "sha256": "15967152c84b48a7c70419c2760b471d7ace659ac361f71d1a470278ea4644b7",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-flower.png",
+      "bytes": 379803,
+      "sha256": "d7e1656328d8726a90dfe0fe7f36a27ba506454afcacf6cc4f43ee4a411ed139",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-foot.png",
+      "bytes": 259373,
+      "sha256": "dbc5f90e64e74d28f136180e5eb8b426ef2aa9ff3a3d4a913e1ed30555708b8e",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-gate-dials.png",
+      "bytes": 259024,
+      "sha256": "633aa47d25dec492732e8c4ad6e93bbc6081f9b41a9754ef0cdd9399507e896f",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-gate-stone.png",
+      "bytes": 268050,
+      "sha256": "618ec37c740d8840b584b700e56fef975d31ffdfc4f27c0036947ce172555ec9",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-jug.png",
+      "bytes": 254597,
+      "sha256": "6a013b87030d942332e3a54ba285c8fd9cffc245a88dd3cefe316dcb5c5fff3d",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-kunang.png",
+      "bytes": 189589,
+      "sha256": "9aac67a0f70b72ac3d6e6bd6fdf54b878a4b4ea0db92b5965b1e72bac083175c",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-ladder.png",
+      "bytes": 103394,
+      "sha256": "04ea6476929483912a6d914a3d32830c3d504a9f55b294a071f848959533c510",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-lamp.png",
+      "bytes": 166100,
+      "sha256": "3121312b08fc5b5ec13bb9a33145160ccab5586318c637b8d87695c3138866cd",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-lever.png",
+      "bytes": 173840,
+      "sha256": "66463b6dd8d6fa420d617a29b9225fbf87c534d14dfbd5c62d48bab4126a73b4",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-manuscript.png",
+      "bytes": 233710,
+      "sha256": "d56aff415909fb6660288fdf6811d9ad87bddebb132250b568f6f41855111dfa",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-mirror.png",
+      "bytes": 322599,
+      "sha256": "1201357cc8a0b6a52408544ac6f50ebe1f8257d6ea65cff95ec0fee0d3f35893",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-passage.png",
+      "bytes": 138497,
+      "sha256": "e227c4c471efdc596f3354ab3a44b3580ed76d470cb53f78573569b11a46b04f",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-pillar.png",
+      "bytes": 123660,
+      "sha256": "3ffd11fb91323bbe0094738d4c5ea43235fc5eccca14ceeb2f6412b974aac8a1",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-poster.png",
+      "bytes": 253764,
+      "sha256": "a76bed03fe119c28b6907b3b9747eac7b38d4494631edc002284703791de657c",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-pusaka.png",
+      "bytes": 341302,
+      "sha256": "0cb9196db5d886e04b450d641a0c73d43128f70f0064e0f403153fb289acac05",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-raft.png",
+      "bytes": 100026,
+      "sha256": "3e354c2317e1b0fc090c78b11bed158fa1e9447a98b728146439283d9532ddf5",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-relief-cave.png",
+      "bytes": 193100,
+      "sha256": "ac0c8dfce966dade6df9985301f3edcfe110313bc2bd63ca03644a89c44206e5",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-relief-gate.png",
+      "bytes": 176072,
+      "sha256": "da71ebc1b09317960e34872a56dab02bdf5ad30bfa50a6596f974dc02d6eefbd",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-relief-water.png",
+      "bytes": 217620,
+      "sha256": "72e1082720c43a21c086087e5b2af5539b897cea5db3a643c6ded928d67e9bbf",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-roots.png",
+      "bytes": 503582,
+      "sha256": "c1ad6ec9a971b694c38cb2e71804d16a1827de6942f3118cf7ebcbf72bcac380",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-scroll.png",
+      "bytes": 275476,
+      "sha256": "e10b037176b2e90f16fdbb196cb490f313fb68992e8f328d3fca4e948571cf73",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-shelf.png",
+      "bytes": 416725,
+      "sha256": "721bffee9656dfd133d6bb874b85063ed099c82611cf16b50698c71bb2fc6441",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-store.png",
+      "bytes": 387679,
+      "sha256": "1d3023cbc1868642288af581f925325f012f9f8301cf7fc71584d3add5825456",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/props-ready/prop-vine.png",
+      "bytes": 185753,
+      "sha256": "a4671890aee7c7f1bc0d0990564bd09f632cbdea82abbc4bdcf0fb7646449c96",
+      "reason": "Replaced by verified pixel-identical lossless WebP"
+    },
+    {
+      "file": "assets/art/bedroom.png.raw.png",
+      "bytes": 2155181,
+      "sha256": "4c7b07ff7732997e1d941fded2683693d012b578c55221271c19ecd5986c4258",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/escape-rich.png.raw.png",
+      "bytes": 3265243,
+      "sha256": "1378f656ab6101548b4472536d77be182ddff3846c28f66d425dbb8c8e45f0cf",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/gate.png.raw.png",
+      "bytes": 2620773,
+      "sha256": "9368852d4e54ca1240fbee530cd7ec934c530132c0dc6bb9104a97d8982b472b",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/hill.png.raw.png",
+      "bytes": 2934687,
+      "sha256": "2154dad7bb8c53a3faad4d4c995ad91725a16f940c8f74ba70128e70209f2cb7",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/ki-jati.png.raw.png",
+      "bytes": 1483765,
+      "sha256": "722c22cd692226ebe635c6aceb35ea22ab5558f44a33efa71d3b817567169fb7",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/ki-samar.png.raw.png",
+      "bytes": 940887,
+      "sha256": "3daf181108dd2288ea8d1fa76b0704aa1ce8599fec4ae385ac514df4ef356ca1",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/kilisuci.png.raw.png",
+      "bytes": 1536992,
+      "sha256": "12edd41326b1ccb5885bd1fe45f886774ee459cda264c42c683d3e52b577c6fb",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/library.png.raw.png",
+      "bytes": 2622343,
+      "sha256": "8ae7d4051234bec3e5d7ec9ef8c617efbaaf9ffb9ae0bd0cb037220b7c8b4b14",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/lutung.png.raw.png",
+      "bytes": 670044,
+      "sha256": "d281eee832596d3e604f022a7193af9fb5bbd4fed1882ab762aed09a6565acb6",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/market.png.raw.png",
+      "bytes": 3014284,
+      "sha256": "11480d6c63db016b1ddd4238b252c5c8a98e44d3edcdc3db2b5aac292673adff",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/mbok.png.raw.png",
+      "bytes": 513833,
+      "sha256": "345faf2730ea01c370156c40d38bee18340223f0a3fe2027a798d976af43148c",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/palace.png.raw.png",
+      "bytes": 2546446,
+      "sha256": "e9d0555cd58a9eadb5a23893b53160a37d86fc94c9dad2e264765d9a362cff91",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/petirtaan.png.raw.png",
+      "bytes": 2904824,
+      "sha256": "33516f5662272f1b8ea6a252a191ba53a9100874ed4f7d8addabc6532f7bf8aa",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-basket.png.raw.png",
+      "bytes": 2116129,
+      "sha256": "6975b4f5c67062a796afcc23e08ee329122276eca706d54f6ba181fb46fe4b4c",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-bell.png.raw.png",
+      "bytes": 1316425,
+      "sha256": "75e8ccedb451f4a18bc718712fe3c6961d007c14f0af2fa722db833ec993f3fd",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-book.png.raw.png",
+      "bytes": 1981145,
+      "sha256": "b533c58343932b05eb2d50f9fc0857fa04afbd077cda0ea37dd0af524223253b",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-candles.png.raw.png",
+      "bytes": 1528685,
+      "sha256": "80dea73b5271b0aad5bb8f8f1b24f9206984e92d5d74ce671e035eca402b82fa",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-dakon.png.raw.png",
+      "bytes": 1223979,
+      "sha256": "61561dbaf42a95fe022eef61f19cfdcee2157e05a4f6aa4184ebca4a4613dd84",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-damar.png.raw.png",
+      "bytes": 1242426,
+      "sha256": "941284f73c10f223b65be714408194eb5e6905954457fae5539d43d0fa96b6f7",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-door-wood.png.raw.png",
+      "bytes": 2427792,
+      "sha256": "700824e7933212324fa5e35b5aca5a0e22d09b3c487c1db28b9b6e1c7d88a24c",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-flower.png.raw.png",
+      "bytes": 1244584,
+      "sha256": "8f7430da058644d9fd1da658201949f4894351e04e66984ac9ed9755bc0c55e8",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-foot.png.raw.png",
+      "bytes": 1614590,
+      "sha256": "a5b00a568a42cc3849fa3403b77995bdd1576e9872e2344afe02e930e62821d8",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-gate-dials.png.raw.png",
+      "bytes": 1782560,
+      "sha256": "0d84a199d6c637fe36be13ab4ab62136064829bbd5be5645a3000bd0b1d9b638",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-gate-stone.png.raw.png",
+      "bytes": 2306463,
+      "sha256": "0a2e3d573778085580f763b60bb1cb06b5880da54c1cb33e474f73d34f91607f",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-jug.png.raw.png",
+      "bytes": 1268897,
+      "sha256": "aee7cb23bd1eab0a1b3e6e898c7ec445da2425a2e4d0e0be36a6237a53a2f1de",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-kunang.png.raw.png",
+      "bytes": 640228,
+      "sha256": "703449eb55e6940e38358e368b500758e2d2b0d2822980967ad7d8ef12f99cf9",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-ladder.png.raw.png",
+      "bytes": 1089800,
+      "sha256": "b53c5f4f09b949430d94da6d8dccc7c39bf37bd518878934f5d4e8ac9ef40c5d",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-lamp.png.raw.png",
+      "bytes": 1133572,
+      "sha256": "61f78b4a9e1554d97fa56d61f05791ebcfa5d2f91f51cc4ea475346bb14d8f98",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-lever.png.raw.png",
+      "bytes": 1692115,
+      "sha256": "764fa19478b9f1f960d72d0df03b207e1dddf2ae6b711d710c613a954c7169a7",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-manuscript.png.raw.png",
+      "bytes": 2024485,
+      "sha256": "b055e6ab2ec62360baf575478c97b1c6803248279c069529c90a66ee94a6edf6",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-mirror.png.raw.png",
+      "bytes": 1872704,
+      "sha256": "2e33298e74bd801c8831c9b4cefc0e1f5fa49f495690bcdc685c5814b11fa86f",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-passage.png.raw.png",
+      "bytes": 1156828,
+      "sha256": "8f271f8c15295b0041e9c98e4d6a2bdbf1f4cf39f0273cf635ef8e52e241ecdd",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-pillar.png.raw.png",
+      "bytes": 1460038,
+      "sha256": "cb228c23fcf0b6d6cf7ba6861a632e652d7d37f17b0a1b8a9a145c076de4ad04",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-poster.png.raw.png",
+      "bytes": 1612026,
+      "sha256": "c94c6ed0f0a04a421831a29bfb41e2043120a185aa49e5843bce083af7d6bc93",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-pusaka.png.raw.png",
+      "bytes": 1944510,
+      "sha256": "c6206052a9272af82044db4270607e63e2d1fe00cb5a4143fa8ca7b0e71ef824",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-raft.png.raw.png",
+      "bytes": 835230,
+      "sha256": "e6274a394b7dfe77aa4e14b59b9cfb40238b0f66eda96486ceca315f764c3716",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-relief-cave.png.raw.png",
+      "bytes": 1576017,
+      "sha256": "64911f218f6c406e89e13f1d4bf6f8824a6fe3d92ba56466a3bcba99b2b3b698",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-relief-gate.png.raw.png",
+      "bytes": 1279460,
+      "sha256": "1710d34d675dddc21268bd9d294330da579434bce2c9d6951220919c44a2b741",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-relief-water.png.raw.png",
+      "bytes": 1812329,
+      "sha256": "e2293e3e6de5c4291c6873580d9ff800b864b374afb663b55e8cf76752c7e1c8",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-roots.png.raw.png",
+      "bytes": 2006115,
+      "sha256": "25aff956fbb5a2edf6e53b57d0044b15be5376cebb16e0c219ff419fc72b3b98",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-scroll.png.raw.png",
+      "bytes": 911025,
+      "sha256": "fa5add32313c26e15a9eabd03ea72aafde44f626af218550f27e3a753eb36587",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-shelf.png.raw.png",
+      "bytes": 1573439,
+      "sha256": "933879c684fc59650d6b4122441efcfaa3aeb6431e2184268efdce83734f87ca",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-store.png.raw.png",
+      "bytes": 2112332,
+      "sha256": "0ccfebfacba998ed109caa73ae8af8e35f6e7f58f78b09ebb791e50b315981fa",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-vine.png.raw.png",
+      "bytes": 1370188,
+      "sha256": "7f07fcfe8335730262275e5c1c9329cdfa8bd591eb7960822b3bd7651a7958a1",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/putri.png.raw.png",
+      "bytes": 1729965,
+      "sha256": "3de405fe3c92718544c56a67e68d6fed1461217eb0746313f93e3ec0219feb0e",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/road-bedroom.png.raw.png",
+      "bytes": 2580445,
+      "sha256": "7ad27b167f472ca52482ef6b4f7f43869c313f7f7d04169cfb6b51331868bdcc",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/road-gate.png.raw.png",
+      "bytes": 3033892,
+      "sha256": "f93ba5332bbad68b137e8a0b560919e10d511856576a8200805113de477d4716",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/road-hill.png.raw.png",
+      "bytes": 3301947,
+      "sha256": "20f2ba5d33c7dc6ba33d983ab03bb238e16c83783a4c94650006ed38b5ccdd8e",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/road-library.png.raw.png",
+      "bytes": 2229361,
+      "sha256": "54c0619cdb1ed722ca74c5a79d2b25ba6745a737aaddcce063f969ed1388d117",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/road-market-quay.png.raw.png",
+      "bytes": 2839805,
+      "sha256": "d4cf3729c4973daef6b57c603a36bc225dd82a0fed820231b885481a2fbb17b3",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/road-market.png.raw.png",
+      "bytes": 2913787,
+      "sha256": "a0957aae7ab00f9fb61a9d2e3d381844137e267df827e85ed535a0d102d7826f",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/road-palace.png.raw.png",
+      "bytes": 2262695,
+      "sha256": "ee0fbfd74f9f238aa780f6c3996112370e80a3eae71c7ba56343e9704834ebc4",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/road-petirtaan.png.raw.png",
+      "bytes": 3057501,
+      "sha256": "136df808e8e2439bbe2b2693162ee9251c8a9781959f4dc59bc2661faebd33b0",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/road-void.png.raw.png",
+      "bytes": 2827747,
+      "sha256": "d233f342ebba951b654fa954310b96e2345eb7fb6bb07a0a40bd5ed50ca82246",
+      "reason": "Intermediate generator output; final production asset retained"
+    },
+    {
+      "file": "assets/art/prop-basket.png",
+      "bytes": 2153830,
+      "sha256": "c4b4b75bda3b519f7097debd24ff93ea2db5436a0bb80bb2a0dd240bdca9b6cb",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-bell.png",
+      "bytes": 1349388,
+      "sha256": "bf7144f42c38640b0abdd493aed8bc57defbc3edf229097d9d3ab6040faff003",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-book.png",
+      "bytes": 2023312,
+      "sha256": "e0b6c40765e8ecee073873a2bc517f58845b0b400b8f0c5c6d4481c2f92910d7",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-candles.png",
+      "bytes": 929192,
+      "sha256": "ebb84bd139667e42bc6ebd2638cfbf6c0440d8887a982720139a35b49e0d58f7",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-dakon.png",
+      "bytes": 1246374,
+      "sha256": "aa8673002aa7e0bbb34fa89da1d113326932777069e24d68cb5e4a940c6db057",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-damar.png",
+      "bytes": 566260,
+      "sha256": "d8a15fe3ca2b2f26a64591568a63819596a4749fbe553bea078cf7de2ea2c04a",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-door-wood.png",
+      "bytes": 1827732,
+      "sha256": "2a434d1f66e49d949983b7161d9863fd9d56cb17327429feedbfb2deec65fb63",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-flower.png",
+      "bytes": 1255522,
+      "sha256": "9c89df72335177c55a98d11dcb84de03d38380fdb7d90d99e8dcb5eff0208858",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-foot.png",
+      "bytes": 1007645,
+      "sha256": "73f979aa73b6645a3219d33b9e78a53e2850001f4a91cc661146c432f3254231",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-gate-dials.png",
+      "bytes": 1811245,
+      "sha256": "8f0122a937e173d589fdac345d13b90c66c00126afe0a9234e3d9d89b342a48e",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-gate-stone.png",
+      "bytes": 1757654,
+      "sha256": "5c3f9206a213ac05f26a1206c51d8c0356e4d463df535a5a8ec04afdd982c9bd",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-jug.png",
+      "bytes": 1284207,
+      "sha256": "ec27ba30355143b544dabcf98f079136f27d57cfd420d4dd2aae646ff9ecd6ff",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-kunang.png",
+      "bytes": 637350,
+      "sha256": "0be64894d66f099366f812da60cbcaebfdf216ca8fe8e2dbebdcef7c362c92a4",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-ladder.png",
+      "bytes": 1087315,
+      "sha256": "31adb3003a2ee91ff97b617c611e0fd016181f6b38ba39f114306142f64338ed",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-lamp.png",
+      "bytes": 1133669,
+      "sha256": "5957a467166f8527609d56b52d5e3c749220c5634de239065c715a57b2d6bdde",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-lever.png",
+      "bytes": 1090287,
+      "sha256": "3c8e25c8060cfbe7615885d0a54755a7cb18ad5a04ae66e8eb7ee775b942c413",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-manuscript.png",
+      "bytes": 1528039,
+      "sha256": "5b67f1edce5fddc43ce7a0760c0d7b3e9bf976145c49cbc0c31d56b7e32e2cb2",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-mirror.png",
+      "bytes": 1918372,
+      "sha256": "dd40d36387f4cbedb8c55d6e79b84998d1e050c09b7d8c4435127a4f05222f8c",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-passage.png",
+      "bytes": 1173343,
+      "sha256": "4659cde436a8014c45129a5c53c5e77da0cc4cd9ca76239bb08e27557cd1104b",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-pillar.png",
+      "bytes": 743447,
+      "sha256": "83170abb26298c6a416f0e5766bc49d5b6bc857d9677fcbe1cab809406c88efb",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-poster.png",
+      "bytes": 1651425,
+      "sha256": "d19304169f504757963ef7089a3abd229793cb7cf894f79c79fed06840e245e6",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-pusaka.png",
+      "bytes": 1984237,
+      "sha256": "89a20ea9f52d8a29d83a8bca48416a5750f23caae6a23901a721c610bdbd68f1",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-raft.png",
+      "bytes": 825665,
+      "sha256": "5bbfe1cc87d46ea10b4a5a17bf7deba050d2b0d92798fb4407d9f405d41e226d",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-relief-cave.png",
+      "bytes": 1579941,
+      "sha256": "ec219c48fa733b65b1da4ddb9a4dee145e3f82d1b3e2db75d3f43c875c9a53da",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-relief-gate.png",
+      "bytes": 1280887,
+      "sha256": "66eeea6bed056b6e7ff62f8baf8f0953ee637538147d841374ce10057a8b0472",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-relief-water.png",
+      "bytes": 1827071,
+      "sha256": "2aa3f873f784f906d5ff0c6c9f5ebfe8ed8dc05741ecfaa85fd6bfbd56e0fbf6",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-roots.png",
+      "bytes": 2051229,
+      "sha256": "c05ec4d5aa9b7c108ba308d603a30296460972adacd045b573486875ff82a619",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-scroll.png",
+      "bytes": 917830,
+      "sha256": "c4d785da7b79c72c3b6b0763839cdb27947c2ef13ac1354ece0ad9fc109fa38d",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-shelf.png",
+      "bytes": 1590436,
+      "sha256": "3811e6bfd43399fd08e26cd7f23fded2b068f8764c875ad96d88f5b5b68c3858",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-store.png",
+      "bytes": 2148263,
+      "sha256": "24a3514e66c3cf562dbe7f8ddb6beb8d2d150e5d755838be70841ccbfa68c08f",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/prop-vine.png",
+      "bytes": 1378131,
+      "sha256": "1cb57274c016e4386c41ba60bd41ca5dbbde490fef6f72e01ea80864ca28c2fe",
+      "reason": "Superseded high-resolution generated prop; existing runtime dimensions and pixels preserved"
+    },
+    {
+      "file": "assets/art/ki-jati.png",
+      "bytes": 798706,
+      "sha256": "74490e556943030de74d9163d2a06c412c9408d7c98ec594ed6ae69b924d688a",
+      "reason": "Obsolete generated NPC/preview; current characters and background retained"
+    },
+    {
+      "file": "assets/art/kilisuci.png",
+      "bytes": 852280,
+      "sha256": "5419d9ee841179c24c078e3e1c9acce2a57b748bc70b10db202f99890a0940a7",
+      "reason": "Obsolete generated NPC/preview; current characters and background retained"
+    },
+    {
+      "file": "assets/art/ki-jati-preview.png",
+      "bytes": 88625,
+      "sha256": "41fecf18134eda296462f45eea7e3134fc45cfdb0627ed10dd0bc001e93d3610",
+      "reason": "Obsolete generated NPC/preview; current characters and background retained"
+    },
+    {
+      "file": "assets/art/petirtaan-preview.png",
+      "bytes": 948261,
+      "sha256": "81cc4eea19690f3cc6bb06c1bdff14ec1bd6d3a8c648a5dc000606d0b595b948",
+      "reason": "Obsolete generated NPC/preview; current characters and background retained"
+    }
+  ],
+  "preserved": [
+    "All original files in karakter/",
+    "GDD, prompts and generation reports",
+    "All active resources and lossless verification hashes"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-book.png.raw.png",
+  "out": "assets\\art\\prop-book.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-book.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "992x1586",
+    "alpha_zero_pct": 30.74,
+    "partial_alpha_pct": 69.24,
+    "opaque_pct": 0.02,
+    "cleaned_transparent_rgb_pixels": 141,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      61,
+      104,
+      942,
+      1484
+    ],
+    "before": [
+      992,
+      1586
+    ],
+    "after": [
+      881,
+      1380
+    ],
+    "margin_px": {
+      "left": 61,
+      "top": 104,
+      "right": 50,
+      "bottom": 102
+    }
+  },
+  "coverage": 0.8841920413232657
+}

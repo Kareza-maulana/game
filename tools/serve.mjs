@@ -2,7 +2,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 const root=path.resolve('dist');
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.png':'image/png','.svg':'image/svg+xml','.css':'text/css','.wasm':'application/wasm','.ogg':'audio/ogg'};
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.css':'text/css','.wasm':'application/wasm','.ogg':'audio/ogg'};
 const server=http.createServer((req,res)=>{
   if(req.url==='/favicon.ico'){res.writeHead(204);res.end();return;}
   let file;

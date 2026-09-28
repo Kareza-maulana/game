@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One small clump of luminous ivory Wijayakusuma night blooming flowers with long narrow petals, two blooms and layered deep green leaves, short stems and a compact rooted base. Roughly square silhouette, restrained amber centers, organic shaded petals, no pot, no floor. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-flower.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-flower.png.raw.png",
+  "raw_bytes": 1244584,
+  "elapsed_seconds": 82.187,
+  "model": "gpt-5.5",
+  "session_id": "01a0e384-d539-78e0-8030-fd6aa921eab0",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-flower.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1254x1254",
+    "alpha_zero_pct": 56.65,
+    "partial_alpha_pct": 43.23,
+    "opaque_pct": 0.12,
+    "cleaned_transparent_rgb_pixels": 1153,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        123,
+        115,
+        1155,
+        1137
+      ],
+      "before": [
+        1254,
+        1254
+      ],
+      "after": [
+        1032,
+        1022
+      ],
+      "margin_px": {
+        "left": 123,
+        "top": 115,
+        "right": 99,
+        "bottom": 117
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

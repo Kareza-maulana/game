@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One upright ancient water sluice lever on a squat carved andesite pedestal, bronze pivot and central upright wooden handle capped with brass, 2:3 proportion. Handle is centered vertically, visible rivets, rust and damp patina. No tilt, no floating marker. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-lever.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-lever.png.raw.png",
+  "raw_bytes": 1692115,
+  "elapsed_seconds": 83.594,
+  "model": "gpt-5.5",
+  "session_id": "01a0e385-d115-79a3-95c1-faf8fbdbdaef",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-lever.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 65.14,
+    "partial_alpha_pct": 34.86,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 704257,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        144,
+        46,
+        879,
+        1489
+      ],
+      "before": [
+        1024,
+        1536
+      ],
+      "after": [
+        735,
+        1443
+      ],
+      "margin_px": {
+        "left": 144,
+        "top": 46,
+        "right": 145,
+        "bottom": 47
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

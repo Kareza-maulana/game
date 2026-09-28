@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-vine.png.raw.png",
+  "out": "assets\\art\\prop-vine.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-vine.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "971x1619",
+    "alpha_zero_pct": 62.45,
+    "partial_alpha_pct": 37.54,
+    "opaque_pct": 0.01,
+    "cleaned_transparent_rgb_pixels": 1103,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      155,
+      35,
+      838,
+      1590
+    ],
+    "before": [
+      971,
+      1619
+    ],
+    "after": [
+      683,
+      1555
+    ],
+    "margin_px": {
+      "left": 155,
+      "top": 35,
+      "right": 133,
+      "bottom": 29
+    }
+  },
+  "coverage": 0.47800746658632004
+}

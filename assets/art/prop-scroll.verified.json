@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-scroll.png.raw.png",
+  "out": "assets\\art\\prop-scroll.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-scroll.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1086x1448",
+    "alpha_zero_pct": 70.47,
+    "partial_alpha_pct": 29.47,
+    "opaque_pct": 0.06,
+    "cleaned_transparent_rgb_pixels": 577,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      37,
+      397,
+      1062,
+      1100
+    ],
+    "before": [
+      1086,
+      1448
+    ],
+    "after": [
+      1025,
+      703
+    ],
+    "margin_px": {
+      "left": 37,
+      "top": 397,
+      "right": 24,
+      "bottom": 348
+    }
+  },
+  "coverage": 0.6314290670644971
+}

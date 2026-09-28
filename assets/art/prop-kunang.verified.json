@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-kunang.png.raw.png",
+  "out": "assets\\art\\prop-kunang.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-kunang.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1399x1124",
+    "alpha_zero_pct": 78.76,
+    "partial_alpha_pct": 21.17,
+    "opaque_pct": 0.07,
+    "cleaned_transparent_rgb_pixels": 879,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      182,
+      204,
+      1223,
+      929
+    ],
+    "before": [
+      1399,
+      1124
+    ],
+    "after": [
+      1041,
+      725
+    ],
+    "margin_px": {
+      "left": 182,
+      "top": 204,
+      "right": 176,
+      "bottom": 195
+    }
+  },
+  "coverage": 0.4020749279538905
+}

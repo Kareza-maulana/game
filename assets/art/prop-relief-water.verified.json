@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-relief-water.png.raw.png",
+  "out": "assets\\art\\prop-relief-water.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-relief-water.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1774x887",
+    "alpha_zero_pct": 44.89,
+    "partial_alpha_pct": 55.08,
+    "opaque_pct": 0.04,
+    "cleaned_transparent_rgb_pixels": 886,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      35,
+      181,
+      1741,
+      751
+    ],
+    "before": [
+      1774,
+      887
+    ],
+    "after": [
+      1706,
+      570
+    ],
+    "margin_px": {
+      "left": 35,
+      "top": 181,
+      "right": 33,
+      "bottom": 136
+    }
+  },
+  "coverage": 0.8682709117459534
+}

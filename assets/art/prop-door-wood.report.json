@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One complete tall open Javanese teak doorway, hand carved floral lintel and deep jambs, worn brass fittings, subtle gold accents, thick wood grain, squared feet. Height about 1.7 times width. The empty opening contains transparent alpha as the background, no room, no wall, no floor, no luminous symbol. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-door-wood.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-door-wood.png.raw.png",
+  "raw_bytes": 2427792,
+  "elapsed_seconds": 106.25,
+  "model": "gpt-5.5",
+  "session_id": "01a0e381-72d4-7833-8cd4-01123447519f",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-door-wood.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 50.24,
+    "partial_alpha_pct": 49.76,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 787327,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        50,
+        45,
+        974,
+        1465
+      ],
+      "before": [
+        1024,
+        1536
+      ],
+      "after": [
+        924,
+        1420
+      ],
+      "margin_px": {
+        "left": 50,
+        "top": 45,
+        "right": 50,
+        "bottom": 71
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

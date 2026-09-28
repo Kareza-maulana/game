@@ -26,5 +26,5 @@ function setupTerrainRendering(scene,level){
       void main(){vec4 color=texture2D(uSampler,vTextureCoord);float x=vTextureCoord.x*inputSize.x/outputFrame.z;gl_FragColor=color*(1.0-smoothstep(0.84,1.0,x));}
     `);r.filters=[filter];
   }
-  return ()=>{const colliders=get('Faded');get('FadedRoad').forEach((o,i)=>o.setOpacity(colliders[i]?.getOpacity()??55));get('RaftRoad').forEach(o=>{const raft=get('Raft')[0];o.setPosition(raft.getX(),raft.getY()-8);});get('BarrierFace').forEach(o=>o.hide(get('Barrier')[0].isHidden()));};
+  return ()=>{const colliders=get('Faded');get('FadedRoad').forEach((o,i)=>o.setOpacity(colliders[i]?.getOpacity()??55));get('RaftRoad').forEach(o=>{const raft=get('Raft')[0];o.setPosition(raft.getX(),raft.getY()-o.getHeight()*.28);});get('BarrierFace').forEach(o=>o.hide(get('Barrier')[0].isHidden()));};
 }

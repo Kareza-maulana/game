@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One antique Javanese teak heirloom cabinet, tall 3:4 proportion, partially open carved doors showing several ivory palm-leaf manuscript bundles, bronze handles, worn gilding, thick carved crown and feet. Deep shelves, rich wood grain, no writing. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-pusaka.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-pusaka.png.raw.png",
+  "raw_bytes": 1944510,
+  "elapsed_seconds": 90.89,
+  "model": "gpt-5.5",
+  "session_id": "01a0e387-b634-7661-8df5-c56346403787",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-pusaka.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1086x1448",
+    "alpha_zero_pct": 36.07,
+    "partial_alpha_pct": 63.88,
+    "opaque_pct": 0.05,
+    "cleaned_transparent_rgb_pixels": 856,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        95,
+        34,
+        1002,
+        1398
+      ],
+      "before": [
+        1086,
+        1448
+      ],
+      "after": [
+        907,
+        1364
+      ],
+      "margin_px": {
+        "left": 95,
+        "top": 34,
+        "right": 84,
+        "bottom": 50
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-poster.png.raw.png",
+  "out": "assets\\art\\prop-poster.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-poster.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "992x1586",
+    "alpha_zero_pct": 41.15,
+    "partial_alpha_pct": 58.82,
+    "opaque_pct": 0.03,
+    "cleaned_transparent_rgb_pixels": 144,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      47,
+      54,
+      958,
+      1522
+    ],
+    "before": [
+      992,
+      1586
+    ],
+    "after": [
+      911,
+      1468
+    ],
+    "margin_px": {
+      "left": 47,
+      "top": 54,
+      "right": 34,
+      "bottom": 64
+    }
+  },
+  "coverage": 0.6798133320571759
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One tiny fantastical firefly seen from the side, square silhouette, dark blue chitin, two delicate translucent wings with pale cyan veins, small golden abdomen, thin legs and antennae. No surrounding circular glow, no scene, no people. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-kunang.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-kunang.png.raw.png",
+  "raw_bytes": 640228,
+  "elapsed_seconds": 88.844,
+  "model": "gpt-5.5",
+  "session_id": "01a0e38b-785d-7de3-a76d-5d47abb8b8e4",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-kunang.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1399x1124",
+    "alpha_zero_pct": 78.76,
+    "partial_alpha_pct": 21.17,
+    "opaque_pct": 0.07,
+    "cleaned_transparent_rgb_pixels": 879,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        182,
+        204,
+        1223,
+        929
+      ],
+      "before": [
+        1399,
+        1124
+      ],
+      "after": [
+        1041,
+        725
+      ],
+      "margin_px": {
+        "left": 182,
+        "top": 204,
+        "right": 176,
+        "bottom": 195
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-raft.png.raw.png",
+  "out": "assets\\art\\prop-raft.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-raft.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1774x887",
+    "alpha_zero_pct": 72.8,
+    "partial_alpha_pct": 27.13,
+    "opaque_pct": 0.07,
+    "cleaned_transparent_rgb_pixels": 396,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      26,
+      332,
+      1749,
+      593
+    ],
+    "before": [
+      1774,
+      887
+    ],
+    "after": [
+      1723,
+      261
+    ],
+    "margin_px": {
+      "left": 26,
+      "top": 332,
+      "right": 25,
+      "bottom": 294
+    }
+  },
+  "coverage": 0.9122242902537897
+}

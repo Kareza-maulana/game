@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-basket.png.raw.png",
+  "out": "assets\\art\\prop-basket.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-basket.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1141x1379",
+    "alpha_zero_pct": 23.11,
+    "partial_alpha_pct": 76.86,
+    "opaque_pct": 0.03,
+    "cleaned_transparent_rgb_pixels": 506,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      50,
+      63,
+      1097,
+      1329
+    ],
+    "before": [
+      1141,
+      1379
+    ],
+    "after": [
+      1047,
+      1266
+    ],
+    "margin_px": {
+      "left": 50,
+      "top": 63,
+      "right": 44,
+      "bottom": 50
+    }
+  },
+  "coverage": 0.8983336124728594
+}

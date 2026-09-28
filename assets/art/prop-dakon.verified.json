@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-dakon.png.raw.png",
+  "out": "assets\\art\\prop-dakon.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-dakon.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1774x887",
+    "alpha_zero_pct": 58.23,
+    "partial_alpha_pct": 41.66,
+    "opaque_pct": 0.11,
+    "cleaned_transparent_rgb_pixels": 654,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      47,
+      221,
+      1729,
+      762
+    ],
+    "before": [
+      1774,
+      887
+    ],
+    "after": [
+      1682,
+      541
+    ],
+    "margin_px": {
+      "left": 47,
+      "top": 221,
+      "right": 45,
+      "bottom": 125
+    }
+  },
+  "coverage": 0.7016172103890053
+}

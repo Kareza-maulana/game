@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-foot.png.raw.png",
+  "out": "assets\\art\\prop-foot.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-foot.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1536x1024",
+    "alpha_zero_pct": 67.92,
+    "partial_alpha_pct": 32.08,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 750306,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      242,
+      62,
+      1364,
+      962
+    ],
+    "before": [
+      1536,
+      1024
+    ],
+    "after": [
+      1122,
+      900
+    ],
+    "margin_px": {
+      "left": 242,
+      "top": 62,
+      "right": 172,
+      "bottom": 62
+    }
+  },
+  "coverage": 0.41803030303030303
+}

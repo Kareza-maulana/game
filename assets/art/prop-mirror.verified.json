@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-mirror.png.raw.png",
+  "out": "assets\\art\\prop-mirror.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-mirror.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "992x1586",
+    "alpha_zero_pct": 40.3,
+    "partial_alpha_pct": 59.68,
+    "opaque_pct": 0.02,
+    "cleaned_transparent_rgb_pixels": 358,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      17,
+      86,
+      975,
+      1489
+    ],
+    "before": [
+      992,
+      1586
+    ],
+    "after": [
+      958,
+      1403
+    ],
+    "margin_px": {
+      "left": 17,
+      "top": 86,
+      "right": 17,
+      "bottom": 97
+    }
+  },
+  "coverage": 0.6747426108979119
+}

@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-bell.png.raw.png",
+  "out": "assets\\art\\prop-bell.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-bell.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1086x1448",
+    "alpha_zero_pct": 53.08,
+    "partial_alpha_pct": 46.8,
+    "opaque_pct": 0.13,
+    "cleaned_transparent_rgb_pixels": 1603,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      88,
+      41,
+      1027,
+      1371
+    ],
+    "before": [
+      1086,
+      1448
+    ],
+    "after": [
+      939,
+      1330
+    ],
+    "margin_px": {
+      "left": 88,
+      "top": 41,
+      "right": 59,
+      "bottom": 77
+    }
+  },
+  "coverage": 0.5682072593624636
+}

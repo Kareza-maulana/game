@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-door-wood.png.raw.png",
+  "out": "assets\\art\\prop-door-wood.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-door-wood.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 50.24,
+    "partial_alpha_pct": 49.76,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 787327,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      50,
+      45,
+      974,
+      1465
+    ],
+    "before": [
+      1024,
+      1536
+    ],
+    "after": [
+      924,
+      1420
+    ],
+    "margin_px": {
+      "left": 50,
+      "top": 45,
+      "right": 50,
+      "bottom": 71
+    }
+  },
+  "coverage": 0.5749222608377538
+}

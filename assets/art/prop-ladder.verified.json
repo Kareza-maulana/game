@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-ladder.png.raw.png",
+  "out": "assets\\art\\prop-ladder.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-ladder.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "793x1983",
+    "alpha_zero_pct": 69.0,
+    "partial_alpha_pct": 30.96,
+    "opaque_pct": 0.05,
+    "cleaned_transparent_rgb_pixels": 2055,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      139,
+      40,
+      654,
+      1932
+    ],
+    "before": [
+      793,
+      1983
+    ],
+    "after": [
+      515,
+      1892
+    ],
+    "margin_px": {
+      "left": 139,
+      "top": 40,
+      "right": 139,
+      "bottom": 51
+    }
+  },
+  "coverage": 0.4591596707649993
+}

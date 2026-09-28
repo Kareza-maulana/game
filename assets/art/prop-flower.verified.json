@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-flower.png.raw.png",
+  "out": "assets\\art\\prop-flower.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-flower.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1254x1254",
+    "alpha_zero_pct": 56.65,
+    "partial_alpha_pct": 43.23,
+    "opaque_pct": 0.12,
+    "cleaned_transparent_rgb_pixels": 1153,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      123,
+      115,
+      1155,
+      1137
+    ],
+    "before": [
+      1254,
+      1254
+    ],
+    "after": [
+      1032,
+      1022
+    ],
+    "margin_px": {
+      "left": 123,
+      "top": 115,
+      "right": 99,
+      "bottom": 117
+    }
+  },
+  "coverage": 0.5990922571640953
+}

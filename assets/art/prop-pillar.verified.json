@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-pillar.png.raw.png",
+  "out": "assets\\art\\prop-pillar.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-pillar.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 76.18,
+    "partial_alpha_pct": 23.82,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 777536,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      313,
+      29,
+      714,
+      1439
+    ],
+    "before": [
+      1024,
+      1536
+    ],
+    "after": [
+      401,
+      1410
+    ],
+    "margin_px": {
+      "left": 313,
+      "top": 29,
+      "right": 310,
+      "bottom": 97
+    }
+  },
+  "coverage": 0.643142144638404
+}

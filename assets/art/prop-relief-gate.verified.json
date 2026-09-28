@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-relief-gate.png.raw.png",
+  "out": "assets\\art\\prop-relief-gate.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-relief-gate.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1774x887",
+    "alpha_zero_pct": 54.07,
+    "partial_alpha_pct": 45.91,
+    "opaque_pct": 0.03,
+    "cleaned_transparent_rgb_pixels": 86,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      82,
+      272,
+      1694,
+      745
+    ],
+    "before": [
+      1774,
+      887
+    ],
+    "after": [
+      1612,
+      473
+    ],
+    "margin_px": {
+      "left": 82,
+      "top": 272,
+      "right": 80,
+      "bottom": 142
+    }
+  },
+  "coverage": 0.9349750024918817
+}

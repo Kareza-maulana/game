@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One old hanging bronze temple bell on a compact carved wood suspension bracket, tall 3:4 proportion. Patinated bronze, bright rim, embossed lotus band, visible dark bell mouth and hanging clapper. Full bracket and bell, no rope disappearing out of frame. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-bell.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-bell.png.raw.png",
+  "raw_bytes": 1316425,
+  "elapsed_seconds": 84.656,
+  "model": "gpt-5.5",
+  "session_id": "01a0e383-2b70-7060-aafc-a84b0d9689cb",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-bell.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1086x1448",
+    "alpha_zero_pct": 53.08,
+    "partial_alpha_pct": 46.8,
+    "opaque_pct": 0.13,
+    "cleaned_transparent_rgb_pixels": 1603,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        88,
+        41,
+        1027,
+        1371
+      ],
+      "before": [
+        1086,
+        1448
+      ],
+      "after": [
+        939,
+        1330
+      ],
+      "margin_px": {
+        "left": 88,
+        "top": 41,
+        "right": 59,
+        "bottom": 77
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

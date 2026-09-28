@@ -1,0 +1,39 @@
+{
+  "raw": "assets\\art\\prop-pusaka.png.raw.png",
+  "out": "assets\\art\\prop-pusaka.png",
+  "cleanup": "sprite-gen verify_native_alpha + trim_to_alpha",
+  "alpha": {
+    "out": "assets\\art\\prop-pusaka.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1086x1448",
+    "alpha_zero_pct": 36.07,
+    "partial_alpha_pct": 63.88,
+    "opaque_pct": 0.05,
+    "cleaned_transparent_rgb_pixels": 856,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "trim": {
+    "bbox": [
+      95,
+      34,
+      1002,
+      1398
+    ],
+    "before": [
+      1086,
+      1448
+    ],
+    "after": [
+      907,
+      1364
+    ],
+    "margin_px": {
+      "left": 95,
+      "top": 34,
+      "right": 84,
+      "bottom": 50
+    }
+  },
+  "coverage": 0.7990062627915173
+}

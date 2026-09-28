@@ -5,6 +5,8 @@
   "description": "Cahaya Kadiri — kampanye Prolog sampai Epilog berdasarkan GDD v2.0",
   "scripts": {
     "build": "node tools/build-campaign.mjs",
+    "assets:optimize": "python tools/optimize-assets.py",
+    "assets:verify": "python tools/verify-assets.py",
     "start": "node tools/serve.mjs",
     "test": "node --test tests/*.test.mjs"
   },

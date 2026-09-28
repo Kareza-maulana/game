@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One low wooden Javanese dakon board on a small carved stool, wide 2:1 silhouette, two rows of scooped round pits and large end pits, a few polished tamarind seeds, rich teak grain and gently curved ends. Clear shallow top-down view combined with frontal side-scroller elevation. All pieces on one connected object. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-dakon.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-dakon.png.raw.png",
+  "raw_bytes": 1223979,
+  "elapsed_seconds": 80.578,
+  "model": "gpt-5.5",
+  "session_id": "01a0e386-3ba3-7863-9d37-4fcd06f1eccc",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-dakon.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1774x887",
+    "alpha_zero_pct": 58.23,
+    "partial_alpha_pct": 41.66,
+    "opaque_pct": 0.11,
+    "cleaned_transparent_rgb_pixels": 654,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        47,
+        221,
+        1729,
+        762
+      ],
+      "before": [
+        1774,
+        887
+      ],
+      "after": [
+        1682,
+        541
+      ],
+      "margin_px": {
+        "left": 47,
+        "top": 221,
+        "right": 45,
+        "bottom": 125
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}

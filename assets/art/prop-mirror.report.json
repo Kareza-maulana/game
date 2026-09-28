@@ -1,0 +1,57 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE isolated static game-object illustration for Cahaya Kadiri. Match the richly textured painterly 16-bit pixel art of the BACKGROUND and ROAD in the reference screenshot; do not imitate its flat placeholder objects or UI. One circular antique bronze mirror on a carved standing base, tall 5:8 proportion, thick embossed floral rim, subtly reflective bluish metal center with small soft reflected highlight, tarnish and fine scratches. No reflected face or scenery. Complete ornate feet. Side-scrolling orthographic elevation, subtle visible top and right side for physical depth. Dense deliberate pixel clusters, material grain, bevels, cracks, soft top-left amber light, cooler side shadows and deep contact creases. Readable silhouette at small in-game size, natural muted colours. Entire object centered, all extremities inside frame with 6% empty margin. ONE subject only, no variants, no sprite sheet, no grid. Use a genuinely TRANSPARENT background with native alpha, including all empty holes. No coloured background, ground plane, cast shadow outside the object, extra props, UI, labels, borders, checkerboard or scenery. High detail within the object, never flat vector shapes.",
+  "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-mirror.png",
+  "raw": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-mirror.png.raw.png",
+  "raw_bytes": 1872704,
+  "elapsed_seconds": 85.235,
+  "model": "gpt-5.5",
+  "session_id": "01a0e387-584d-76e1-9f37-0d8c7ea3b8dc",
+  "refs": [
+    "C:\\Users\\po\\Downloads\\KIRANA\\assets\\prompts\\props-style-reference.png"
+  ],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "explicit",
+    "out": "C:\\Users\\po\\Downloads\\KIRANA\\assets\\art\\prop-mirror.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "992x1586",
+    "alpha_zero_pct": 40.3,
+    "partial_alpha_pct": 59.68,
+    "opaque_pct": 0.02,
+    "cleaned_transparent_rgb_pixels": 358,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 2,
+    "rollout_cleaned": true,
+    "transparent_background_reported": null,
+    "trim_alpha": {
+      "bbox": [
+        17,
+        86,
+        975,
+        1489
+      ],
+      "before": [
+        992,
+        1586
+      ],
+      "after": [
+        958,
+        1403
+      ],
+      "margin_px": {
+        "left": 17,
+        "top": 86,
+        "right": 17,
+        "bottom": 97
+      }
+    }
+  },
+  "provider_resolved_from": "explicit"
+}
