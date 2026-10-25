@@ -9,6 +9,18 @@ function createCampaignGame(scene,level,M,css,content){
   let toastEnd=0,hintTime=0,lastProgress='',hudTime=0,chaseTime=0,escapeTime=0,risingFog=level.height,footX=16,trapReady=false;
   let history=[],bellPending=null,stealthTime=0,invulnerable=0,readNode='',saved=null,saveWarning=false,lightHistory=new Set(),lastAnim=0;
   let thinTouched=new Map(),crumbled=new Map(),projectile=null,lastProjectile=-10,previewOrder=[],pendingScene=null,dropUntil=0,mobile=null;
+  const lutungChase=level.id==='Pasar'?M.createLutungChase(level):null;
+  function drawLutung(){
+    if(!lutungChase)return;const pose=lutungChase.snapshot();
+    get('Lutung').forEach(o=>{o.hide(!pose.visible);o.setPosition(pose.x,pose.feet-o.getHeight());o.setAngle(pose.angle);o.flipX(pose.arrived&&player.getX()<pose.x);});
+  }
+  function resetLutung(){if(lutungChase){lutungChase.reset({playerX:player.getX(),active:q.chase,atDock:s.checkpoint===2||q.chaseWon});drawLutung();}}
+  function beginLutungChase(){
+    q.chase=true;s.checkpoint=1;chaseTime=0;
+    // Recover a save interrupted after delivery but before the theft dialogue ended.
+    if(player.getX()<700||player.getY()>400){player.setPosition(...level.checkpoints[1]);body.setCurrentSpeed(0);body.setCurrentFallSpeed(0);resetCamera();}
+    resetLutung();save();
+  }
   try{saved=JSON.parse(localStorage.getItem('cahayakadiri_save')||'null');}catch{}
   if(!$('ck-style')){const style=document.createElement('style');style.id='ck-style';style.textContent=css;document.head.append(style);}
   $('ck')?.remove();const ui=document.createElement('div');ui.id='ck';document.body.append(ui);
@@ -55,7 +67,7 @@ function createCampaignGame(scene,level,M,css,content){
   }
   function objective(){switch(level.id){
     case'Prolog':return q.books.length<3?`Kembalikan buku ke tiga lantai · ${q.books.length}/3. Tangga besi berada di kanan.`:'Buka buku Keong Mas di loteng.';
-    case'Pasar':return !q.marketStarted?'Temui Mbok penjual di warung.':q.orders.length<3?`Antarkan tiga pesanan · ${q.orders.length}/3.`:!q.chaseWon?'Ikuti lutung melalui atap sampai dermaga.':'Berikan makanan pada lutung, lalu lanjut ke taman.';
+    case'Pasar':return !q.marketStarted?'Temui Mbok penjual di warung.':q.orders.length<3?`Antarkan tiga pesanan · ${q.orders.length}/3.`:!q.chaseWon?(s.checkpoint===2?'Lutung menunggu di dermaga bawah. Turun + Lompat, dekati lutung lalu Interaksi untuk menawarkan makanan.':'Ikuti lutung pembawa bungkusan di depanmu. Lompat antaratap menuju dermaga.'):'Serat Asih pulih. Lanjutkan ke taman.';
     case'Petirtaan':return !s.pelita?'Temui Ki Jati di taman.':!s.sabar?'Buka Hulu dan Akar, tutup Hilir. Diam di damar tengah.':!s.drained?'Tutup Hulu dan Akar, buka Hilir.':!s.jujur?'Sorot pijakan lupa. Diam + X untuk membaca relief.':'Serat Sabar dan Jujur pulih. Lanjut ke Bukit Klotok.';
     case'Bukit':{const g=caveGuide();return `Langkah ${g.step}/4 · ${g.text}`;}
     case'Gerbang':return !q.gate?`Ungkap empat petunjuk · ${q.clues.length}/4. Kendi, cermin, gudang, batu lupa.`:'Gerbang terbuka. Terjang Kabut: ketuk arah dua kali.';
@@ -65,7 +77,7 @@ function createCampaignGame(scene,level,M,css,content){
     case'Epilog':return !q.epilogueRead?'Buka kembali buku Keong Mas di meja.':'Baca poster UKM dan teruskan kisah ini.';
   }}
   function hud(){const own=s.serat.join(',');if($('serat-slots').dataset.owned!==own){$('serat-slots').innerHTML=M.SERAT.map(([name])=>`<i class="${s.serat.includes(name)?'filled':''}" title="Serat ${name}" aria-label="${name}: ${s.serat.includes(name)?'terkumpul':'belum'}"></i>`).join('');$('serat-slots').dataset.owned=own;}$('oil').style.setProperty('--oil',s.pelita?Math.max(.08,s.oil/100):0);$('oil').setAttribute('aria-label',s.pelita?`Minyak ${Math.round(s.oil)} persen`:'Pelita belum diperoleh');$('quest').textContent=inputText(objective());mobile?.update(s);}
-  function enter(){q=s.quests;const cp=level.checkpoints[s.checkpoint]||level.checkpoints[0];player.setPosition(...cp);body.setCurrentSpeed(0);body.setCurrentFallSpeed(0);resetCamera();setMode('play');$('hud').hidden=false;$('objective').hidden=false;$('legend').hidden=false;get('Scroll').forEach(o=>{const id=o.getVariables().get('kidung').getAsNumber();if(id)o.hide(s.kidung.includes(id));});hud();save();if(D['intro'+level.id])showDialog(D['intro'+level.id]);}
+  function enter(){q=s.quests;const cp=level.checkpoints[s.checkpoint]||level.checkpoints[0];player.setPosition(...cp);body.setCurrentSpeed(0);body.setCurrentFallSpeed(0);resetCamera();resetLutung();setMode('play');$('hud').hidden=false;$('objective').hidden=false;$('legend').hidden=false;get('Scroll').forEach(o=>{const id=o.getVariables().get('kidung').getAsNumber();if(id)o.hide(s.kidung.includes(id));});hud();save();if(level.id==='Pasar'&&q.orders.length===3&&!q.chase&&!q.chaseWon)showDialog(D.chase,beginLutungChase);else if(D['intro'+level.id])showDialog(D['intro'+level.id]);}
   function title(){setMode('title');$('hud').hidden=true;$('objective').hidden=true;$('legend').hidden=true;const canResume=saved&&[1,2].includes(saved.version);$('modal').innerHTML=`<section class="title-screen"><div class="title-ornament">✧</div><span class="eyebrow">SERAT SAPTA KETELADANAN</span><h1 aria-label="The Journey of Kirana : Awakening Forgotten Legends">The Journey<br><em>of Kirana</em><span class="game-subtitle"> : Awakening Forgotten Legends</span></h1><div class="gold-rule"></div><p>Ada kisah yang hanya hidup<br>selama seseorang masih mengingatnya.</p><div class="title-buttons"><button class="primary" id="start">Mulai kisah <span>→</span></button>${canResume?'<button id="continue">Lanjutkan perjalanan</button>':''}</div><span class="title-note">SEBUAH PERJALANAN DARI INGATAN KE CAHAYA</span></section>`;
     $('start').onclick=()=>{s=M.newCampaign();q=s.quests;game.__ckState=s;game.__ckStarted=true;if(level.id!=='Prolog')go('Prolog',{resume:true});else enter();};if($('continue'))$('continue').onclick=()=>{s=M.newCampaign(saved);q=s.quests;game.__ckState=s;game.__ckStarted=true;if(s.scene!==level.id)go(s.scene,{resume:true});else enter();};}
   function showDialog(lines,done){dialog=lines;dialogAt=0;dialogDone=done;auto=false;autoTime=0;dialogAge=0;setMode('dialog');renderDialog();}
@@ -114,10 +126,10 @@ function createCampaignGame(scene,level,M,css,content){
     if(s.golden)showDialog(D.golden,finish);else finish();
   }
   function respawn(message='Kabut menyapumu kembali ke Damar Pengingat.'){
-    let cp=level.checkpoints[s.checkpoint]||level.checkpoints[0];if(level.id==='Pasar'&&q.chase&&!q.chaseWon){cp=level.checkpoints[1];chaseTime=0;}if(level.id==='Bukit'&&s.serat.includes('Andhap')&&!q.escaped){cp=level.checkpoints[2];escapeTime=0;}
-    player.setPosition(...cp);body.setCurrentSpeed(0);body.setCurrentFallSpeed(0);resetCamera();soundscape.cue('respawn');s.oil=Math.max(45,s.oil-15);invulnerable=clock+3;repel=clock+4;keys.clear();pressed.clear();flash=.8;toast(message);history=[];bellPending=null;risingFog=level.height;
+    let cp=level.checkpoints[s.checkpoint]||level.checkpoints[0];if(level.id==='Pasar'&&q.chase&&!q.chaseWon&&s.checkpoint!==2){cp=level.checkpoints[1];chaseTime=0;}if(level.id==='Bukit'&&s.serat.includes('Andhap')&&!q.escaped){cp=level.checkpoints[2];escapeTime=0;}
+    player.setPosition(...cp);body.setCurrentSpeed(0);body.setCurrentFallSpeed(0);resetCamera();resetLutung();soundscape.cue('respawn');s.oil=Math.max(45,s.oil-15);invulnerable=clock+3;repel=clock+4;keys.clear();pressed.clear();flash=.8;toast(message);history=[];bellPending=null;risingFog=level.height;
   }
-  function near(n,r=40){return Math.hypot(player.getX()+16-(n.x+10),player.getY()+16-(n.y+16))<r;}
+  function near(n,r=40){if(n.type==='lutung'&&lutungChase&&!lutungChase.snapshot().arrived)return false;return Math.hypot(player.getX()+16-(n.x+10),player.getY()+16-(n.y+16))<r;}
   function has(name){return s.serat.includes(name);}
   function reveal(index,text){if(!q.clues.includes(index))q.clues.push(index);save();showDialog([['Kirana',text]]);}
   // Scene-specific interactions are defined below; input and physics are shared.
@@ -127,7 +139,7 @@ function createCampaignGame(scene,level,M,css,content){
       case'lamp':q.lamps[n.index]=!q.lamps[n.index];save();toast('Lampu '+(q.lamps[n.index]?'dinyalakan.':'dimatikan.'));break;
       case'portal':if(!M.canLeave(s,'Prolog'))toast('Tiga buku belum kembali ke raknya.');else showDialog(D.portal,()=>{flash=1;go('Pasar');});break;
       case'mbok':if(!q.marketStarted)showDialog(D.mbok,()=>{q.marketStarted=true;save();});else showDialog([['Mbok Rondo',q.orders.length<3?'Pelanggan ada di bawah, panggung, dan atap, Nduk.':'Bungkusan itu untuk Tuan Putri. Lutung membawanya ke dermaga.']]);break;
-      case'order':if(!q.marketStarted){toast('Pesanan ada pada Mbok penjual.');break;}if(!q.orders.includes(n.index)){q.orders.push(n.index);save();if(q.orders.length===3&&!q.chaseWon)showDialog(D.chase,()=>{q.chase=true;s.checkpoint=1;chaseTime=0;save();});else toast('Pesanan diterima · '+q.orders.length+'/3.');}break;
+      case'order':if(!q.marketStarted){toast('Pesanan ada pada Mbok penjual.');break;}if(!q.orders.includes(n.index)){q.orders.push(n.index);save();if(q.orders.length===3&&!q.chaseWon)showDialog(D.chase,beginLutungChase);else toast('Pesanan diterima · '+q.orders.length+'/3.');}break;
       case'lutung':if(q.orders.length<3){toast('Lutung melindungi bungkusan. Antar dulu pesanan Mbok.');break;}choice('Lutung yang lapar','Ia mendekap bungkusan dan menatap sisa sarapanmu.',['Berikan sisa makanan','Coba merebut bungkusan'],pick=>{if(pick===0){q.chaseWon=true;q.chase=false;showDialog(D.asih,()=>award('Asih'));}else toast('Lutung mundur. Mungkin ia membutuhkan sesuatu darimu.');});break;
       case'dakon':dakon();break;
       case'slide':if(!has('Asih'))toast('Celah terlalu rendah. Langkah Cepat belum terbuka.');else toast('Tahan ↓ sambil bergerak untuk menyusup ke bawah dermaga.');break;
@@ -186,7 +198,8 @@ function createCampaignGame(scene,level,M,css,content){
   fullscreenLabel();ui.querySelector('.hud-actions').prepend(fullscreenButton);
   fullscreenButton.onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(mobile.enabled)await mobile.requestLandscape(true);else if(document.documentElement.requestFullscreen)await document.documentElement.requestFullscreen();else toast('Gunakan pilihan layar penuh pada browser.');}catch{toast('Gunakan pilihan layar penuh pada browser, atau F11 di komputer.');}};
   document.addEventListener('fullscreenchange',fullscreenLabel,{signal:abort.signal});
-  let caveMarker=null,caveLandmarks=[];
+  let caveMarker=null,caveLandmarks=[],chaseMarker=null;
+  if(lutungChase){chaseMarker=document.createElement('div');chaseMarker.id='chase-target';chaseMarker.hidden=true;ui.append(chaseMarker);}
   if(level.id==='Bukit'){
     ui.classList.add('cave-ui');caveMarker=document.createElement('div');caveMarker.id='cave-target';caveMarker.hidden=true;caveMarker.innerHTML='<b></b><span></span>';ui.append(caveMarker);
     caveLandmarks=level.damars.map(([x,y],i)=>{const el=document.createElement('div');el.className='cave-landmark';el.hidden=true;el.innerHTML=`<strong>${['Damar Lereng','Damar Jurang','Damar Kilisuci'][i]}</strong><small>Obor emas · simpan & isi minyak</small>`;ui.append(el);return{el,at:[x+10,y-48]};});
@@ -246,7 +259,8 @@ function createCampaignGame(scene,level,M,css,content){
         else if(readable.type==='lost'&&has('Jujur')&&!q.clues.includes(3))reveal(3,'Di bawah cahaya pelita, aksara terakhir kembali: A.');
       }
       stealthTime=level.id==='Gerbang'&&crouch&&!left&&!right&&near(level.nodes.find(n=>n.id==='sleeper'),45)?stealthTime+dt:0;
-      if(level.id==='Pasar'&&q.chase&&!q.chaseWon&&player.getX()<5210){chaseTime+=dt;const wall=760+chaseTime*70;if(player.getX()<wall-220||player.getY()>486&&player.getX()>900)respawn('Bungkusan menjauh. Coba lagi dari atap pasar.');}
+      if(lutungChase){lutungChase.step(dt,{playerX:player.getX(),active:q.chase&&!q.chaseWon});drawLutung();}
+      if(level.id==='Pasar'&&q.chase&&!q.chaseWon&&player.getX()<5210&&s.checkpoint!==2){chaseTime+=dt;const wall=760+chaseTime*70;if(player.getX()<wall-220||player.getY()>486&&player.getX()>900)respawn('Bungkusan menjauh. Coba lagi dari atap pasar.');}
       if(level.id==='Pasar'&&player.getX()>=5210&&s.checkpoint!==2){s.checkpoint=2;save();toast('Dermaga tercapai. Turun dengan ↓ + Z untuk menemui lutung.');}
       if(level.id==='Bukit'){
         if(!has('Andhap')&&player.getX()>928)player.setX(928);
@@ -296,12 +310,18 @@ function createCampaignGame(scene,level,M,css,content){
     M.followCamera(camera,{x:player.getX(),y:player.getY(),onFloor:body.isOnFloor(),viewW,viewH,width:level.width,height:level.height,dt});
     [['L0Sky',.05],['L1Mountains',.20],['L2Garden',.45],['L3Walls',.75],['',1],['L5Foreground',1.25],['L6Atmosphere',1]].forEach(([name,m])=>{const l=scene.getLayer(name);l.setCameraX(Math.round(halfW+(camera.x-halfW)*m));l.setCameraY(Math.round(halfH+(camera.y-halfH)*m));});
     updateTerrain();drawCaveGuide(viewW,viewH);
+    if(chaseMarker){
+      chaseMarker.hidden=mode!=='play'||!q.chase||q.chaseWon;
+      if(!chaseMarker.hidden){const pose=lutungChase.snapshot(),rect=document.querySelector('canvas').getBoundingClientRect(),sx=(pose.x+14-scene.getLayer('').getCameraX()+viewW/2)*rect.width/viewW,sy=(pose.feet-38-scene.getLayer('').getCameraY()+viewH/2)*rect.height/viewH;
+        chaseMarker.style.left=Math.max(60,Math.min(rect.width-60,sx))+'px';chaseMarker.style.top=Math.max(76,Math.min(rect.height-40,sy))+'px';chaseMarker.textContent=pose.arrived?'↓ Lutung · tawarkan makanan':sx>rect.width-30?'Lutung →':'↓ Lutung · bungkusan';
+      }
+    }
     soundscape.update({scene:level.id,x:player.getX(),y:player.getY(),mode,shining,moving:down('ArrowLeft','ArrowRight','KeyA','KeyD'),grounded:body.isOnFloor(),speed:body.getMaxSpeed(),hidden:document.hidden,silence:level.id==='Gerbang'&&q.gate&&clock<game.__ckSilenceUntil});
     $('vignette').style.opacity=s.pelita&&s.oil<25?'.9':'.3';flash=Math.max(0,flash-dt*2);$('flash').style.opacity=flash;if(clock>toastEnd)$('toast').hidden=true;hudTime+=dt;if(hudTime>.15){hud();hudTime=0;}pressed.clear();release.clear();
   }
   // Observation only: test tools drive keyboard, pointer and saved-game resume.
   window.__ckRender=()=>{const r=player.getRendererObject();return {visible:r.visible,alpha:r.alpha,worldAlpha:r.worldAlpha,tint:r.tint,renderable:r.renderable,x:r.x,y:r.y,bounds:r.getBounds(),texture:r.texture?.baseTexture?.resource?.url,frame:r.texture?.frame,scale:{x:r.scale.x,y:r.scale.y},z:player.getZOrder(),index:r.parent?.children.indexOf(r),last:r.parent?.children.slice(-8).map(x=>({z:x.zOrder,url:x.texture?.baseTexture?.resource?.url}))};};
-  window.__cahaya={snapshot:()=>({scene:level.id,mode,story:storyView.snapshot(),camera:{x:scene.getLayer('').getCameraX(),y:scene.getLayer('').getCameraY()},audio:soundscape.snapshot(),state:JSON.parse(JSON.stringify(s)),x:player.getX(),y:player.getY(),width:player.getWidth(),height:player.getHeight(),hidden:player.isHidden(),animation:player.getAnimation(),onFloor:body.isOnFloor(),shining,readTime,stealthTime,chaseTime,escapeTime,footX,sliding,solidPlatforms:get('Faded').map(o=>o.getBehavior('Platform').activated()),npcs:['KiJati','Kilisuci','Guard'].flatMap(name=>get(name).map(o=>({name,node:o.getVariables().get('node').getAsString(),frame:o.getAnimationFrame(),x:o.getX(),y:o.getY(),width:o.getWidth(),height:o.getHeight()})))})};
+  window.__cahaya={snapshot:()=>({scene:level.id,mode,story:storyView.snapshot(),lutung:lutungChase?{...lutungChase.snapshot(),y:get('Lutung')[0].getY(),height:get('Lutung')[0].getHeight()}:null,camera:{x:scene.getLayer('').getCameraX(),y:scene.getLayer('').getCameraY()},audio:soundscape.snapshot(),state:JSON.parse(JSON.stringify(s)),x:player.getX(),y:player.getY(),width:player.getWidth(),height:player.getHeight(),hidden:player.isHidden(),animation:player.getAnimation(),onFloor:body.isOnFloor(),shining,readTime,stealthTime,chaseTime,escapeTime,footX,sliding,solidPlatforms:get('Faded').map(o=>o.getBehavior('Platform').activated()),npcs:['KiJati','Kilisuci','Guard'].flatMap(name=>get(name).map(o=>({name,node:o.getVariables().get('node').getAsString(),frame:o.getAnimationFrame(),x:o.getX(),y:o.getY(),width:o.getWidth(),height:o.getHeight()})))})};
   if(game.__ckStarted)enter();else title();
   if(mobile.blocked&&mode==='play')pause();
   return {tick,dispose};

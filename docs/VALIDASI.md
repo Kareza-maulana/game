@@ -93,6 +93,15 @@ Fixture uji regresi dibuat khusus dalam profil browser pengujian. Save pemain di
 - `node tools/text-check.mjs` memeriksa desktop 1280×800 serta mobile 844×390/568×320, ukuran target sentuh, tata letak tetap, mask parsial, kontrol lanjut, pembatalan suara, mute/volume nol, narasi, batas grapheme, tab tersembunyi, dan reduced motion. Teks utuh tersedia untuk pembaca layar, salinan visual disembunyikan dari pembaca layar.
 - Reduced motion langsung menampilkan teks penuh tanpa rangkaian suara ketikan. Hasil pengujian tersimpan di `test-results/text-report.json`.
 
+## Pengejaran lutung di Pasar Tandes
+
+- Sprite lutung yang semula diam di dermaga kini mengikuti permukaan atap dan melompati celah, membawa bungkusan yang sudah ada pada aset. Gerakan baru tidak mengubah collision/terrain atau algoritma kamera.
+- Lutung muncul setelah pesanan ketiga dan dialog pencurian selesai. Kecepatan/jaraknya mengikuti posisi pemain; lompatan yang sudah dimulai tetap berakhir di pijakan. Di dermaga, lutung turun ke posisi interaksi dan menunggu makanan.
+- Reset ke checkpoint atap mengatur ulang posisi lutung. Checkpoint dermaga tetap dipertahankan saat melanjutkan save atau kembali ke damar. Save yang terputus antara pengantaran ketiga dan akhir dialog pencurian melanjutkan pemicu pengejaran.
+- `npm.cmd test`: 17 tes lolos, termasuk lintasan lutung sepanjang seluruh atap, lompatan saat pemain berhenti, dan pemulihan checkpoint.
+- `node tools/lutung-check.mjs`: pesanan ketiga dipicu melalui input; seluruh rute atap dilalui; makanan diberikan dan Serat Asih diperoleh; jeda, kegagalan pengejaran, save/checkpoint dermaga, serta gerakan melalui kontrol mobile diuji. Pada 2.990 sampel rute, koordinat horizontal lutung berada di area pandang kamera. Hasil: `test-results/lutung-report.json`.
+- Pemeriksaan visual: `lutung-start.png`, `lutung-fed.png`, `lutung-mobile.png` dalam `test-results/`. Pengujian save pengantaran yang terputus juga lolos melalui fixture browser tersendiri.
+
 ## Belum divalidasi
 
 Perangkat ponsel fisik, semua browser, kinerja laptop kelas menengah, aksesibilitas menyeluruh, seluruh rute pengambilan 12 Kidung/ending emas, serta durasi target 45–60 menit belum diuji. Hasil ini tidak menyatakan semua spesifikasi seni, sinematik, audio dan produksi GDD sudah lengkap; lihat [catatan produksi](PRODUKSI.md).

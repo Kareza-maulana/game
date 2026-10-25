@@ -12,7 +12,7 @@ npm.cmd start
 
 Buka **http://127.0.0.1:3100**. Jangan membuka dist/index.html melalui file:// karena pemuatan aset memerlukan server lokal. Game berjalan tanpa internet setelah file tersedia. Server/build memakai Node.js 22.
 
-**Ukuran game siap diunggah: 87,78 MB** (folder `dist/`, termasuk ilustrasi cerita baru). Cukup unggah isi `dist/` ke hosting; folder `assets/`, `karakter/`, `node_modules/`, laporan, dan hasil tes adalah berkas produksi, tidak ikut diunduh pemain. Sebanyak 94 gambar runtime menggunakan WebP lossless pada resolusi semula; setiap piksel RGBA diverifikasi identik. Tidak ada penurunan resolusi atau jumlah warna dalam optimasi ini. Sprite asli pengguna tetap di `karakter/`.
+**Ukuran game siap diunggah: 87,82 MB** (folder `dist/`, termasuk ilustrasi cerita baru). Cukup unggah isi `dist/` ke hosting; folder `assets/`, `karakter/`, `node_modules/`, laporan, dan hasil tes adalah berkas produksi, tidak ikut diunduh pemain. Sebanyak 94 gambar runtime menggunakan WebP lossless pada resolusi semula; setiap piksel RGBA diverifikasi identik. Tidak ada penurunan resolusi atau jumlah warna dalam optimasi ini. Sprite asli pengguna tetap di `karakter/`.
 
 Build membuat ekspor baru, membersihkan berkas ekspor lama, dan menolak hasil yang mencapai 100.000.000 byte. Laporan ukuran: `docs/build-size.json`; perbandingan: `docs/optimization-report.json`. Raw generasi, PNG yang sudah diganti WebP, master objek besar yang telah digantikan aset runtime, dan preview/NPC lama telah dibersihkan; daftar lengkap beserta hash ada di `docs/asset-cleanup.json`. Prompt dan laporan generasi tetap disimpan.
 
@@ -35,6 +35,8 @@ Untuk mengedit visual, buka **cahaya-kadiri.json** di GDevelop 5. Gerak dan coll
 | Bicara / periksa | C / E |
 | Jurnal / jeda | J / Esc |
 | Layar penuh | Tombol ⛶ di kanan atas |
+
+Setelah pesanan ketiga di Pasar Tandes, ikuti lutung pembawa bungkusan yang bergerak dan melompat di jalur atap. Di dermaga, turun ke lantai bawah lalu tawarkan makanan melalui Interaksi untuk memperoleh Serat Asih.
 
 Untuk membaca pahatan, berdiri diam di dekatnya dan tahan X sampai isi muncul otomatis. Pahatan goa yang sudah terbaca dapat dibuka ulang dengan C, termasuk setelah melanjutkan save.
 
