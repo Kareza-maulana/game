@@ -1,0 +1,10 @@
+#ck .feedback-panel{width:min(92vw,560px);text-align:left;max-height:calc(100dvh - 24px);overscroll-behavior:contain}
+.feedback-panel .panel-head h2{font-size:28px}.feedback-panel>p{font:14px/1.65 system-ui;margin:8px 0 18px}
+#feedback-form label{display:block;font:14px/1.5 system-ui;color:#eee3ba;margin-bottom:8px}
+#ck #feedback-comment{display:block;width:100%;min-height:110px;max-height:32dvh;resize:vertical;padding:12px 14px;background:#081f1be6;border:1px solid #bca76e99;border-radius:9px;color:#f0ecd7;font:16px/1.6 system-ui;pointer-events:auto;user-select:text;-webkit-user-select:text}
+#feedback-comment::placeholder{color:#94ac9c}#feedback-comment:focus-visible{outline:2px solid #e0c88a;outline-offset:3px}#feedback-count{text-align:right;margin-top:4px;font-size:11px}
+.feedback-panel #feedback-storage{font-size:12px;margin:6px 0}.feedback-panel #feedback-status{font:13px/1.6 system-ui;color:#ebd49c;min-height:20px;margin:10px 0}
+.feedback-actions{display:flex;flex-wrap:wrap;gap:10px}.feedback-actions button{min-height:46px;flex:1;border-radius:9px}
+#ck a.home-button{display:block;pointer-events:auto;text-align:center;text-decoration:none;color:#ead49b;background:#102b27de;border:1px solid #c5b47b88;border-radius:9px;padding:12px 16px;min-height:46px;font:14px/1.5 system-ui;margin-top:14px}
+#ck a.home-button:hover{background:#29473c}#ck a.home-button:focus-visible{outline:2px solid #ecd698;outline-offset:3px}
+@media(max-height:550px){.feedback-panel .panel-head h2{margin:6px 0;font-size:23px}.feedback-panel>p{font-size:12px;margin:6px 0 10px}#ck #feedback-comment{min-height:86px}.feedback-panel #feedback-storage{font-size:11px}.feedback-actions{gap:8px}}

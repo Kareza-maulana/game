@@ -12,7 +12,7 @@ npm.cmd start
 
 Buka **http://127.0.0.1:3100**. Jangan membuka dist/index.html melalui file:// karena pemuatan aset memerlukan server lokal. Game berjalan tanpa internet setelah file tersedia. Server/build memakai Node.js 22.
 
-**Ukuran game siap diunggah: 49,42 MB** (folder `dist/`, sebelumnya 64,03 MB). Cukup unggah isi `dist/` ke hosting; folder `assets/`, `karakter/`, `node_modules/`, laporan, dan hasil tes adalah berkas produksi, tidak ikut diunduh pemain. Sebanyak 94 gambar runtime menggunakan WebP lossless pada resolusi semula; setiap piksel RGBA diverifikasi identik. Tidak ada penurunan resolusi atau jumlah warna dalam optimasi ini. Sprite asli pengguna tetap di `karakter/`.
+**Ukuran game siap diunggah: 49,50 MB** (folder `dist/`, sebelumnya 64,03 MB). Cukup unggah isi `dist/` ke hosting; folder `assets/`, `karakter/`, `node_modules/`, laporan, dan hasil tes adalah berkas produksi, tidak ikut diunduh pemain. Sebanyak 94 gambar runtime menggunakan WebP lossless pada resolusi semula; setiap piksel RGBA diverifikasi identik. Tidak ada penurunan resolusi atau jumlah warna dalam optimasi ini. Sprite asli pengguna tetap di `karakter/`.
 
 Build membuat ekspor baru, membersihkan berkas ekspor lama, dan menolak hasil yang mencapai 100.000.000 byte. Laporan ukuran: `docs/build-size.json`; perbandingan: `docs/optimization-report.json`. Raw generasi, PNG yang sudah diganti WebP, master objek besar yang telah digantikan aset runtime, dan preview/NPC lama telah dibersihkan; daftar lengkap beserta hash ada di `docs/asset-cleanup.json`. Prompt dan laporan generasi tetap disimpan.
 
@@ -47,6 +47,12 @@ Game mencoba mengunci **landscape** ketika dibuka pada perangkat sentuh, lalu me
 Dialog memiliki Lanjut, Auto, dan Lewati setelah dua detik. Jurnal dan menu menjeda fisika. Tersapu kabut mengembalikan pemain ke damar tanpa kehilangan serat.
 
 Menu jeda menyediakan volume **Suasana**, **Musik**, **Efek suara**, serta mute. Pengaturannya tersimpan terpisah dari progres. Audio aktif setelah interaksi pertama, memakai ambience per lokasi dan efek langkah, lompat, mendarat, pelita, serta penemuan serat. Kamera menahan lompatan biasa dan perubahan arah kecil, lalu mengikuti perpindahan lantai atau gerakan yang mendekati batas pandangan.
+
+Setelah menamatkan epilog, pop-up **Komentar atau tanggapan** muncul otomatis, termasuk setelah dialog ending emas. Pemain dapat mengirim tanggapan (maksimal 1.500 karakter) ke tabel Supabase `komentar`, melewati formulir, atau membukanya lagi lewat **Tulis tanggapan** pada layar penutup. Payload hanya `{komentar: teks}`; `id` dan `created_at` menggunakan default database. Tidak ada library tambahan: browser memakai REST POST dengan `Prefer: return=minimal`, sehingga tidak memerlukan akses baca komentar. Setelah berhasil, teks yang sama tidak dikirim ulang; komentar berbeda dikirim sebagai tanggapan baru. Tombol **Kembali ke beranda** pada pop-up dan layar penutup membuka `https://login.ukmpp.or.id` di tab yang sama.
+
+Draf tetap disimpan di perangkat sampai server mengonfirmasi sukses. Saat jaringan gagal atau izin RLS menolak, komentar tetap tersedia untuk dicoba lagi; UI tidak menampilkan sukses palsu. Pengiriman tetap bekerja jika localStorage diblokir. Draf lama dari versi lokal dapat dikirim melalui tombol **Kirim tanggapan**; tidak ada pengiriman diam-diam. Timeout 12 detik, tanpa retry otomatis. Penyimpanan lokal memakai `cahayakadiri_feedback` (konfirmasi kirim) dan `cahayakadiri_feedback_draft`.
+
+Konfigurasi Supabase ada di `src/site-config.json`: URL, **anon key publik**, tabel, dan kolom isi. Sebelum digunakan, jalankan `supabase/komentar-insert.sql` di SQL Editor Supabase untuk memberi `anon` kebijakan INSERT komentar nonkosong maksimal 1.500 karakter. RLS tetap aktif; skrip ini tidak memberi akses baca/edit/hapus. Jangan menggunakan service-role key di game. Setelah SQL diterapkan, pengiriman nyata berhasil (HTTP 201). Satu baris berlabel `[UJI INTEGRASI CAHAYA KADIRI]` tersimpan sebagai verifikasi; pengujian browser berikutnya memakai respons simulasi agar tidak menambah komentar uji. Panduan izin: [Supabase RLS](https://supabase.com/docs/guides/database/postgres/row-level-security).
 
 ## Isi kampanye
 
@@ -83,6 +89,7 @@ node tools/campaign-smoke.mjs
 node tools/campaign-playthrough.mjs
 node tools/mobile-check.mjs
 node tools/mobile-regression.mjs
+node tools/feedback-check.mjs
 node tools/cave-regression.mjs
 node tools/polish-check.mjs
 node tools/npc-check.mjs

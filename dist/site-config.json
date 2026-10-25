@@ -1,5 +1,11 @@
 {
-  "ukmUrl": "",
+  "ukmUrl": "https://login.ukmpp.or.id",
   "eventDate": "",
-  "eventName": "UKM Pendidikan & Penalaran"
+  "eventName": "UKM Pendidikan & Penalaran",
+  "feedback": {
+    "url": "https://hikhodkteetrfzswklxs.supabase.co",
+    "anonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhpa2hvZGt0ZWV0cmZ6c3drbHhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEwOTU1MjksImV4cCI6MjA5NjY3MTUyOX0.M7vI2Am0NNeGUvITVUYQo50HE7rA7JR4XbAu6_n590M",
+    "table": "komentar",
+    "commentColumn": "komentar"
+  }
 }

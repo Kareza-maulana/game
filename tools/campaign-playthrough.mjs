@@ -69,7 +69,7 @@ try{
   await move(397);await interact();for(const m of MANUSCRIPT)await page.locator(`[data-relief="${m.id}"]`).click();await page.locator('#check-relief').click();await dialogs();assert.ok((await snap()).state.quests.manuscript);await move(848);await interact();await scene('Epilog');
  }
  if((await snap()).scene==='Epilog'){
-  await move(330);await interact();await dialogs();await move(111);await interact();await dialogs();assert.equal((await snap()).state.completed,true);assert.equal((await snap()).mode,'complete');fs.writeFileSync('test-results/save-completed.json',JSON.stringify((await snap()).state));console.log('PASS: complete campaign through keyboard/pointer interactions.');
+  await move(330);await interact();await dialogs();await move(111);await interact();await dialogs();assert.equal((await snap()).state.completed,true);assert.equal((await snap()).mode,'feedback');await page.locator('#feedback-later').click();assert.equal((await snap()).mode,'complete');fs.writeFileSync('test-results/save-completed.json',JSON.stringify((await snap()).state));console.log('PASS: complete campaign through keyboard/pointer interactions.');
  }
  console.log('CURRENT',await snap());assert.deepEqual(errors,[]);await page.screenshot({path:'test-results/campaign-route.png'});
 }catch(e){const failure=await snap().catch(()=>null);console.log('FAIL',failure,'ERRORS',errors);if(failure)fs.writeFileSync('test-results/save-failure.json',JSON.stringify(failure.state));await page.screenshot({path:'test-results/campaign-route-failure.png'});throw e;}finally{await browser.close();}

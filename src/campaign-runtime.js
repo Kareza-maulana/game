@@ -95,7 +95,23 @@ function createCampaignGame(scene,level,M,css,content){
     }render();
   }
   function debate(){if(q.debate){showDialog([['Ki Samar','Kini ada yang membaca namaku. Terima kasih, Kirana.']]);return;}const index=q.answers.length,a=M.ARGUMENTS[index];choice('Ki Samar',a.question,a.options,pick=>{M.answerArgument(s,pick);save();if(q.debate){showDialog([...D.samarEnd,['Narasi',M.argumentScore(s)===3?'Kelima pilar menyala terang. Ki Samar menulis namanya dan larut menjadi cahaya.':'Pilar terakhir menyala lembut. Perbedaan jawaban tak menghapus keberanian untuk saling mendengar. Ki Samar menulis namanya.']],()=>{flash=.8;save();});}else debate();});}
-  function ending(){if(!q.epilogueRead){toast('Baca dahulu halaman terakhir buku Keong Mas.');return;}s.completed=true;s.golden=s.kidung.length===12;save();const render=()=>{setMode('complete');$('modal').innerHTML=`<section class="panel completion"><div class="title-ornament">✧</div><span class="eyebrow">${s.golden?'ENDING EMAS':'KISAH YANG DITERUSKAN'}</span><h2>Cahaya itu<br>kini ada padamu.</h2><p>Kirana pulang membawa tujuh nilai<br>dan satu nama yang kembali diingat.</p><div class="summary"><span>Serat ${s.serat.length}/7</span><span>Kidung ${s.kidung.length}/12</span><span>${Math.round((s.serat.length+s.kidung.length)/19*100)}%</span></div><div class="stack"><button id="end-journal" class="primary">Buka Jurnal Nusantara →</button><button id="end-explore">Cari ingatan yang terlewat</button>${/^https?:\/\//.test(content.site.ukmUrl)?'<button id="ukm-link">Kembali ke situs UKM PP ↗</button>':''}<button id="end-title">Kembali ke judul</button></div>${content.site.eventDate?`<p>${content.site.eventName} · ${content.site.eventDate}</p>`:''}</section>`;$('end-journal').onclick=()=>journal();$('end-explore').onclick=()=>journal('Perjalanan');$('end-title').onclick=title;if($('ukm-link'))$('ukm-link').onclick=()=>window.open(content.site.ukmUrl,'_blank','noopener,noreferrer');};if(s.golden)showDialog(D.golden,render);else render();}
+  function ending(){
+    if(!q.epilogueRead){toast('Baca dahulu halaman terakhir buku Keong Mas.');return;}
+    s.completed=true;s.golden=s.kidung.length===12;save();
+    const homeUrl=content.site.ukmUrl||'https://login.ukmpp.or.id';
+    function feedback(){
+      setMode('feedback');
+      M.showEndingFeedback({container:$('modal'),signal:abort.signal,homeUrl,feedback:content.site.feedback,onClose:()=>{render();$('end-feedback').focus();}});
+    }
+    function render(){
+      setMode('complete');
+      $('modal').innerHTML=`<section class="panel completion"><div class="title-ornament">&#10023;</div><span class="eyebrow">${s.golden?'ENDING EMAS':'KISAH YANG DITERUSKAN'}</span><h2>Cahaya itu<br>kini ada padamu.</h2><p>Kirana pulang membawa tujuh nilai<br>dan satu nama yang kembali diingat.</p><div class="summary"><span>Serat ${s.serat.length}/7</span><span>Kidung ${s.kidung.length}/12</span><span>${Math.round((s.serat.length+s.kidung.length)/19*100)}%</span></div><div class="stack"><button id="end-feedback" class="primary">Tulis tanggapan</button><button id="end-journal">Buka Jurnal Nusantara &rarr;</button><button id="end-explore">Cari ingatan yang terlewat</button><a id="ukm-link" class="home-button" href="${homeUrl}">Kembali ke beranda &#8599;</a><button id="end-title">Kembali ke judul</button></div></section>`;
+      if(content.site.eventDate){const event=document.createElement('p');event.textContent=content.site.eventName+' / '+content.site.eventDate;$('modal').querySelector('section').append(event);}
+      $('end-feedback').onclick=feedback;$('end-journal').onclick=()=>journal();$('end-explore').onclick=()=>journal('Perjalanan');$('end-title').onclick=title;
+    }
+    const finish=()=>{render();feedback();};
+    if(s.golden)showDialog(D.golden,finish);else finish();
+  }
   function respawn(message='Kabut menyapumu kembali ke Damar Pengingat.'){
     let cp=level.checkpoints[s.checkpoint]||level.checkpoints[0];if(level.id==='Pasar'&&q.chase&&!q.chaseWon){cp=level.checkpoints[1];chaseTime=0;}if(level.id==='Bukit'&&s.serat.includes('Andhap')&&!q.escaped){cp=level.checkpoints[2];escapeTime=0;}
     player.setPosition(...cp);body.setCurrentSpeed(0);body.setCurrentFallSpeed(0);resetCamera();soundscape.cue('respawn');s.oil=Math.max(45,s.oil-15);invulnerable=clock+3;repel=clock+4;keys.clear();pressed.clear();flash=.8;toast(message);history=[];bellPending=null;risingFog=level.height;
@@ -158,8 +174,8 @@ function createCampaignGame(scene,level,M,css,content){
   const allowed=['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','KeyA','KeyD','KeyW','KeyS','KeyZ','Space','KeyX','KeyC','KeyE','KeyJ','Escape','Enter','ShiftLeft','ShiftRight'];
   function keyDown(code){if(keys.has(code))return;keys.add(code);pressed.add(code);if(code==='KeyX')lampDown=clock;
     if(mode==='play'&&['ArrowLeft','ArrowRight','KeyA','KeyD'].includes(code)){if(has('Setya')&&lastTap.key===code&&clock-lastTap.at<.28&&clock>dashCooldown){dash=.22;dashCooldown=clock+.8;soundscape.cue('dash');}lastTap={key:code,at:clock};}}
-  window.addEventListener('keydown',e=>{if(!allowed.includes(e.code))return;e.preventDefault();if(!e.repeat)keyDown(e.code);},{signal:abort.signal});
-  window.addEventListener('keyup',e=>{if(!allowed.includes(e.code))return;e.preventDefault();keys.delete(e.code);release.add(e.code);},{signal:abort.signal});
+  window.addEventListener('keydown',e=>{if(mode==='feedback'||e.target.closest?.('input,textarea,select,[contenteditable=true]')||!allowed.includes(e.code))return;e.preventDefault();if(!e.repeat)keyDown(e.code);},{signal:abort.signal});
+  window.addEventListener('keyup',e=>{if(mode==='feedback'||e.target.closest?.('input,textarea,select,[contenteditable=true]')||!allowed.includes(e.code))return;e.preventDefault();keys.delete(e.code);release.add(e.code);},{signal:abort.signal});
   window.addEventListener('blur',()=>{keys.clear();if(mode==='play')pause();},{signal:abort.signal});
   document.addEventListener('visibilitychange',()=>{if(document.hidden&&mode==='play')pause();},{signal:abort.signal});
   mobile=M.setupMobileControls({ui,signal:abort.signal,down:keyDown,up:(code,emit=true)=>{keys.delete(code);if(emit)release.add(code);},clear:()=>{keys.clear();pressed.clear();release.clear();},onPortrait:()=>{if(mode==='play')pause();},canPlay:()=>mode==='play'});
