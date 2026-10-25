@@ -12,7 +12,7 @@ npm.cmd start
 
 Buka **http://127.0.0.1:3100**. Jangan membuka dist/index.html melalui file:// karena pemuatan aset memerlukan server lokal. Game berjalan tanpa internet setelah file tersedia. Server/build memakai Node.js 22.
 
-**Ukuran game siap diunggah: 87,71 MB** (folder `dist/`, termasuk ilustrasi cerita baru). Cukup unggah isi `dist/` ke hosting; folder `assets/`, `karakter/`, `node_modules/`, laporan, dan hasil tes adalah berkas produksi, tidak ikut diunduh pemain. Sebanyak 94 gambar runtime menggunakan WebP lossless pada resolusi semula; setiap piksel RGBA diverifikasi identik. Tidak ada penurunan resolusi atau jumlah warna dalam optimasi ini. Sprite asli pengguna tetap di `karakter/`.
+**Ukuran game siap diunggah: 87,78 MB** (folder `dist/`, termasuk ilustrasi cerita baru). Cukup unggah isi `dist/` ke hosting; folder `assets/`, `karakter/`, `node_modules/`, laporan, dan hasil tes adalah berkas produksi, tidak ikut diunduh pemain. Sebanyak 94 gambar runtime menggunakan WebP lossless pada resolusi semula; setiap piksel RGBA diverifikasi identik. Tidak ada penurunan resolusi atau jumlah warna dalam optimasi ini. Sprite asli pengguna tetap di `karakter/`.
 
 Build membuat ekspor baru, membersihkan berkas ekspor lama, dan menolak hasil yang mencapai 100.000.000 byte. Laporan ukuran: `docs/build-size.json`; perbandingan: `docs/optimization-report.json`. Raw generasi, PNG yang sudah diganti WebP, master objek besar yang telah digantikan aset runtime, dan preview/NPC lama telah dibersihkan; daftar lengkap beserta hash ada di `docs/asset-cleanup.json`. Prompt dan laporan generasi tetap disimpan.
 
@@ -37,6 +37,8 @@ Untuk mengedit visual, buka **cahaya-kadiri.json** di GDevelop 5. Gerak dan coll
 | Layar penuh | Tombol ⛶ di kanan atas |
 
 Untuk membaca pahatan, berdiri diam di dekatnya dan tahan X sampai isi muncul otomatis. Pahatan goa yang sudah terbaca dapat dibuka ulang dengan C, termasuk setelah melanjutkan save.
+
+Narasi dan dialog memakai mask huruf bertahap dengan suara ketikan lembut. Klik/tap **Tampilkan teks** atau tekan **Enter / C / Spasi** untuk melengkapi kalimat; tekan lagi untuk melanjutkan. **Auto** menunggu teks selesai muncul sebelum menghitung waktu membaca. Suara ketikan mengikuti pengaturan **Efek suara** dan **Suara: mati**. Preferensi perangkat untuk mengurangi animasi langsung menampilkan teks penuh.
 
 Quest goa memiliki empat langkah dan penunjuk tujuan yang mengikuti posisi pemain. **Damar Jurang** adalah obor emas berlabel di teras sebelum jembatan putus: mendekatinya menyimpan perjalanan dan mengisi minyak; C mengisi penuh. Dari teras itu, hadap kanan, tahan X sambil melompat dengan Z, lalu tetap tahan X dan tekan C di dekat Wani. Jika sudah sampai Kilisuci tanpa Wani, ikuti penunjuk ke bawah dan gunakan ↓ + Z untuk turun menembus lantai. Lima cerukan puzzle memakai bentuk lima lilin kecil, berbeda dari obor damar.
 

@@ -85,6 +85,14 @@ Fixture uji regresi dibuat khusus dalam profil browser pengujian. Save pemain di
 - `node tools/fade-check.mjs`: pengukuran opacity tiap frame pada viewport 1280×800 dan 844×390; memeriksa dasar gambar tetap opak, pelepasan gambar lama, klik lanjut berulang, pembukaan ulang ketika fade belum selesai, pergantian scene, serta reduced motion. Hasil tersimpan pada `test-results/fade-report.json`.
 - Salinan visual dialog yang memudar keluar bersifat inert, tanpa ID kontrol ganda, dan dibersihkan setelah animasi. Tidak ada aset gambar baru untuk perubahan ini.
 
+## Mask teks narasi/dialog dan efek suara
+
+- Huruf dibuka bertahap dengan clip mask 100 ms; jeda koma/akhir kalimat dan tempo narasi lebih lambat. Seluruh teks disusun sejak awal agar tinggi kotak tetap stabil.
+- Klik/tap Lanjut atau Enter/C/Spasi pertama melengkapi teks, input berikutnya berpindah baris. Auto menunggu pengungkapan selesai lalu memberi waktu membaca. Auto tidak mengulang animasi saat diaktifkan/dimatikan.
+- Efek ketikan pendek dibuat melalui Web Audio, dibatasi satu suara per 70 ms, mengikuti volume efek dan mute. Tidak menambah unduhan aset suara. Pengungkapan/suara berhenti ketika dialog dilewati, scene dibuang, tab tersembunyi, atau kartu rotasi ponsel menutupi permainan.
+- `node tools/text-check.mjs` memeriksa desktop 1280×800 serta mobile 844×390/568×320, ukuran target sentuh, tata letak tetap, mask parsial, kontrol lanjut, pembatalan suara, mute/volume nol, narasi, batas grapheme, tab tersembunyi, dan reduced motion. Teks utuh tersedia untuk pembaca layar, salinan visual disembunyikan dari pembaca layar.
+- Reduced motion langsung menampilkan teks penuh tanpa rangkaian suara ketikan. Hasil pengujian tersimpan di `test-results/text-report.json`.
+
 ## Belum divalidasi
 
 Perangkat ponsel fisik, semua browser, kinerja laptop kelas menengah, aksesibilitas menyeluruh, seluruh rute pengambilan 12 Kidung/ending emas, serta durasi target 45–60 menit belum diuji. Hasil ini tidak menyatakan semua spesifikasi seni, sinematik, audio dan produksi GDD sudah lengkap; lihat [catatan produksi](PRODUKSI.md).

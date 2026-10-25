@@ -12,8 +12,9 @@ function createStoryPresentation({ui,modal,story,dialogues,sceneId,signal,onText
   function stopText(){cancelAnimationFrame(textFrame);textFrame=0;textRun=null;}
   function textButton(){
     if(!textRun)return;
-    textRun.next.textContent=textRun.count<textRun.glyphs.length?'Tampilkan teks':textRun.last?'Selesai':'Lanjut →';
-    textRun.copy.dataset.revealing=String(textRun.count<textRun.glyphs.length);
+    const revealing=textRun.count<textRun.glyphs.length,label=revealing?'Tampilkan teks':textRun.last?'Selesai':'Lanjut →';
+    if(textRun.next.textContent!==label)textRun.next.textContent=label;
+    if(textRun.copy.dataset.revealing!==String(revealing))textRun.copy.dataset.revealing=String(revealing);
   }
   function finishText(){
     if(!textRun||textRun.count===textRun.glyphs.length)return false;
@@ -25,7 +26,7 @@ function createStoryPresentation({ui,modal,story,dialogues,sceneId,signal,onText
     textFrame=0;const run=textRun;if(!run||signal.aborted||!visible)return;
     const dt=Math.min(64,now-run.stamp);run.stamp=now;
     // Do not catch up with a burst of text/sound when returning from another tab.
-    if(!document.hidden){
+    if(!document.hidden&&!run.copy.closest('[inert]')){
       run.budget+=dt;let voiced=false;
       while(run.count<run.glyphs.length&&run.budget>=run.wait){
         run.budget-=run.wait;const glyph=run.glyphs[run.count++];glyph.node.classList.add('is-revealed');
