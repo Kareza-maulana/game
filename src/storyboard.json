@@ -1,0 +1,15 @@
+{
+  "chapters": {"Prolog":"library","Pasar":"market","Petirtaan":"garden","Bukit":"cave","Gerbang":"gate","Kedaton":"palace","Bangsal":"hall","Putri":"princess","Epilog":"return"},
+  "sequences": {
+    "introProlog":[[0,"library"]], "portal":[[0,"library"],[1,"portal"]],
+    "introPasar":[[0,"market"]], "mbok":[[0,"market"]], "chase":[[0,"market"],[1,"chase"]], "asih":[[0,"sharing"],[2,"market"]],
+    "introPetirtaan":[[0,"garden"]], "jati":[[0,"garden"],[5,"lamp"]], "sabar":[[0,"relief"]], "jujur":[[0,"relief"]],
+    "introBukit":[[0,"cave"]], "kilisuci":[[0,"cave"]], "andhap":[[0,"candles"]],
+    "introGerbang":[[0,"gate"]], "samarGate":[[0,"doubt"],[3,"gate"]],
+    "introKedaton":[[0,"palace"]], "galuh":[[0,"palace"]], "pusaka":[[0,"pusaka"]],
+    "introBangsal":[[0,"hall"]], "samarEnd":[[0,"hall"],[2,"remembered"]],
+    "introPutri":[[0,"princess"]], "putriEnd":[[0,"princess"],[2,"manuscript"]],
+    "introEpilog":[[0,"return"]], "lastbook":[[0,"return"],[1,"serat-asih"],[2,"return"]], "golden":[[0,"return"],[1,"golden"]]
+  },
+  "portraits": {"Kirana":"portrait-kirana","Mbok Rondo":"portrait-mbok","Mbok Rondo Dadapan":"portrait-mbok","Ki Jati":"portrait-jati","Dewi Kilisuci":"portrait-kilisuci","Penjaga":"portrait-penjaga","Penjaga atap":"portrait-penjaga","Ki Samar":"portrait-samar","Candra Kirana":"portrait-putri","Ingatan Candra Kirana":"portrait-putri","Bayang Galuh":"portrait-putri","Anak":"portrait-anak","Anak pasar":"portrait-anak"}
+}

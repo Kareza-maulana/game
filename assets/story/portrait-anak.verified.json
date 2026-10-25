@@ -1,0 +1,18 @@
+{
+  "id": "portrait-anak",
+  "kind": "portrait",
+  "file": "assets/story/portrait-anak.webp",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "size": [
+    384,
+    512
+  ],
+  "bytes": 147718,
+  "sha256": "7c11ad4f492696287c1777a485cc0dbd0a7a422982976e5116bca3065c3165a0",
+  "rgba_sha256": "5bc37e4d6d9fcf8b4cb85f4a2ae76ba663170adb6c600ece3db3ff0c4bd2eac1",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

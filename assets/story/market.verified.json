@@ -1,0 +1,18 @@
+{
+  "id": "market",
+  "kind": "scene",
+  "file": "assets/story/market.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1415300,
+  "sha256": "9a4e7823638b905e33823d0bc1fde4cce9c580af6f6db006dac2336c212abf8c",
+  "rgba_sha256": "3ded5399e76cd5a5f7e275e53917ef6affb9566cc0fdd66ce5dab896cf44d7ab",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

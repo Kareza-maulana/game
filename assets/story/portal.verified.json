@@ -1,0 +1,18 @@
+{
+  "id": "portal",
+  "kind": "scene",
+  "file": "assets/story/portal.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1255572,
+  "sha256": "1e482c3397e7c8ef6b1ce3f90f514e98cd8115299dec09f5fe0d476b874d54c8",
+  "rgba_sha256": "3081e22e5f220433dca6665747acff999a815ab55773d9401545d28222528bc2",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

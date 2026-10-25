@@ -1,0 +1,18 @@
+{
+  "id": "portrait-penjaga",
+  "kind": "portrait",
+  "file": "assets/story/portrait-penjaga.webp",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "size": [
+    384,
+    512
+  ],
+  "bytes": 209060,
+  "sha256": "17e932cf04531b632827f7bedc6223422656f999d6ee945e60e87f9b3c1f4b25",
+  "rgba_sha256": "d766fba67610c640dfd9a200afa3c8368a0fb99d01eaa0b64d87a836855c305b",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

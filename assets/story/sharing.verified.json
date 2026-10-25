@@ -1,0 +1,18 @@
+{
+  "id": "sharing",
+  "kind": "scene",
+  "file": "assets/story/sharing.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1312854,
+  "sha256": "a3a3a42848890e8c5078265fd6846034b0418805c507a49479ff8578fcb3c879",
+  "rgba_sha256": "a58bd644b5e83c61e2fefc0e0170011b4482b4b73554eeb0626994233e3d4678",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

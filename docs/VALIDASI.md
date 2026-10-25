@@ -18,6 +18,9 @@ Pemeriksaan visual/build terbaru dilakukan 28 September 2026 di Windows, Chrome 
 
 ## Pengujian browser
 
+- Ilustrasi cerita (25 Oktober 2026): 27 adegan dan 8 potret GPT, termasuk tujuh kilas balik Serat. `node tools/story-check.mjs` lulus: seluruh 35 WebP dapat didecode, setiap beat storyboard memilih gambar yang benar, potret Kirana berada di kanan dan NPC di kiri. Kontrol dapat dijangkau pada 1280 × 800, 844 × 390 dan 568 × 320. Uji actual game memeriksa fisika berhenti saat dialog, Skip terkunci dua detik, Auto maju, Skip kembali bermain, serta nol request ilustrasi cerita pada layar judul. Reduced motion menonaktifkan fade dan gambar dilepas setelah dialog berakhir. Hasil: `test-results/story-report.json`; screenshot `story-kirana-<width>.png` dan `story-jati-<width>.png`.
+- Seluruh adegan/potret diperiksa melalui contact sheet. Kilas balik Asih dikoreksi agar hanya Mbok yang hadir sebagai manusia; Putri berada dalam wujud keong emas. Native transparency delapan potret, SHA gambar, hash RGBA runtime dan file ekspor diperiksa oleh `python tools/verify-assets.py`. Aset lama serta sprite pengguna tidak berubah. Seluruh 2.460 instance tetap identik dengan geometri sebelum revisi sinematik. Ukuran build akhir sekitar **87,71 MB**, di bawah 100 MB; 35 gambar ini disalin secara terpisah ke `dist/story/` dan tidak masuk preload awal engine.
+- Setelah integrasi ilustrasi, `node tools/campaign-smoke.mjs` lulus untuk sembilan scene tanpa error JavaScript/resource. Pegangan observasi snapshot dibersihkan ketika scene dibuang agar pengujian tidak membaca kamera scene lama saat transisi. `node tools/feedback-check.mjs` juga kembali lulus untuk ending biasa/emas, tiga viewport mobile, penyimpanan lokal diblokir, RLS menolak, jaringan gagal, dan navigasi beranda. Pengujian formulir ini menggunakan respons simulasi; tidak menambah komentar ke Supabase. Seluruh 14 tes logika tetap lulus.
 - Pembaruan 25 Oktober 2026: formulir ending menggunakan POST REST ke Supabase tabel `komentar`, hanya mengirim kolom `komentar` dengan `Prefer: return=minimal`. URL dan anon key publik dikonfigurasi dalam `src/site-config.json`. Pemeriksaan tanpa baris memastikan kolom `id`, `created_at`, dan `komentar` tersedia; metadata OpenAPI dibatasi oleh server. Percobaan INSERT pertama ditolak RLS `42501`. Setelah pengguna menerapkan `supabase/komentar-insert.sql`, satu INSERT berlabel `[UJI INTEGRASI CAHAYA KADIRI]` berhasil dengan HTTP 201. Tidak ada komentar pemain yang diambil/dicatat. Hasil langsung: `test-results/feedback-live.json`.
 - `node tools/feedback-check.mjs` menguji UI dan memakai intersepsi request Supabase agar tidak menambah data uji pada server. Cakupannya: ending biasa/emas, keyboard, payload satu kolom, header API, respons 201/401, jaringan terputus, draf bertahan, localStorage diblokir, pencegahan pengiriman ulang teks yang sama, focus trap/Escape, navigasi beranda, dan tiga viewport sentuh. Respons gagal tidak ditampilkan sebagai sukses; tidak ada retry otomatis. Laporan: `test-results/feedback-report.json`.
 - Build integrasi Supabase: **49,50 MB**, 9 scene, 2.460 instance, 151 resource. Seluruh 14 tes logika lulus. Draf lokal versi lama dimuat sebagai belum terkirim dan hanya dikirim ketika pemain menekan tombol Kirim.
@@ -74,6 +77,13 @@ Berkas di `test-results/`:
 - `save-<Scene>.json`: progres hasil input untuk melanjutkan pengujian bab.
 
 Fixture uji regresi dibuat khusus dalam profil browser pengujian. Save pemain di browser sehari-hari tidak diubah.
+
+## Penghalusan fade ilustrasi dan perpindahan map
+
+- Ilustrasi baru memudar masuk selama 900 ms di atas gambar lama yang tetap opak, sehingga pergantian tidak melewati jeda gelap. Fade memakai kurva percepatan/perlambatan yang lembut.
+- Dialog masuk/keluar 600 ms, latar ilustrasi 720 ms, perpindahan map menutup 650 ms lalu membuka 800 ms setelah ilustrasi tujuan siap. Runtime menunggu durasi penutupan yang dikembalikan komponen, termasuk 0 ms untuk preferensi pengurangan animasi.
+- `node tools/fade-check.mjs`: pengukuran opacity tiap frame pada viewport 1280×800 dan 844×390; memeriksa dasar gambar tetap opak, pelepasan gambar lama, klik lanjut berulang, pembukaan ulang ketika fade belum selesai, pergantian scene, serta reduced motion. Hasil tersimpan pada `test-results/fade-report.json`.
+- Salinan visual dialog yang memudar keluar bersifat inert, tanpa ID kontrol ganda, dan dibersihkan setelah animasi. Tidak ada aset gambar baru untuk perubahan ini.
 
 ## Belum divalidasi
 

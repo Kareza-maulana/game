@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {exportProject} from 'gdcore-tools';
+import {exportStoryAssets} from './story-assets.mjs';
 
 function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>{const p=path.join(dir,e.name);if(e.isSymbolicLink())throw new Error('Refusing symlink: '+p);return e.isDirectory()?files(p):[p];});}
 export function exportGame(project,root){
@@ -11,6 +12,7 @@ export function exportGame(project,root){
   fs.mkdirSync(stage);
   try{
     exportProject(project,stage);
+    exportStoryAssets(stage);
     fs.copyFileSync('src/site-config.json',path.join(stage,'site-config.json'));
     const index=path.join(stage,'index.html');
     fs.writeFileSync(index,fs.readFileSync(index,'utf8').replace('user-scalable=no','user-scalable=no, viewport-fit=cover'));

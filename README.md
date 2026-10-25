@@ -12,7 +12,7 @@ npm.cmd start
 
 Buka **http://127.0.0.1:3100**. Jangan membuka dist/index.html melalui file:// karena pemuatan aset memerlukan server lokal. Game berjalan tanpa internet setelah file tersedia. Server/build memakai Node.js 22.
 
-**Ukuran game siap diunggah: 49,50 MB** (folder `dist/`, sebelumnya 64,03 MB). Cukup unggah isi `dist/` ke hosting; folder `assets/`, `karakter/`, `node_modules/`, laporan, dan hasil tes adalah berkas produksi, tidak ikut diunduh pemain. Sebanyak 94 gambar runtime menggunakan WebP lossless pada resolusi semula; setiap piksel RGBA diverifikasi identik. Tidak ada penurunan resolusi atau jumlah warna dalam optimasi ini. Sprite asli pengguna tetap di `karakter/`.
+**Ukuran game siap diunggah: 87,71 MB** (folder `dist/`, termasuk ilustrasi cerita baru). Cukup unggah isi `dist/` ke hosting; folder `assets/`, `karakter/`, `node_modules/`, laporan, dan hasil tes adalah berkas produksi, tidak ikut diunduh pemain. Sebanyak 94 gambar runtime menggunakan WebP lossless pada resolusi semula; setiap piksel RGBA diverifikasi identik. Tidak ada penurunan resolusi atau jumlah warna dalam optimasi ini. Sprite asli pengguna tetap di `karakter/`.
 
 Build membuat ekspor baru, membersihkan berkas ekspor lama, dan menolak hasil yang mencapai 100.000.000 byte. Laporan ukuran: `docs/build-size.json`; perbandingan: `docs/optimization-report.json`. Raw generasi, PNG yang sudah diganti WebP, master objek besar yang telah digantikan aset runtime, dan preview/NPC lama telah dibersihkan; daftar lengkap beserta hash ada di `docs/asset-cleanup.json`. Prompt dan laporan generasi tetap disimpan.
 
@@ -54,6 +54,10 @@ Draf tetap disimpan di perangkat sampai server mengonfirmasi sukses. Saat jaring
 
 Konfigurasi Supabase ada di `src/site-config.json`: URL, **anon key publik**, tabel, dan kolom isi. Sebelum digunakan, jalankan `supabase/komentar-insert.sql` di SQL Editor Supabase untuk memberi `anon` kebijakan INSERT komentar nonkosong maksimal 1.500 karakter. RLS tetap aktif; skrip ini tidak memberi akses baca/edit/hapus. Jangan menggunakan service-role key di game. Setelah SQL diterapkan, pengiriman nyata berhasil (HTTP 201). Satu baris berlabel `[UJI INTEGRASI CAHAYA KADIRI]` tersimpan sebagai verifikasi; pengujian browser berikutnya memakai respons simulasi agar tidak menambah komentar uji. Panduan izin: [Supabase RLS](https://supabase.com/docs/guides/database/postgres/row-level-security).
 
+Ilustrasi cerita kini hadir saat memasuki sembilan scene, pada aksi/pertemuan penting, dan pada tujuh kilas balik Serat. **27 ilustrasi dan 8 potret** ada di `assets/story/`. Potret Kirana berada di kanan dialog; NPC di kiri; narasi tanpa potret. Bayang Galuh menggunakan potret Putri dengan efek bayangan. Gambar berganti dengan crossfade, map berganti melalui fade singkat, dan preferensi reduced motion mematikan animasi fade. Lanjut, Auto, dan Lewati setelah dua detik tetap tersedia; gameplay berhenti selama dialog. Debat Ki Samar juga memakai potret.
+
+Ilustrasi dimuat sesuai kebutuhan, dengan prefetch hanya gambar berikutnya. Tidak ada unduhan ilustrasi cerita pada layar judul. Ekspor baru berupa WebP lossless pada kanvas maksimum 1280 × 720 untuk adegan dan 384 × 512 untuk potret; semua gambar map/sprite lama dipertahankan. Potret baru adalah satu pose per tokoh, belum empat ekspresi GDD. Cakupan lukisan diperluas atas permintaan pengguna dari batas tujuh gambar pada GDD awal. Sumber urutan: `src/storyboard.json`; prompt: `assets/prompts/story/`; catatan hasil: `assets/prompts/story/generated.json`. Gambar dibuat melalui GPT bawaan `image_gen`, diekspor dengan fungsi fit sprite-gen. Jalur CLI sprite-gen sempat ditolak karena model akun; hasil akhir menggunakan jalur GPT bawaan, bukan API berbayar lain.
+
 ## Isi kampanye
 
 | Area | Quest utama | Material pijakan |
@@ -90,6 +94,7 @@ node tools/campaign-playthrough.mjs
 node tools/mobile-check.mjs
 node tools/mobile-regression.mjs
 node tools/feedback-check.mjs
+node tools/story-check.mjs
 node tools/cave-regression.mjs
 node tools/polish-check.mjs
 node tools/npc-check.mjs

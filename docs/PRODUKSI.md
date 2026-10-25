@@ -55,7 +55,7 @@ Kampanye gameplay ini belum berarti seluruh spesifikasi seni dan produksi GDD se
 
 - Platform memakai material raster GPT berulang; bentuk luar masih mengikuti platform persegi panjang. Ki Jati, Kilisuci dan penjaga memakai animasi dari sheet pengguna; NPC lain masih pose statis dan beberapa tokoh kecil memakai ulang sprite. Bayang Galuh memakai varian warna Putri.
 - Latar generatif belum menjadi tileset modular yang cocok persis dengan semua collision. Atlas, batas 48 warna, dan optimasi tekstur belum final.
-- Kilas balik disampaikan lewat dialog dan efek cahaya. Lukisan tiap serat, hujan, koreografi kamera, tirai, dan animasi cutscene sesuai durasi GDD belum lengkap.
+- Tujuh lukisan kilas balik Serat sudah tersedia, bersama ilustrasi pengantar scene dan momen cerita lain (27 adegan, 8 potret). Hujan, koreografi kamera in-engine dan animasi cutscene sesuai durasi GDD belum lengkap; potret masih satu pose, belum empat ekspresi per tokoh. Cakupan ilustrasi lebih banyak dari batas awal GDD mengikuti permintaan pengguna terbaru.
 - Cahaya memakai sprite radial/kerucut, belum extension Lighting beserta Light obstacle. Dialog memakai DOM, belum Yarn.
 - Puzzle cermin berupa pemulihan petunjuk melalui interaksi. Gerbang memakai transliterasi Latin DAHA. Siklus tidur penjaga disederhanakan menjadi merunduk dan menunggu dua detik.
 - Pengejaran/pelarian memakai batas posisi dan waktu untuk menyapu pemain; variasi rute dan kamera sinematik masih dapat dikembangkan.

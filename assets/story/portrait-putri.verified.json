@@ -1,0 +1,18 @@
+{
+  "id": "portrait-putri",
+  "kind": "portrait",
+  "file": "assets/story/portrait-putri.webp",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "size": [
+    384,
+    512
+  ],
+  "bytes": 249182,
+  "sha256": "ce9cb0a66fe26759e7b0505fccddac4abdbdffa222088a8197d6f5f11bf3667d",
+  "rgba_sha256": "10c00985fabf1863758d65efce546147f48bc828dacb56dee9e2be04885c0af7",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

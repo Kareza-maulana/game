@@ -1,0 +1,18 @@
+{
+  "id": "portrait-kirana",
+  "kind": "portrait",
+  "file": "assets/story/portrait-kirana.webp",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "size": [
+    384,
+    512
+  ],
+  "bytes": 220360,
+  "sha256": "fb9384de44b18067b42efce0c635d9e9f8f0b5d9dbc5c3d2fe4393553bfc54e7",
+  "rgba_sha256": "8a26a1e2d1fee2f339e9307234293cdc1f0a73a52d468f4da2919267519c9a10",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "portrait-mbok",
+  "kind": "portrait",
+  "file": "assets/story/portrait-mbok.webp",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "size": [
+    384,
+    512
+  ],
+  "bytes": 221762,
+  "sha256": "3242f41bba14a6a91819561af38719157598a84cc720904ed94b41aaeb9274c0",
+  "rgba_sha256": "c5bf84e92e402e7bd6f1c5276d405f860e8d98a597c776bd65dde7e9b87ed77c",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "return",
+  "kind": "scene",
+  "file": "assets/story/return.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1245372,
+  "sha256": "b38d8667e2c19d1afd639ca0e5361c1b8035c9ce8f412b0ce70bf9327c4a499f",
+  "rgba_sha256": "fb74f6262c94dcdf901b6939940cfb7365703f50101f534b257d0355bd776e88",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

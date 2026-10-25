@@ -1,0 +1,18 @@
+{
+  "id": "princess",
+  "kind": "scene",
+  "file": "assets/story/princess.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1327908,
+  "sha256": "01fb1350782b54e08a53478ea576559c1eaddb4448fdac4b5ca12f8f70e38881",
+  "rgba_sha256": "094abc9fe98729807a00b37f6d5184f5b71a632c00b8abaf17d3543516b6662b",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

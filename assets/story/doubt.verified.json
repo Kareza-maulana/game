@@ -1,0 +1,18 @@
+{
+  "id": "doubt",
+  "kind": "scene",
+  "file": "assets/story/doubt.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1414266,
+  "sha256": "33394e9a6b0f1e72d86165d93eef4afd9816f7c6dfe00e15265a4ecd86818c61",
+  "rgba_sha256": "6b4aad8843fc35e47b6a16bf1eaf814f01969d5e6ab59cfcf0ff02c2c812d39d",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

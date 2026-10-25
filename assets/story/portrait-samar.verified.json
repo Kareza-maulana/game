@@ -1,0 +1,18 @@
+{
+  "id": "portrait-samar",
+  "kind": "portrait",
+  "file": "assets/story/portrait-samar.webp",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "size": [
+    384,
+    512
+  ],
+  "bytes": 248574,
+  "sha256": "fdb14efcb638a71826035749a67b31edcbb86809f5f1d00c2770309777601ab9",
+  "rgba_sha256": "68034b7a7cc03a4d1b678e6503f8ffaa50d8753895b6343d3d86ee9e668fd666",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

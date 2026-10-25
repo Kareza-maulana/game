@@ -1,0 +1,18 @@
+{
+  "id": "serat-wani",
+  "kind": "scene",
+  "file": "assets/story/serat-wani.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1520288,
+  "sha256": "854912dda0fc4f4c4069e587977cbed950fc379a6b8cea99f80630f6d9dcca1f",
+  "rgba_sha256": "b1d1d7d4eda46bd2d233bed67cb2db78426510484fb6edb8a10e03b9d962cd82",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

@@ -1,0 +1,394 @@
+[
+  {
+    "id": "library",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. She returns old books in a richly detailed Kediri library loft at rainy night, a circular blue window, warm desk lamp and dusty timber shelves. Quiet curious mood.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/library.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-a5541193-468e-42c5-9640-ad277593c7e4.png",
+    "runtimeFile": "assets/story/library.webp"
+  },
+  {
+    "id": "portal",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. She opens an old illustrated book at the library desk; loose unreadable glowing glyph-shaped sparks spiral out of the pages around her hands, a luminous gold portal opening among shelves, rain outside. Astonishment, dramatic but gentle.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/library.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-e72ab7e0-d0d8-4c40-94ef-b1dd3ae1116f.png",
+    "runtimeFile": "assets/story/portal.webp"
+  },
+  {
+    "id": "market",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Mbok Rondo is an elderly Javanese woman with a grey bun, cream shoulder shawl, brown top and brown-gold batik sarong, kind lined face. Kirana arrives at a lively medieval East Javanese river market. Mbok offers a banana-leaf breakfast from a timber food stall, clay pots, bamboo roofs, baskets of rice, distant river boats. Warm amber dawn, welcoming scene.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/mbok.webp",
+      "assets/art/market.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-c33e54b9-913e-4523-885c-c3c5f57b5341.png",
+    "runtimeFile": "assets/story/market.webp"
+  },
+  {
+    "id": "chase",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. She leaps carefully across tiled and bamboo market rooftops after a black langur carrying a cloth bundle, the Brantas river and a wooden quay beyond. Energetic diagonal composition, no weapons or injury.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/lutung.webp",
+      "assets/art/market.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-edd94788-6a4e-4c0b-9b61-705c1f70eee1.png",
+    "runtimeFile": "assets/story/chase.webp"
+  },
+  {
+    "id": "sharing",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Mbok Rondo is an elderly Javanese woman with a grey bun, cream shoulder shawl, brown top and brown-gold batik sarong, kind lined face. On a timber river quay Kirana kneels and shares her breakfast with a small black langur; it gently returns Mbok's cloth bundle. Mbok watches with a warm knowing smile in the background. Intimate act of kindness.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/mbok.webp",
+      "assets/art/lutung.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-247ca570-0598-4411-b2d4-cd4a08ab0d99.png",
+    "runtimeFile": "assets/story/sharing.webp"
+  },
+  {
+    "id": "garden",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Ki Jati is an elderly Javanese gardener with a short white beard, brown striped headcloth, dark brown traditional jacket with golden ties, batik sarong and walking stick. She enters an ancient moss-covered Javanese bathing garden and notices the elderly gardener beside a golden lamp. Carved relief walls, banyan roots, flowering vines, still tiered water, a few stones fading softly into mist.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/npc/ki-jati/idle-01.webp",
+      "assets/art/petirtaan.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-0ab1d9b5-84c4-4668-b0f3-34d05e478088.png",
+    "runtimeFile": "assets/story/garden.webp"
+  },
+  {
+    "id": "lamp",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Ki Jati is an elderly Javanese gardener with a short white beard, brown striped headcloth, dark brown traditional jacket with golden ties, batik sarong and walking stick. Emotional close-medium scene: Ki Jati, a tear at the corner of his eye, places a small glowing bronze oil lamp into Kirana's open hands. A family-shaped relief is fading on the carved wet stone wall behind them. No modern candles.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/npc/ki-jati/idle-01.webp",
+      "assets/art/petirtaan.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-ae6c6bbb-081a-40e4-a77c-90f0d47b4012.png",
+    "runtimeFile": "assets/story/lamp.webp"
+  },
+  {
+    "id": "relief",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Ki Jati is an elderly Javanese gardener with a short white beard, brown striped headcloth, dark brown traditional jacket with golden ties, batik sarong and walking stick. The bathing garden fills with clear water as Kirana shines her bronze oil lamp onto restored carved narrative reliefs. Ki Jati stands quietly beside her, golden reflections, moss and cascades, relief panels becoming visible without legible words.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/npc/ki-jati/idle-01.webp",
+      "assets/art/petirtaan.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-89b4ffb1-ba10-4203-a39d-edf7d8a91ffe.png",
+    "runtimeFile": "assets/story/relief.webp"
+  },
+  {
+    "id": "cave",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Dewi Kilisuci is a serene mature Javanese hermit in the flowing white-and-gold robes, elaborate gold hair ornament and swirling pale sash of the supplied sprite. Inside Selomangleng cave, Kirana listens to the hermit beside ancient weathered reliefs, hanging roots and oil lamps. A cool beam from the cave entrance meets warm gold lamplight. Calm, grave conversation about remembering stories.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/npc/kilisuci/idle-01.webp",
+      "assets/art/hill.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-0a153881-358d-46f7-8331-ea635c59eaf1.png",
+    "runtimeFile": "assets/story/cave.webp"
+  },
+  {
+    "id": "candles",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Dewi Kilisuci is a serene mature Javanese hermit in the flowing white-and-gold robes, elaborate gold hair ornament and swirling pale sash of the supplied sprite. Kirana lowers her lamp humbly to light exactly FIVE small candle niches carved into the cave wall; Kilisuci watches from behind. The five tiny flames form a clear arc, dust and carved stone, urgent pale mist gathering toward an upper escape passage.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/npc/kilisuci/idle-01.webp",
+      "assets/art/hill.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-57a48885-938d-4730-82f1-b1eb2c56184a.png",
+    "runtimeFile": "assets/story/candles.webp"
+  },
+  {
+    "id": "gate",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. A Javanese palace guard in dark bronze-and-gold armour, a pointed gold helmet and red sash, holding a long spear, matching the reference. A monumental weathered red-brick split gate of medieval Dhaha at sunset. Kirana and the spear guard face FOUR carved stone dials; a water jug and bronze mirror nearby, mossed reliefs, high watchtower. No readable letters.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/npc/penjaga/idle-01.webp",
+      "assets/art/gate.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-4224b4a4-d676-4bc5-8256-56e6e5dbbf10.png",
+    "runtimeFile": "assets/story/gate.webp"
+  },
+  {
+    "id": "doubt",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Ki Samar is a weary middle-aged Javanese scholar with stubble, dark purple hooded robe with gold geometric edging, holding manuscripts and a writing brush. Ki Samar appears out of thin violet mist beneath the Dhaha brick gateway at sunset and calmly questions Kirana. Her oil lamp holds a small warm pool of light between them, fading gold sky and manuscript motes. Philosophical tension, not combat.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/ki-samar.webp",
+      "assets/art/gate.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-f9ec632e-1b81-45cf-b048-98c84a3f9500.png",
+    "runtimeFile": "assets/story/doubt.webp"
+  },
+  {
+    "id": "palace",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Kirana explores a deep shadowy carved timber palace corridor. A translucent purple feminine shadow resembling the princess follows one step behind, distant bronze bells, empty footprints in dust, mist and tiny lamp reflections. Evocative all-ages mystery.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/putri.webp",
+      "assets/art/palace.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-22db84af-d732-436a-a6c5-561c6a0cdb8c.png",
+    "runtimeFile": "assets/story/palace.webp"
+  },
+  {
+    "id": "pusaka",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. In the palace attic Kirana reaches toward an open carved heirloom cabinet filled with blank scrolls. One old manuscript glows faintly under her hovering hand. Show a delicate fading ornamental name-like mark, never readable text. Dust, carved teak and warm oil light.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/palace.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-f38c43cc-6633-4c5b-91ff-895f1bc9e5b9.png",
+    "runtimeFile": "assets/story/pusaka.webp"
+  },
+  {
+    "id": "hall",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Ki Samar is a weary middle-aged Javanese scholar with stubble, dark purple hooded robe with gold geometric edging, holding manuscripts and a writing brush. A vast dark Javanese audience hall with exactly FIVE stone pillars receding in depth; some glow with gold remembered symbols while others dissolve into violet fog. Kirana raises her lamp toward the calm hooded scholar at the far end.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/ki-samar.webp",
+      "assets/art/palace.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-32e24b65-3deb-4a93-b574-3068a932cf4c.png",
+    "runtimeFile": "assets/story/hall.webp"
+  },
+  {
+    "id": "remembered",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Ki Samar is a weary middle-aged Javanese scholar with stubble, dark purple hooded robe with gold geometric edging, holding manuscripts and a writing brush. Emotional resolution: Kirana offers a blank manuscript and a writing brush to the weary hooded scholar. He looks moved, his outline gently dissolving into warm golden specks as five pillars brighten behind. No fighting and no readable letters.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/ki-samar.webp",
+      "assets/art/palace.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-e62ad313-29b2-44df-92fa-08cd8e796458.png",
+    "runtimeFile": "assets/story/remembered.webp"
+  },
+  {
+    "id": "princess",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Moonlit royal chamber, a faint half-transparent Candra Kirana sits beside a carved window. Modern Kirana enters carrying seven glowing manuscript fragments and the small oil lamp. Blue moonlight, gold embroidery, restrained hope.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/putri.webp",
+      "assets/art/bedroom.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-3a399649-6606-49b4-b55e-f60594b6dfc6.png",
+    "runtimeFile": "assets/story/princess.webp"
+  },
+  {
+    "id": "manuscript",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Kirana and the now fully restored princess face one another across a low carved writing table. Exactly SEVEN luminous manuscript fragments fit together into one complete illustrated book. The princess gestures kindly toward a dawn-lit portal, white-gold cloth, batik and warm light.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/putri.webp",
+      "assets/art/bedroom.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-d0414abe-256f-4d2a-bb0c-be7b58b3210f.png",
+    "runtimeFile": "assets/story/manuscript.webp"
+  },
+  {
+    "id": "return",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Back in the same old Kediri library after the rain, Kirana sits at the desk and smiles at the restored book, pale gold dawn through the round window, wet city roofs outside, stacked books and warm lamp. Quiet return, backpack beside her.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/library.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-ec645de3-90d5-4071-bf5f-a86cadbfb534.png",
+    "runtimeFile": "assets/story/return.webp"
+  },
+  {
+    "id": "golden",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. A young Indonesian child with short black hair and a simple green shirt sits beside Kirana at the library desk in soft dawn light. Kirana opens the restored illustrated storybook for the child, both absorbed in the story, shelves and a round window behind.",
+    "references": [
+      "karakter/IDLE/player.png",
+      "assets/art/library.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-4f61dc29-94b5-4dd9-ac46-e6c46598404a.png",
+    "runtimeFile": "assets/story/golden.webp"
+  },
+  {
+    "id": "serat-asih",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Mbok Rondo is an elderly Javanese woman with a grey bun, cream shoulder shawl, brown top and brown-gold batik sarong, kind lined face. Historical flashback, NO MODERN KIRANA: Mbok Rondo finds a tiny glowing golden snail beside a green rice-field stream and carefully lifts it into her palms. Humble bamboo hut beyond, gentle late afternoon warmth, kindness shown through her action.",
+    "references": [
+      "assets/art/mbok.webp",
+      "assets/art/putri.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-5f631618-1c10-4bf0-8db6-d080ba8ce1c1.png",
+    "runtimeFile": "assets/story/serat-asih.webp",
+    "correctedFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-5e9ac225-5338-4611-bd33-a66f1c6cc005.png",
+    "correction": "Removed human princess: at this beat she is the golden snail."
+  },
+  {
+    "id": "serat-sabar",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Historical flashback, NO MODERN KIRANA: a tiny golden snail rests safely in a simple earthenware bowl inside Mbok's modest bamboo home. A delicate memory of Candra Kirana is reflected in the water, waiting quietly as morning light travels across the floor.",
+    "references": [
+      "assets/art/putri.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-a8922d70-667b-4e83-a403-0b196fd562b1.png",
+    "runtimeFile": "assets/story/serat-sabar.webp"
+  },
+  {
+    "id": "serat-jujur",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Historical flashback, NO MODERN KIRANA: Candra Kirana stands calmly before a small distant row of suspicious royal courtiers, keeping an open hand on her heart as accusations are implied by their gestures. Bright clear gold light on her face, shadow behind, dignity and truth, no violence.",
+    "references": [
+      "assets/art/putri.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-238c86fd-08f8-4537-8f8c-9ebbd401a68e.png",
+    "runtimeFile": "assets/story/serat-jujur.webp"
+  },
+  {
+    "id": "serat-wani",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Historical flashback, NO MODERN KIRANA: Candra Kirana steps alone out of an ancient red-brick palace gate toward an unknown winding forest path, holding the edge of her white-gold shawl. Vast blue misty hills ahead, a small determined silhouette, brave hopeful dawn.",
+    "references": [
+      "assets/art/putri.webp",
+      "assets/art/gate.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-6cec62a0-e19a-4395-b022-2a6fdc9fdee8.png",
+    "runtimeFile": "assets/story/serat-wani.webp"
+  },
+  {
+    "id": "serat-andhap",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Mbok Rondo is an elderly Javanese woman with a grey bun, cream shoulder shawl, brown top and brown-gold batik sarong, kind lined face. Historical flashback, NO MODERN KIRANA: inside a humble bamboo house the princess quietly prepares rice and helps with simple cooking, her elaborate outer shawl set aside modestly. Mbok watches gratefully from the doorway. Steam, banana leaves, earthenware hearth, warm humility.",
+    "references": [
+      "assets/art/putri.webp",
+      "assets/art/mbok.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-611118b7-71f3-4461-99a1-f552827fa135.png",
+    "runtimeFile": "assets/story/serat-andhap.webp"
+  },
+  {
+    "id": "serat-setya",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Historical flashback, NO MODERN KIRANA: the princess and a young Javanese prince in restrained traditional gold-brown court clothes clasp hands in a solemn promise before a carved palace threshold. Sunset, a path about to separate them, loyal tenderness, no wedding or modern jewellery.",
+    "references": [
+      "assets/art/putri.webp",
+      "assets/art/palace.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-0f659a22-c8cf-48d7-bac8-7650eb38b41d.png",
+    "runtimeFile": "assets/story/serat-setya.webp"
+  },
+  {
+    "id": "serat-wicaksana",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. Wide cinematic 16:9 canvas, approximately 1280x720. Keep the principal faces and action within the central 80% and upper 70%, leaving the lower quarter quieter for a dialogue overlay. One coherent scene with full environmental detail. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Mbok Rondo is an elderly Javanese woman with a grey bun, cream shoulder shawl, brown top and brown-gold batik sarong, kind lined face. Historical flashback, NO MODERN KIRANA: the princess and prince reunite beside Mbok's modest home while a storyteller shares their illustrated manuscript with children in the foreground. A living story carried to the next generation, flowing green landscape, golden light and quiet wisdom.",
+    "references": [
+      "assets/art/putri.webp",
+      "assets/art/mbok.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-921206f0-f3e7-41c9-9410-563096626011.png",
+    "runtimeFile": "assets/story/serat-wicaksana.webp"
+  },
+  {
+    "id": "portrait-kirana",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. A single isolated waist-up dialogue character cutout, genuine transparent background, centered within generous margin, consistent soft top-left light. Portrait canvas approximately 768x1024. Kirana is a young Indonesian university woman, long black high ponytail, blue-and-white varsity jacket over white shirt, dark trousers, white sneakers, tan backpack. Match the supplied player sprite exactly; she is NOT the historical princess. Waist-up three-quarter portrait facing slightly LEFT, thoughtful friendly determination. Both shoulders and the top of the ponytail fully visible.",
+    "references": [
+      "karakter/IDLE/player.png"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-fc247629-515f-45f9-a143-766f17484cbd.png",
+    "runtimeFile": "assets/story/portrait-kirana.webp"
+  },
+  {
+    "id": "portrait-mbok",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. A single isolated waist-up dialogue character cutout, genuine transparent background, centered within generous margin, consistent soft top-left light. Portrait canvas approximately 768x1024. Mbok Rondo is an elderly Javanese woman with a grey bun, cream shoulder shawl, brown top and brown-gold batik sarong, kind lined face. Waist-up three-quarter portrait facing slightly RIGHT, welcoming smile, holding a little banana-leaf meal.",
+    "references": [
+      "assets/art/mbok.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-242e172f-8dd4-42dc-b29b-4a16a9501d6a.png",
+    "runtimeFile": "assets/story/portrait-mbok.webp"
+  },
+  {
+    "id": "portrait-jati",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. A single isolated waist-up dialogue character cutout, genuine transparent background, centered within generous margin, consistent soft top-left light. Portrait canvas approximately 768x1024. Ki Jati is an elderly Javanese gardener with a short white beard, brown striped headcloth, dark brown traditional jacket with golden ties, batik sarong and walking stick. Waist-up three-quarter portrait facing slightly RIGHT, tender worried eyes, one hand resting on his walking stick.",
+    "references": [
+      "assets/npc/ki-jati/idle-01.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-9273d675-4eb9-499c-b023-84707ddc65b9.png",
+    "runtimeFile": "assets/story/portrait-jati.webp"
+  },
+  {
+    "id": "portrait-kilisuci",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. A single isolated waist-up dialogue character cutout, genuine transparent background, centered within generous margin, consistent soft top-left light. Portrait canvas approximately 768x1024. Dewi Kilisuci is a serene mature Javanese hermit in the flowing white-and-gold robes, elaborate gold hair ornament and swirling pale sash of the supplied sprite. Waist-up three-quarter portrait facing slightly RIGHT, composed wise expression, gold hairpiece and flowing sash contained within the image.",
+    "references": [
+      "assets/npc/kilisuci/idle-01.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-5246871e-a12e-4cbe-b858-d752d7df2baf.png",
+    "runtimeFile": "assets/story/portrait-kilisuci.webp"
+  },
+  {
+    "id": "portrait-penjaga",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. A single isolated waist-up dialogue character cutout, genuine transparent background, centered within generous margin, consistent soft top-left light. Portrait canvas approximately 768x1024. A Javanese palace guard in dark bronze-and-gold armour, a pointed gold helmet and red sash, holding a long spear, matching the reference. Waist-up three-quarter portrait facing slightly RIGHT, alert but approachable, helmet fully visible and spear held near one shoulder.",
+    "references": [
+      "assets/npc/penjaga/idle-01.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-a4edd4f5-36a8-4c59-bdec-3e619f7c2f7a.png",
+    "runtimeFile": "assets/story/portrait-penjaga.webp"
+  },
+  {
+    "id": "portrait-samar",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. A single isolated waist-up dialogue character cutout, genuine transparent background, centered within generous margin, consistent soft top-left light. Portrait canvas approximately 768x1024. Ki Samar is a weary middle-aged Javanese scholar with stubble, dark purple hooded robe with gold geometric edging, holding manuscripts and a writing brush. Waist-up three-quarter portrait facing slightly RIGHT, tired reflective eyes, brush and manuscript close to his chest.",
+    "references": [
+      "assets/art/ki-samar.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-fc5a3246-cefa-4359-a4c2-e5bacbcbecc4.png",
+    "runtimeFile": "assets/story/portrait-samar.webp"
+  },
+  {
+    "id": "portrait-putri",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. A single isolated waist-up dialogue character cutout, genuine transparent background, centered within generous margin, consistent soft top-left light. Portrait canvas approximately 768x1024. Candra Kirana is the historical Javanese princess with long black hair, gold floral crown, white-and-gold wrapped court dress and dark brown gold batik skirt, as in the supplied reference. Waist-up three-quarter portrait facing slightly RIGHT, calm compassionate expression, crown and shoulders fully inside the frame.",
+    "references": [
+      "assets/art/putri.webp"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-156d319a-1066-4d12-8867-f54684769261.png",
+    "runtimeFile": "assets/story/portrait-putri.webp"
+  },
+  {
+    "id": "portrait-anak",
+    "provider": "GPT built-in image_gen",
+    "prompt": "Create ONE finished illustration for Cahaya Kadiri. Rich handcrafted painterly 16-bit pixel art, clearly stepped pixel edges, detailed material texture, Indonesian/Javanese cultural setting, expressive coherent anatomy and atmospheric lighting matching the attached game references. Not a sprite sheet, no panels, no collage, no captions, no UI, no borders, no watermark or readable text. A single isolated waist-up dialogue character cutout, genuine transparent background, centered within generous margin, consistent soft top-left light. Portrait canvas approximately 768x1024. A young Indonesian child with short black hair and a simple green shirt, waist-up three-quarter portrait facing slightly RIGHT, curious bright eyes, holding a closed storybook. Same pixel-art style as the reference, no adult features.",
+    "references": [
+      "karakter/IDLE/player.png"
+    ],
+    "originalFile": "C:\\Users\\po\\.codex\\generated_images\\01a0bfa4-f680-7501-b063-d47443fd5cf5\\exec-ec901312-712f-4e6c-b689-dc72a12793a8.png",
+    "runtimeFile": "assets/story/portrait-anak.webp"
+  }
+]

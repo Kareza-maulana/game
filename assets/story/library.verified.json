@@ -1,0 +1,18 @@
+{
+  "id": "library",
+  "kind": "scene",
+  "file": "assets/story/library.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1201726,
+  "sha256": "6326b448e9d6d1b295e583978c56ef073e686ee87600f870731177b37d3fce5b",
+  "rgba_sha256": "5238173183e560dd45c15f888d69cfab48cba0fe4c105a725761f8e04716f09a",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

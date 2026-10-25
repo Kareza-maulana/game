@@ -1,0 +1,18 @@
+{
+  "id": "relief",
+  "kind": "scene",
+  "file": "assets/story/relief.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1501112,
+  "sha256": "eb43a6a9f5c64e609ec50644ac27e98e8c11f44892763dd4ebb9293013330b5b",
+  "rgba_sha256": "1f6b548ec8ba3d05dab9867931f8219fdd0a16f1122b020cb4851705cc64227b",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

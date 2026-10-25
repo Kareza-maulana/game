@@ -1,0 +1,18 @@
+{
+  "id": "portrait-kilisuci",
+  "kind": "portrait",
+  "file": "assets/story/portrait-kilisuci.webp",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "size": [
+    384,
+    512
+  ],
+  "bytes": 299052,
+  "sha256": "bfd17f96040a1d4a965372d0897565f5254b10fc466d03176df317a6c0296830",
+  "rgba_sha256": "e33ee36ca68f9f2e5789ca1e393a8cbb09b02a435218cfffd12f69c8c2ff915b",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

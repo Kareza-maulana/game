@@ -1,0 +1,18 @@
+{
+  "id": "portrait-jati",
+  "kind": "portrait",
+  "file": "assets/story/portrait-jati.webp",
+  "sourceSize": [
+    1086,
+    1448
+  ],
+  "size": [
+    384,
+    512
+  ],
+  "bytes": 186266,
+  "sha256": "499d460f5c9655f583f8be13b1965dc59dc39bb7653c05a9918a869c14026ae9",
+  "rgba_sha256": "b559e9f974f62219a617ede44fbd6227714dc9939d1c0d892c8fc288b6470fb8",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

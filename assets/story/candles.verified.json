@@ -1,0 +1,18 @@
+{
+  "id": "candles",
+  "kind": "scene",
+  "file": "assets/story/candles.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1438882,
+  "sha256": "3b5119596ed42ce1726229637155b3590243f235f9b3d15564d4c15815d9538c",
+  "rgba_sha256": "e0d419c1b2fcbb23ba78d3bb7ee1f0ed59f3bf80021127199400216e5eaa1038",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

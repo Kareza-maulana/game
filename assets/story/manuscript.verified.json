@@ -1,0 +1,18 @@
+{
+  "id": "manuscript",
+  "kind": "scene",
+  "file": "assets/story/manuscript.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1366106,
+  "sha256": "5ddc552c86fc7f93b7274f309b8c5bffb24d2bc1dff41307e3bf4c5bb3f480e1",
+  "rgba_sha256": "e32cdec650dbf627e5a7e7429c0997b82fe8e8adb5597d5e36b4668e6fabe81d",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "serat-asih",
+  "kind": "scene",
+  "file": "assets/story/serat-asih.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1389924,
+  "sha256": "13a6183496d1ee188b3898999bbc2380b20a776ae2d167e19a03619b8366b331",
+  "rgba_sha256": "81e701c5c6d26645a228aee75e2614809faec55c060aac469863255cc6334080",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

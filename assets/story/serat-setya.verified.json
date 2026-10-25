@@ -1,0 +1,18 @@
+{
+  "id": "serat-setya",
+  "kind": "scene",
+  "file": "assets/story/serat-setya.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1315086,
+  "sha256": "b7ab7fcbb4934af5c56dec4277f6346c20a99ac9653090a0561c4e0bc32cea33",
+  "rgba_sha256": "b52a216d935c1903659a3df772b0300ec5b5b83749ccdb969a91fde9a597daaa",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

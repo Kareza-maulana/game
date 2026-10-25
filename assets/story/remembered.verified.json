@@ -1,0 +1,18 @@
+{
+  "id": "remembered",
+  "kind": "scene",
+  "file": "assets/story/remembered.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1328988,
+  "sha256": "50490af3616bb95a065f05946566ca129fe5841a8130a02a806fc70edf3deba8",
+  "rgba_sha256": "9cc3182b4fdfd82342d3e8864dd0959a4d5f29efa08b19e031334ee788807c83",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

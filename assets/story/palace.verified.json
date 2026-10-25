@@ -1,0 +1,18 @@
+{
+  "id": "palace",
+  "kind": "scene",
+  "file": "assets/story/palace.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1177954,
+  "sha256": "65878c373b61502bdf0085c0afd6f9663bb893b87ebb212dfe1df4bf77ba7193",
+  "rgba_sha256": "7c84b44ddddbb0b7bccc8cf4f5d5fef9883d43d5b8f62e3b7c1ff7ea662aa5a6",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

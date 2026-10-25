@@ -1,0 +1,18 @@
+{
+  "id": "gate",
+  "kind": "scene",
+  "file": "assets/story/gate.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1538232,
+  "sha256": "d157f7a89631b5d84f7ab4e77a8133a0522396839d2d243fbc9e8483210dc20a",
+  "rgba_sha256": "1eaa145755c693ed688bd112552714f2cec8afa517cf35e6318051c27707a326",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

@@ -20,6 +20,17 @@ for clip in read('assets/npc/manifest.json').values():
     assert sha((ROOT / clip['source']).read_bytes()) == clip['sha256'], 'NPC sheet changed'
     for frame in clip.get('runtimeFrames', clip['frames']):
         assert (ROOT / frame).is_file(), f'Missing NPC frame: {frame}'
+story_reports = list((ROOT / 'assets/story').glob('*.verified.json'))
+for report in story_reports:
+    entry = json.loads(report.read_text(encoding='utf-8'))
+    file = ROOT / entry['file']
+    assert sha(file.read_bytes()) == entry['sha256'], f'Story asset changed: {file}'
+    with Image.open(file) as image:
+        assert list(image.size) == entry['size']
+        assert sha(image.convert('RGBA').tobytes()) == entry['rgba_sha256']
+        if entry['kind'] == 'portrait':
+            assert image.convert('RGBA').getchannel('A').getextrema()[0] == 0, 'Portrait lost transparency'
+    assert (ROOT / 'dist/story' / file.name).read_bytes() == file.read_bytes(), f'Export is stale: {file}'
 project = read('cahaya-kadiri.json')
 for resource in project['resources']['resources']:
     if resource.get('file'):
@@ -27,4 +38,4 @@ for resource in project['resources']['resources']:
 files = [p for p in (ROOT / 'dist').rglob('*') if p.is_file()]
 size = sum(p.stat().st_size for p in files)
 assert size < 100_000_000, f'100 MB budget exceeded: {size}'
-print(f'PASS: {len(manifest)} lossless RGBA hashes; original sprites intact; all resources exist; dist {size:,} bytes <100 MB.')
+print(f'PASS: {len(manifest)} existing + {len(story_reports)} story RGBA hashes; original sprites intact; all resources exist; dist {size:,} bytes <100 MB.')

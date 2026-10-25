@@ -1,0 +1,18 @@
+{
+  "id": "garden",
+  "kind": "scene",
+  "file": "assets/story/garden.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1562712,
+  "sha256": "6043f6f352ca6a6f50348e349281d7abdf9f7975d1d911a531faacd134cd509d",
+  "rgba_sha256": "541cdc51cfa40a6a43ae311b2179bd3c42e11ea8226f6d75cd4a878bdab0fb69",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

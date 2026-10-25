@@ -1,0 +1,18 @@
+{
+  "id": "serat-wicaksana",
+  "kind": "scene",
+  "file": "assets/story/serat-wicaksana.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1401456,
+  "sha256": "b2781dc73a1719cf4df61d924944ef88ccd9443ab75d6421241b6949519cd354",
+  "rgba_sha256": "af19fe447974f66654eb4a00d41a3a73c5105b12efa601d067e91e716fa04968",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "serat-sabar",
+  "kind": "scene",
+  "file": "assets/story/serat-sabar.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1192222,
+  "sha256": "9a8df120790a35fd6cbcc37be99ec0d308ada0312729b92c5cfa55ed193c0a36",
+  "rgba_sha256": "e514808ec3882d7bcd68650b7f959c96e445b81feaec9ba583b5df6e51c952e4",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

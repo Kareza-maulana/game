@@ -1,0 +1,18 @@
+{
+  "id": "serat-andhap",
+  "kind": "scene",
+  "file": "assets/story/serat-andhap.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1156576,
+  "sha256": "a289f3e8f845f6215f0707eeb6622ea6d7a12d94bb698e48c67a92627b86178c",
+  "rgba_sha256": "e5affe96a9d358aef7fcbb0ace0125ed6f7d94367487fe7504e8646738c5eb78",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

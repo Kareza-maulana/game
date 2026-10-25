@@ -1,0 +1,18 @@
+{
+  "id": "golden",
+  "kind": "scene",
+  "file": "assets/story/golden.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1134732,
+  "sha256": "9ba28b33e1062dd7ecab1c290a674aa010e8b756881fb5b8c1bdc2bf31eca690",
+  "rgba_sha256": "cffd75efe8f5ecea1e7ac23506336c8a23e55b1d634a91db03320532a0b0b671",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

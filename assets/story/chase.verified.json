@@ -1,0 +1,18 @@
+{
+  "id": "chase",
+  "kind": "scene",
+  "file": "assets/story/chase.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1489524,
+  "sha256": "7b6cd7fa7d3f9074f71fa98eb22c6d35fa5958015daa85d104fb88290d200b38",
+  "rgba_sha256": "e41115d89642a531b52ed8f27694fec9296b33ea92c939f1b13a32ae5a2e2e60",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

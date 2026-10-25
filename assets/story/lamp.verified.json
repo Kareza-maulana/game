@@ -1,0 +1,18 @@
+{
+  "id": "lamp",
+  "kind": "scene",
+  "file": "assets/story/lamp.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1526426,
+  "sha256": "c28e29d69357728009270d917ef2dbc75174b7379d6928e00b64a04291439469",
+  "rgba_sha256": "2c13400c6c9b314e137ccb6c97ed8ede861502760fc61d453476cf2eab97ac04",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

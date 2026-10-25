@@ -1,0 +1,18 @@
+{
+  "id": "hall",
+  "kind": "scene",
+  "file": "assets/story/hall.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1232234,
+  "sha256": "eb4e7516f5c0d137c9071dc8921ebb1f94e0ada7962ff2e0f08ecea34c8709b3",
+  "rgba_sha256": "262f9a3a6fccb3453594e086af4a92d904828e880b6af248a7ff96c6313ac138",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

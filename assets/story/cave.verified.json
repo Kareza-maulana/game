@@ -1,0 +1,18 @@
+{
+  "id": "cave",
+  "kind": "scene",
+  "file": "assets/story/cave.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1438194,
+  "sha256": "1ced81e73c57e784abd8c024fba54e158e313edca244828d75a57bcf874967ba",
+  "rgba_sha256": "8c9a5135194c8ac6ba70301e7a3ce9d0edad707fcb1ea975ab565d0606adfef5",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}

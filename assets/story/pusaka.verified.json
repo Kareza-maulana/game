@@ -1,0 +1,18 @@
+{
+  "id": "pusaka",
+  "kind": "scene",
+  "file": "assets/story/pusaka.webp",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "size": [
+    1279,
+    720
+  ],
+  "bytes": 1218780,
+  "sha256": "b8782f2f249a593cb8676d4fcbc6b7898a535f8d3abc4158941aef5533534327",
+  "rgba_sha256": "cd1be6b0ce1a71b1f1c9ec5ded18b456974a487cb32f3d196dff19c56fc605cc",
+  "lossless": true,
+  "runtime_fit": "sprite-gen nearest fit_to_cell"
+}
