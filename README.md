@@ -1,4 +1,4 @@
-# Cahaya Kadiri
+# The Journey of Kirana : Awakening Forgotten Legends
 
 Kampanye platformer **Prolog sampai Epilog** berdasarkan [GDD v2.0](gdd-candra-kirana.md), dengan sembilan scene GDevelop. Versi 0.2 memperluas prototipe Petirtaan menjadi perjalanan lengkap; seni final, sinematik dan audio masih perlu penyempurnaan.
 

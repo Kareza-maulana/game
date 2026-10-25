@@ -31,7 +31,7 @@ template.getObjects().insertNewObject(draft,'Sprite','Kirana',0).addNewBehavior(
 template.getObjects().insertNewObject(draft,'Sprite','Stone',1).addNewBehavior(draft,'PlatformBehavior::PlatformBehavior','Platform');
 const el=new gd.SerializerElement();draft.serializeTo(el);const data=JSON.parse(gd.Serializer.toJSON(el));el.delete();draft.delete();
 const sceneTemplate=data.layouts[0],playerTemplate=sceneTemplate.objects[0],stoneTemplate=sceneTemplate.objects[1],layerTemplate=sceneTemplate.layers[0];
-data.layouts=[];data.firstLayout='Prolog';Object.assign(data.properties,{name:'Cahaya Kadiri',description:'Serat Sapta Keteladanan — Prolog sampai Epilog, berdasarkan GDD v2.0.',version:'0.2.0',windowWidth:480,windowHeight:270,adaptGameResolutionAtRuntime:true,scaleMode:'nearest',pixelsRounding:true,antialiasingMode:'none',sizeOnStartupMode:'scaleOuter',packageName:'id.ukmpp.cahayakadiri',minFPS:30,maxFPS:60});
+data.layouts=[];data.firstLayout='Prolog';Object.assign(data.properties,{name:'The Journey of Kirana : Awakening Forgotten Legends',description:'Serat Sapta Keteladanan — Prolog sampai Epilog, berdasarkan GDD v2.0.',version:'0.2.0',windowWidth:480,windowHeight:270,adaptGameResolutionAtRuntime:true,scaleMode:'nearest',pixelsRounding:true,antialiasingMode:'none',sizeOnStartupMode:'scaleOuter',packageName:'id.ukmpp.cahayakadiri',minFPS:30,maxFPS:60});
 data.properties.loadingScreen.showGDevelopSplash=false;data.properties.watermark.showWatermark=false;
 const core=fs.readFileSync('src/model.mjs','utf8').replaceAll('export ','')+'\n'+fs.readFileSync('src/campaign-model.mjs','utf8').replaceAll('export ','')+'\n'+fs.readFileSync('src/camera.mjs','utf8').replaceAll('export ','')+'\n'+fs.readFileSync('src/audio.js','utf8')+'\n'+fs.readFileSync('src/terrain-renderer.js','utf8')+'\n'+fs.readFileSync('src/mobile-controls.js','utf8')+'\n'+fs.readFileSync('src/ending-feedback.js','utf8')+'\n'+fs.readFileSync('src/story-presentation.js','utf8');
 const runtime=fs.readFileSync('src/campaign-runtime.js','utf8'),css=fs.readFileSync('src/ui.css','utf8')+'\n'+fs.readFileSync('src/campaign.css','utf8')+'\n'+fs.readFileSync('src/mobile.css','utf8')+'\n'+fs.readFileSync('src/ending-feedback.css','utf8')+'\n'+fs.readFileSync('src/story-presentation.css','utf8');
@@ -40,7 +40,7 @@ const resource=name=>{const file=assetFile(name);if(!data.resources.resources.so
 let instanceCount=0;
 for(const level of levels){
   const material=terrain[TERRAIN_BY_SCENE[level.id]];
-  const scene=structuredClone(sceneTemplate);scene.name=level.id;scene.mangledName=level.id;scene.title='Cahaya Kadiri — '+level.name;scene.objects=[];scene.instances=[];scene.r=14;scene.v=28;scene.b=27;
+  const scene=structuredClone(sceneTemplate);scene.name=level.id;scene.mangledName=level.id;scene.title='The Journey of Kirana : Awakening Forgotten Legends — '+level.name;scene.objects=[];scene.instances=[];scene.r=14;scene.v=28;scene.b=27;
   scene.layers=['L0Sky','L1Mountains','L2Garden','L3Walls','','L5Foreground','L6Atmosphere'].map(name=>({...structuredClone(layerTemplate),name}));
   function sprite(name,sets,behavior=null){
     const obj=structuredClone(behavior==='player'?playerTemplate:behavior?stoneTemplate:{...stoneTemplate,behaviors:[]});obj.name=name;

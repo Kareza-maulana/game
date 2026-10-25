@@ -16,7 +16,7 @@ function setupMobileControls({ui,signal,down,up,clear,onPortrait,canPlay}){
     ${button('use','KeyC','Interaksi','Interaksi')}${button('jump','KeyZ','Lompat','Lompat')}</div>`;
   const rotate=document.createElement('section');rotate.id='rotate-device';rotate.hidden=true;
   rotate.setAttribute('role','dialog');rotate.setAttribute('aria-modal','true');rotate.setAttribute('aria-labelledby','rotate-title');
-  rotate.innerHTML='<div class="rotate-card"><div class="rotate-phone" aria-hidden="true">↻</div><span class="eyebrow">CAHAYA KADIRI</span><h2 id="rotate-title">Mainkan dengan layar mendatar</h2><p>Miringkan ponsel agar pemandangan dan kontrol lebih leluasa.</p><button class="primary" id="landscape-start">Aktifkan landscape</button><p id="rotate-note">Ketuk untuk mencoba layar penuh dan rotasi otomatis.</p></div>';
+  rotate.innerHTML='<div class="rotate-card"><div class="rotate-phone" aria-hidden="true">↻</div><span class="eyebrow">THE JOURNEY OF KIRANA : AWAKENING FORGOTTEN LEGENDS</span><h2 id="rotate-title">Mainkan dengan layar mendatar</h2><p>Miringkan ponsel agar pemandangan dan kontrol lebih leluasa.</p><button class="primary" id="landscape-start">Aktifkan landscape</button><p id="rotate-note">Ketuk untuk mencoba layar penuh dan rotasi otomatis.</p></div>';
   ui.append(rotate);
   let blocked=false,busy=false,gestureAttempted=false;
   const pointers=new Map(),latched=new Set();

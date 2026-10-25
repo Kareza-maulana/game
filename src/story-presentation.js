@@ -1,4 +1,4 @@
-function createStoryPresentation({ui,modal,story,dialogues,sceneId,signal}){
+function createStoryPresentation({ui,modal,story,dialogues,sceneId,signal,onTextSound=()=>{}}){
   const root=document.createElement('div');root.id='story-stage';root.setAttribute('aria-hidden','true');
   root.innerHTML='<div class="story-pictures"></div><div class="story-shade"></div><div class="story-caption"><span></span><small></small></div>';
   ui.append(root);
@@ -7,6 +7,56 @@ function createStoryPresentation({ui,modal,story,dialogues,sceneId,signal}){
   const easing='cubic-bezier(.4,0,.2,1)',duration=ms=>reduced.matches?0:ms;
   let request=0,current='',wanted='',hideTimer=0,curtainTimer=0,visible=false,portraitId='',portraitSide='none';
   let closingDialog=null;
+  let textRun=null,textFrame=0;
+  const segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter('id',{granularity:'grapheme'}):null;
+  function stopText(){cancelAnimationFrame(textFrame);textFrame=0;textRun=null;}
+  function textButton(){
+    if(!textRun)return;
+    textRun.next.textContent=textRun.count<textRun.glyphs.length?'Tampilkan teks':textRun.last?'Selesai':'Lanjut →';
+    textRun.copy.dataset.revealing=String(textRun.count<textRun.glyphs.length);
+  }
+  function finishText(){
+    if(!textRun||textRun.count===textRun.glyphs.length)return false;
+    cancelAnimationFrame(textFrame);textFrame=0;
+    for(const {node}of textRun.glyphs)node.classList.add('is-revealed');
+    textRun.count=textRun.glyphs.length;textButton();return true;
+  }
+  function revealFrame(now){
+    textFrame=0;const run=textRun;if(!run||signal.aborted||!visible)return;
+    const dt=Math.min(64,now-run.stamp);run.stamp=now;
+    // Do not catch up with a burst of text/sound when returning from another tab.
+    if(!document.hidden){
+      run.budget+=dt;let voiced=false;
+      while(run.count<run.glyphs.length&&run.budget>=run.wait){
+        run.budget-=run.wait;const glyph=run.glyphs[run.count++];glyph.node.classList.add('is-revealed');
+        voiced=voiced||/[\p{L}\p{N}]/u.test(glyph.char);
+        run.wait=/[.!?…]/u.test(glyph.char)?240:/[,;:—]/u.test(glyph.char)?120:run.narration?30:26;
+      }
+      if(voiced)onTextSound(run.who);
+      textButton();
+    }
+    if(run.count<run.glyphs.length)textFrame=requestAnimationFrame(revealFrame);
+  }
+  function revealText({copy,next,lines,index,text,who,opening}){
+    // Toggling Auto updates controls without restarting the current sentence.
+    if(textRun?.copy===copy&&textRun.lines===lines&&textRun.index===index&&textRun.text===text){textButton();return;}
+    stopText();
+    const accessible=document.createElement('span');accessible.className='dialog-full-text';accessible.textContent=text;
+    const visual=document.createElement('span');visual.className='dialog-reveal';visual.setAttribute('aria-hidden','true');
+    const glyphs=[];
+    for(const word of text.split(/(\s+)/u)){
+      if(!word)continue;if(/^\s+$/u.test(word)){visual.append(document.createTextNode(word));continue;}
+      const group=document.createElement('span');group.className='dialog-word';
+      const chars=segmenter?[...segmenter.segment(word)].map(s=>s.segment):Array.from(word);
+      for(const char of chars){const node=document.createElement('span');node.className='dialog-glyph';node.textContent=char;group.append(node);glyphs.push({node,char});}
+      visual.append(group);
+    }
+    copy.replaceChildren(accessible,visual);
+    textRun={copy,next,lines,index,text,who,glyphs,count:0,last:index===lines.length-1,narration:/^(Narasi|Ingatan|Serat)/u.test(who),stamp:performance.now(),budget:0,wait:opening?260:90};
+    textButton();
+    if(reduced.matches)finishText();else if(glyphs.length)textFrame=requestAnimationFrame(revealFrame);
+  }
+  reduced.addEventListener('change',()=>{if(reduced.matches)finishText();},{signal});
   function clearPictures(){for(const image of pictures.children)image.getAnimations().forEach(a=>a.cancel());pictures.replaceChildren();root.classList.remove('has-picture');current='';}
   function removeClosingDialog(){closingDialog?.remove();closingDialog=null;}
   function releaseCurtain(){
@@ -43,7 +93,7 @@ function createStoryPresentation({ui,modal,story,dialogues,sceneId,signal}){
         fade.finished.then(()=>{if(token===request&&visible)for(const old of [...pictures.children])if(old!==image){old.getAnimations().forEach(a=>a.cancel());old.remove();}}).catch(()=>{});
       }
       current=id;root.dataset.art=id;caption.querySelector('span').textContent=asset.title;
-      caption.querySelector('small').textContent=id.startsWith('serat-')?'KILAS BALIK CANDRA KIRANA':'CAHAYA KADIRI';
+      caption.querySelector('small').textContent=id.startsWith('serat-')?'KILAS BALIK CANDRA KIRANA':'THE JOURNEY OF KIRANA : AWAKENING FORGOTTEN LEGENDS';
       root.classList.add('has-picture');clearTimeout(curtainTimer);releaseCurtain();
     }).catch(()=>{if(token===request){if(!current)root.classList.remove('has-picture');releaseCurtain();}});
   }
@@ -58,10 +108,11 @@ function createStoryPresentation({ui,modal,story,dialogues,sceneId,signal}){
     const aside=box.querySelector('.speaker-portrait'),img=aside.querySelector('img');aside.hidden=!portrait;
     if(portrait&&portraitId!==portrait){portraitId=portrait;img.getAnimations().forEach(a=>a.cancel());img.src=story.assets[portrait].url;img.animate([{opacity:0},{opacity:who==='Bayang Galuh'?.75:1}],{duration:duration(450),easing});}
     if(portrait)img.alt='Potret '+who;
-    box.querySelector('.speaker-name').textContent=who;box.querySelector('.dialog-copy').textContent=text;
+    box.querySelector('.speaker-name').textContent=who;
     box.querySelector('.dialog-progress').textContent=`${index+1} / ${lines.length}`;
     const skip=box.querySelector('#skip-dialog'),next=box.querySelector('#next-dialog'),toggle=box.querySelector('#auto-dialog');
-    skip.disabled=age<2;skip.onclick=onSkip;next.textContent=index===lines.length-1?'Selesai':'Lanjut →';next.onclick=onNext;
+    skip.disabled=age<2;skip.onclick=onSkip;next.onclick=onNext;
+    revealText({copy:box.querySelector('.dialog-copy'),next,lines,index,text,who,opening});
     toggle.textContent=auto?'Auto aktif':'Auto';toggle.setAttribute('aria-pressed',String(auto));toggle.onclick=onAuto;
     picture(cue(lines,index));
     // Only the immediate next illustration is prefetched, never the whole story.
@@ -69,6 +120,7 @@ function createStoryPresentation({ui,modal,story,dialogues,sceneId,signal}){
   }
   function hide(){
     if(!visible)return;
+    stopText();
     // The modal may be hidden/replaced immediately by the runtime. Fade a purely
     // visual copy without duplicate IDs, interactive controls or screen-reader text.
     const box=modal.querySelector('.story-dialog');
@@ -95,6 +147,6 @@ function createStoryPresentation({ui,modal,story,dialogues,sceneId,signal}){
     curtain.animate([{opacity:0},{opacity:1}],{duration:ms,easing,fill:'forwards'});
     return ms;
   }
-  signal.addEventListener('abort',()=>{++request;clearTimeout(hideTimer);clearTimeout(curtainTimer);clearPictures();removeClosingDialog();root.remove();},{once:true});
-  return {render,hide,decorateChoice,transitionOut,snapshot:()=>({visible,art:current,pendingArt:wanted,side:portraitSide,images:pictures.children.length})};
+  signal.addEventListener('abort',()=>{++request;stopText();clearTimeout(hideTimer);clearTimeout(curtainTimer);clearPictures();removeClosingDialog();root.remove();},{once:true});
+  return {render,hide,decorateChoice,transitionOut,finishText,isRevealing:()=>!!textRun&&textRun.count<textRun.glyphs.length,snapshot:()=>({visible,art:current,pendingArt:wanted,side:portraitSide,images:pictures.children.length,text:textRun?{revealed:textRun.count,total:textRun.glyphs.length,complete:textRun.count===textRun.glyphs.length}:null})};
 }

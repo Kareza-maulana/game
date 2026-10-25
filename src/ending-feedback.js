@@ -4,11 +4,11 @@ function showEndingFeedback({container,signal,onClose,homeUrl,feedback}){
   dialog.className='panel feedback-panel';dialog.setAttribute('role','dialog');
   dialog.setAttribute('aria-modal','true');dialog.setAttribute('aria-labelledby','feedback-title');
   dialog.innerHTML=`<div class="panel-head"><div><span class="eyebrow">TERIMA KASIH SUDAH BERMAIN</span><h2 id="feedback-title">Bagaimana perjalananmu?</h2></div><button type="button" id="feedback-close" aria-label="Tutup tanggapan">×</button></div>
-    <p>Bagikan kesan, bagian favorit, atau saranmu untuk Cahaya Kadiri.</p>
+    <p>Bagikan kesan, bagian favorit, atau saranmu untuk The Journey of Kirana : Awakening Forgotten Legends.</p>
     <form id="feedback-form"><label for="feedback-comment">Komentar atau tanggapan</label>
     <textarea id="feedback-comment" name="comment" rows="4" maxlength="${limit}" placeholder="Ceritakan pengalamanmu di sini…" aria-describedby="feedback-storage feedback-count" required></textarea>
     <div id="feedback-count" class="subtle">0 / ${limit}</div>
-    <p id="feedback-storage" class="subtle">Tanggapan akan dikirim ke pengelola Cahaya Kadiri. Draf disimpan di perangkat ini sampai berhasil dikirim.</p>
+    <p id="feedback-storage" class="subtle">Tanggapan akan dikirim ke pengelola The Journey of Kirana : Awakening Forgotten Legends. Draf disimpan di perangkat ini sampai berhasil dikirim.</p>
     <p id="feedback-status" role="status" aria-live="polite"></p>
     <div class="feedback-actions"><button type="submit" id="feedback-save" class="primary">Kirim tanggapan</button><button type="button" id="feedback-later">Nanti saja</button></div></form>
     <a class="home-button" href="${homeUrl}">Kembali ke beranda ↗</a>`;
@@ -72,7 +72,7 @@ function showEndingFeedback({container,signal,onClose,homeUrl,feedback}){
         return;
       }
       sentText=comment;
-      try{localStorage.setItem(storageKey,JSON.stringify({version:2,game:'Cahaya Kadiri',comment,sentAt:new Date().toISOString()}));localStorage.removeItem(draftKey);}catch{/* Server receipt is authoritative, even without local storage. */}
+      try{localStorage.setItem(storageKey,JSON.stringify({version:2,game:'The Journey of Kirana : Awakening Forgotten Legends',comment,sentAt:new Date().toISOString()}));localStorage.removeItem(draftKey);}catch{/* Server receipt is authoritative, even without local storage. */}
       status.textContent='Terima kasih! Tanggapanmu berhasil dikirim ke pengelola.';
       find('feedback-later').textContent='Selesai';
     }catch{

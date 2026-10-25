@@ -2,7 +2,7 @@
   "name": "cahaya-kadiri",
   "version": "0.2.0",
   "private": true,
-  "description": "Cahaya Kadiri — kampanye Prolog sampai Epilog berdasarkan GDD v2.0",
+  "description": "The Journey of Kirana : Awakening Forgotten Legends — kampanye Prolog sampai Epilog berdasarkan GDD v2.0",
   "scripts": {
     "build": "node tools/build-campaign.mjs",
     "assets:optimize": "python tools/optimize-assets.py",

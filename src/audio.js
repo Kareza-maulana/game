@@ -2,7 +2,8 @@ function createSoundscape(){
   let context=null,master=null,buses=null,noise=null,meter=null,loops=[],voices=new Set(),lastZone='',nextNature=0,nextMusic=0,nextStep=0,wasGrounded=true,wasTorch=false,notes=0,lastMode='title';
   let settings={ambience:.65,music:.38,effects:.7,muted:false};
   try{const saved=JSON.parse(localStorage.getItem('cahayakadiri_audio')||'null');if(saved){for(const k of ['ambience','music','effects'])if(Number.isFinite(saved[k]))settings[k]=Math.max(0,Math.min(1,saved[k]));settings.muted=saved.muted===true;}}catch{}
-  const stats={cues:0,steps:0,landings:0,nature:0,music:0};
+  const stats={cues:0,text:0,steps:0,landings:0,nature:0,music:0};
+  let nextText=0;
   const persist=()=>{try{localStorage.setItem('cahayakadiri_audio',JSON.stringify(settings));}catch{}};
   function ramp(param,value,time=.18){if(param._ckTarget===value)return;param._ckTarget=value;param.setTargetAtTime(value,context.currentTime,time);}
   function unlock(){
@@ -28,7 +29,14 @@ function createSoundscape(){
     const t=context.currentTime,o=context.createBufferSource(),filter=context.createBiquadFilter(),g=context.createGain();o.buffer=noise;filter.type='bandpass';filter.frequency.value=frequency;filter.Q.value=.8;g.gain.setValueAtTime(amp,t);g.gain.exponentialRampToValueAtTime(.0001,t+len);o.connect(filter);filter.connect(g);g.connect(buses[bus]);voices.add(o);o.onended=()=>{o.disconnect();filter.disconnect();g.disconnect();voices.delete(o);};o.start(t,(notes%3)*.37);o.stop(t+len);
   }
   function cue(name,options={}){
-    if(!context||settings.muted)return;stats.cues++;
+    if(!context||settings.muted)return;
+    if(name==='text'){
+      if(context.state!=='running'||settings.effects<=0||document.hidden||context.currentTime<nextText)return;
+      nextText=context.currentTime+.07;stats.cues++;stats.text++;
+      const speaker=options.speaker||'',pitch=/^(Narasi|Ingatan|Serat)/u.test(speaker)?230:300+[...speaker].reduce((sum,c)=>sum+c.codePointAt(0),0)%140;
+      voice(pitch,.04,.023,{type:'triangle',to:pitch*.85});rustle(.025,.035,1500);return;
+    }
+    stats.cues++;
     if(name==='jump'){rustle(.13,.18,900);voice(140,.16,.055,{to:230,type:'triangle'});}
     else if(name==='double'){rustle(.22,.12,1600);voice(440,.3,.065,{to:660});voice(880,.35,.025,{delay:.045});}
     else if(name==='dash'||name==='kibas'){rustle(.3,.36,1100);voice(110,.24,.035,{to:50});}

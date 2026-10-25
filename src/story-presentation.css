@@ -15,6 +15,8 @@
 .speaker-portrait img{width:100%;height:100%;object-fit:contain;object-position:center bottom;image-rendering:pixelated;filter:drop-shadow(0 5px 8px #0009)}
 .ghost-speaker .speaker-portrait img{filter:sepia(.35) hue-rotate(205deg) drop-shadow(0 0 14px #aa95f7);opacity:.75}
 .story-dialog .dialog-copy{font-size:17px;line-height:1.65;margin:10px 0 15px}.story-dialog .dialog-controls{position:sticky;bottom:0;background:#0d2622;min-height:44px;gap:12px}
+.dialog-full-text{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.dialog-reveal{white-space:pre-wrap}.dialog-word{white-space:nowrap}.dialog-glyph{display:inline-block;opacity:0;clip-path:inset(0 100% 0 0);transition:clip-path .1s linear,opacity .1s linear}.dialog-glyph.is-revealed{opacity:1;clip-path:inset(0)}
 #ck .story-dialog .dialog-controls button{min-height:44px;min-width:50px;padding:8px;font-size:12px}#ck .story-dialog .dialog-controls button.next{margin-left:4px;color:#f7dfa1;border:1px solid #b9a57166;border-radius:5px;padding:8px 15px}
 #scene-curtain{position:fixed;inset:0;z-index:1000;background:#071714;pointer-events:auto}
 .choice-speaker{display:flex;align-items:center;gap:20px;margin:4px 0 15px}.choice-speaker img{width:88px;height:125px;object-fit:contain;object-position:center bottom;image-rendering:pixelated;flex:none}.choice-speaker h2{margin:0}.character-choice{position:relative}
@@ -22,3 +24,4 @@
 @media(max-height:550px){#ck #modal.story-dialog-modal{padding-bottom:max(10px,env(safe-area-inset-bottom))}#ck .dialog.story-dialog{width:94%;--portrait:96px;gap:14px;padding:10px 15px;max-height:65dvh}.speaker-portrait{height:130px;margin-top:-32px}.story-dialog .dialog-copy{font-size:13px;line-height:1.5;margin:6px 0 8px}.story-dialog .dialog-content{max-height:57dvh}.story-caption{top:12px;left:4%}.story-caption span{font-size:19px}.story-caption small{font-size:7px;margin-top:4px}.story-dialog .speaker-name{font-size:9px}.story-shade{background:linear-gradient(180deg,#04140e80,transparent 35%,#04140ed9 100%)}}
 @media(max-height:550px){#ck .story-dialog-exit{padding-bottom:max(10px,env(safe-area-inset-bottom))}}
 @media(prefers-reduced-motion:reduce){#story-stage,.story-image{transition:none}}
+@media(prefers-reduced-motion:reduce){.dialog-glyph{transition:none}}

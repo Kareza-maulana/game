@@ -14,4 +14,4 @@ const server=http.createServer((req,res)=>{
     res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store'});fs.createReadStream(file).pipe(res);
   });
 });
-server.listen(3100,'127.0.0.1',()=>console.log('Cahaya Kadiri: http://127.0.0.1:3100'));
+server.listen(3100,'127.0.0.1',()=>console.log('The Journey of Kirana : Awakening Forgotten Legends: http://127.0.0.1:3100'));
